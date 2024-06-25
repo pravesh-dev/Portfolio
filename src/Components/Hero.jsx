@@ -100,11 +100,7 @@ function Hero() {
         </div>
       </div>
       <div className="w-full absolute bottom-1  flex flex-col justify-center items-center">
-        <span className="absolute top-1  rounded-3xl">
-          {/* <img className="w-[0.1rem]" src={mouseBtn} alt="" /> */}
-        </span>
         <img className="w-[0.6rem]" src={mouse} alt="" />
-        {/* <img className="w-[0.6rem]" src={mouseArrow} alt="" /> */}
         <p className="text-center text-white/50 font-thin text-[0.6rem] tracking-widest">
           Scroll Down
         </p>
