@@ -7,7 +7,7 @@ import imageBg from "../assets/images/image-bg.svg";
 import myImage from "../assets/images/myImage.svg";
 import mouse from "../assets/images/icon/scrollMouse.svg";
 import "./Hero.css";
-// import HeroDecoration from "./HeroDecoration";
+import HeroDecoration from "./HeroDecoration";
 
 function Hero() {
   let socialIcons = [
@@ -26,7 +26,7 @@ function Hero() {
   ];
   return (
     <div className="w-full h-screen">
-      {/* <HeroDecoration/> */}
+      <HeroDecoration/>
       <div id="hero-top" className="h-[70%] w-full flex relative">
         <div className="w-[20%] h-[75%] flex flex-col gap-[0.6rem] items-center justify-end absolute left-0">
           {socialIcons.map((item, index) => {
