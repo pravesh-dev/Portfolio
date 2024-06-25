@@ -6,9 +6,7 @@ import gitHub from "../assets/images/icon/gitHub.svg";
 import imageBg from "../assets/images/image-bg.svg";
 import myImage from "../assets/images/myImage.svg";
 import mouse from "../assets/images/icon/scrollMouse.svg";
-// import mouseArrow from "../assets/mouseArrow.svg";
-// import mouseBtn from "../assets/mouseBtn.svg";
-// import "./Hero.css";
+import "./Hero.css";
 // import HeroDecoration from "./HeroDecoration";
 
 function Hero() {
