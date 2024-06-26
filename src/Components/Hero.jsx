@@ -37,7 +37,7 @@ function Hero() {
             );
           })}
         </div>
-        <div className="w-full h-[80%] relative border">
+        <div className="w-full h-[80%] relative">
           <div className=" w-60 h-60 absolute bottom-0 left-1/2 -translate-x-1/2">
             <img
               src={imageBg}
