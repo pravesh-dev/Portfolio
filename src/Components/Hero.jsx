@@ -38,29 +38,33 @@ function Hero() {
           })}
         </div>
         <div className="w-full h-[80%] relative border">
-          <div className="w-16 h-[1.4rem] flex justify-center items-center gap-1 absolute top-[45%] left-1/2 -translate-x-[215%] z-50 bg-white/30 rounded-[2.7px]">
-            <h3 className="text-white font-bold text-[0.5rem]">20+</h3>
-            <p className="text-white text-[0.35rem] tracking-widest leading-[0.4.3rem]">
-              Completed <br /> <span className="text-primary">Projects</span>
-            </p>
+          <div className=" w-60 h-60 absolute bottom-0 left-1/2 -translate-x-1/2">
+            <img
+              src={imageBg}
+              className="w-44 z-10 absolute bottom-0 left-1/2 -translate-x-1/2"
+              alt=""
+            />
+            <img
+              src={myImage}
+              className="w-52 z-20 absolute bottom-[10%] left-1/2 -translate-x-[48%]"
+              alt=""
+            />
+            <div className="w-44 h-24 rounded-b-[5.5rem] bg-gradient-to-t from-[#1a1a1a] from-50% to-transparent z-30 absolute bottom-0 left-1/2 -translate-x-1/2"></div>
+
+            
+            <div className="w-16 h-[1.4rem] flex justify-center items-center gap-1 absolute top-[20%] -left-[10%] z-50 bg-white/30 rounded-[2.7px]">
+              <h3 className="text-white font-bold text-[0.5rem]">20+</h3>
+              <p className="text-white text-[0.35rem] tracking-widest leading-[0.4.3rem]">
+                Completed <br /> <span className="text-primary">Projects</span>
+              </p>
+            </div>
+            <div className="w-16 h-[1.4rem] flex justify-center items-center gap-1 absolute top-[51%] left-[80%] z-50 bg-white/30 rounded-[2.7px]">
+              <h3 className="text-white font-bold text-[0.5rem]">1+</h3>
+              <p className="text-white text-[0.35rem] tracking-widest leading-[0.4.3rem]">
+                Years of <br /> <span className="text-primary">Experience</span>
+              </p>
+            </div>
           </div>
-          <div className="w-16 h-[1.4rem] flex justify-center items-center gap-1 absolute top-[65%] left-1/2 translate-x-[120%] z-50 bg-white/30 rounded-[2.7px]">
-            <h3 className="text-white font-bold text-[0.5rem]">1+</h3>
-            <p className="text-white text-[0.35rem] tracking-widest leading-[0.4.3rem]">
-              Years of <br /> <span className="text-primary">Experience</span>
-            </p>
-          </div>
-          <img
-            src={imageBg}
-            className="w-44 z-10 absolute bottom-0 left-1/2 -translate-x-1/2"
-            alt=""
-          />
-          <img
-            src={myImage}
-            className="w-52 z-20 absolute bottom-[10%] left-1/2 -translate-x-[48%]"
-            alt=""
-          />
-          <div className="w-44 h-24 rounded-b-[5.5rem] bg-gradient-to-t from-[#1a1a1a] from-50% to-transparent z-30 absolute bottom-0 left-1/2 -translate-x-1/2"></div>
         </div>
         <div className="w-full absolute bottom-7 left-1/2 -translate-x-1/2">
           <h1 className=" text-center text-primary text-[2.1rem] font-monseret font-extrabold leading-7">
