@@ -25,8 +25,8 @@ function Hero() {
     },
   ];
   return (
-    <div className="w-full h-screen">
-      <HeroDecoration/>
+    <div className="w-full h-screen relative">
+      <HeroDecoration />
       <div id="hero-top" className="h-[70%] w-full flex relative">
         <div className="w-[20%] h-[75%] flex flex-col gap-[0.6rem] items-center justify-end absolute left-0">
           {socialIcons.map((item, index) => {
@@ -37,14 +37,14 @@ function Hero() {
             );
           })}
         </div>
-        <div className="w-full h-[80%] relative">
-          <div className="w-16 h-[1.4rem] flex justify-center items-center gap-1 absolute top-40 left-1/2 -translate-x-[215%] z-50 bg-white/30 rounded-[2.7px]">
+        <div className="w-full h-[80%] relative border">
+          <div className="w-16 h-[1.4rem] flex justify-center items-center gap-1 absolute top-[45%] left-1/2 -translate-x-[215%] z-50 bg-white/30 rounded-[2.7px]">
             <h3 className="text-white font-bold text-[0.5rem]">20+</h3>
             <p className="text-white text-[0.35rem] tracking-widest leading-[0.4.3rem]">
               Completed <br /> <span className="text-primary">Projects</span>
             </p>
           </div>
-          <div className="w-16 h-[1.4rem] flex justify-center items-center gap-1 absolute top-60 left-1/2 translate-x-[120%] z-50 bg-white/30 rounded-[2.7px]">
+          <div className="w-16 h-[1.4rem] flex justify-center items-center gap-1 absolute top-[65%] left-1/2 translate-x-[120%] z-50 bg-white/30 rounded-[2.7px]">
             <h3 className="text-white font-bold text-[0.5rem]">1+</h3>
             <p className="text-white text-[0.35rem] tracking-widest leading-[0.4.3rem]">
               Years of <br /> <span className="text-primary">Experience</span>
@@ -57,7 +57,7 @@ function Hero() {
           />
           <img
             src={myImage}
-            className="w-52 z-20 absolute bottom-9 left-1/2 -translate-x-[48%]"
+            className="w-52 z-20 absolute bottom-[10%] left-1/2 -translate-x-[48%]"
             alt=""
           />
           <div className="w-44 h-24 rounded-b-[5.5rem] bg-gradient-to-t from-[#1a1a1a] from-50% to-transparent z-30 absolute bottom-0 left-1/2 -translate-x-1/2"></div>
@@ -75,7 +75,7 @@ function Hero() {
         id="hero-bottom"
         className="w-full h-[30%] flex justify-between pt-8 pl-11 pr-8 absolute"
       >
-        <p className="w-28 text-[0.32rem] text-white/60 font-extralight text-justify mt-3">
+        <p className="w-28 text-[0.4rem] text-white/60 font-extralight text-justify mt-3">
           Debbie put her hand into the hole, sliding her hand down as far as her
           arm could reach. Lorem ipsum dolor sit amet Lorem, ipsum.
         </p>
@@ -97,7 +97,7 @@ function Hero() {
           </p>
         </div>
       </div>
-      <div className="w-full absolute bottom-1  flex flex-col justify-center items-center">
+      <div className="w-full absolute bottom-3  flex flex-col justify-center items-center">
         <img className="w-[0.6rem]" src={mouse} alt="" />
         <p className="text-center text-white/50 font-thin text-[0.6rem] tracking-widest">
           Scroll Down
