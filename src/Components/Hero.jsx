@@ -27,8 +27,8 @@ function Hero() {
   return (
     <div className="w-full h-screen relative">
       <HeroDecoration />
-      <div id="hero-top" className="h-[70%] w-full flex relative border lg:h-[80%]">
-        <div className="w-[20%] h-[75%] flex flex-col gap-[0.6rem] items-center justify-end absolute left-0 lg:w-[10%] lg:gap-4">
+      <div id="hero-top" className="h-[70%] w-full flex relative lg:h-[80%]">
+        <div className="w-[20%] h-[75%] flex flex-col gap-[0.6rem] items-center justify-end absolute left-0 lg:w-[14%] lg:h-[70%] lg:gap-4 xl:w-[10%] xl:h-[60%]">
           {socialIcons.map((item, index) => {
             return (
               <a key={index} href="#" className={`${index === 3 && "mb-8 lg:mb-14"}`}>
@@ -38,46 +38,46 @@ function Hero() {
           })}
         </div>
         <div className="w-full h-[80%] relative">
-          <div className=" w-60 h-60 absolute bottom-0 left-1/2 -translate-x-1/2">
+          <div className=" w-60 h-60 absolute bottom-0 left-1/2 -translate-x-1/2 lg:w-80 lg:h-80 lg:-bottom-5">
             <img
               src={imageBg}
-              className="w-44 z-10 absolute bottom-0 left-1/2 -translate-x-1/2"
+              className="w-44 z-10 absolute bottom-0 left-1/2 -translate-x-1/2 lg:w-56"
               alt=""
             />
             <img
               src={myImage}
-              className="w-52 z-20 absolute bottom-[10%] left-1/2 -translate-x-[48%]"
+              className="w-52 z-20 absolute bottom-[10%] left-1/2 -translate-x-[48%] lg:w-64 lg:bottom-[15%]"
               alt=""
             />
-            <div className="w-44 h-24 rounded-b-[5.5rem] bg-gradient-to-t from-[#1a1a1a] from-50% to-transparent z-30 absolute bottom-0 left-1/2 -translate-x-1/2"></div>
+            <div className="w-44 h-24 rounded-b-[5.5rem] bg-gradient-to-t from-[#1a1a1a] from-50% to-transparent z-30 absolute bottom-0 left-1/2 -translate-x-1/2 lg:w-56"></div>
 
             
-            <div className="w-16 h-[1.4rem] flex justify-center items-center gap-1 absolute top-[20%] -left-[10%] z-50 bg-white/30 rounded-[2.7px]">
-              <h3 className="text-white font-bold text-[0.5rem]">20+</h3>
-              <p className="text-white text-[0.35rem] tracking-widest leading-[0.4.3rem]">
+            <div className="w-16 h-[1.4rem] flex justify-center items-center gap-1 absolute top-[20%] -left-[10%] z-50 bg-white/30 rounded-[2.7px] lg:w-24 lg:h-[1.9rem]">
+              <h3 className="text-white font-bold text-[0.5rem] lg:text-[0.7rem]">20+</h3>
+              <p className="text-white text-[0.35rem] tracking-widest leading-[0.43rem] lg:text-[0.54rem] lg:leading-3">
                 Completed <br /> <span className="text-primary">Projects</span>
               </p>
             </div>
-            <div className="w-16 h-[1.4rem] flex justify-center items-center gap-1 absolute top-[51%] left-[80%] z-50 bg-white/30 rounded-[2.7px]">
-              <h3 className="text-white font-bold text-[0.5rem]">1+</h3>
-              <p className="text-white text-[0.35rem] tracking-widest leading-[0.4.3rem]">
+            <div className="w-16 h-[1.4rem] flex justify-center items-center gap-1 absolute top-[51%] left-[80%] z-50 bg-white/30 rounded-[2.7px] lg:w-24 lg:h-[1.9rem]">
+              <h3 className="text-white font-bold text-[0.5rem] lg:text-[0.7rem]">1+</h3>
+              <p className="text-white text-[0.35rem] tracking-widest leading-[0.43rem] lg:text-[0.54rem] lg:leading-3">
                 Years of <br /> <span className="text-primary">Experience</span>
               </p>
             </div>
           </div>
         </div>
-        <div className="w-full absolute bottom-7 left-1/2 -translate-x-1/2">
-          <h1 className=" text-center text-primary text-[2.1rem] font-monseret font-extrabold leading-7">
+        <div className="w-full absolute bottom-7 left-1/2 -translate-x-1/2 lg:bottom-4">
+          <h1 className=" text-center text-primary text-[2.1rem] font-monseret font-extrabold leading-7 lg:text-[3rem] lg:mb-3">
             Pravesh <span className="stroke-text">Sa</span>ini
           </h1>
-          <h2 className="w-full text-center uppercase text-white text-sm font-monseret font-bold">
+          <h2 className="w-full text-center uppercase text-white text-sm font-monseret font-bold lg:text-[1.3rem]">
             frontend <span className="stroke-text">developer</span>
           </h2>
         </div>
       </div>
       <div
         id="hero-bottom"
-        className="w-full h-[30%] flex justify-between pt-8 pl-11 pr-8 absolute lg:h-[27%] lg:-mt-20 border lg:pr-20 lg:pl-24"
+        className="w-full h-[30%] flex justify-between pt-8 pl-11 pr-8 absolute lg:h-[27%] lg:-mt-20 lg:pr-20 lg:pl-24"
       >
         <p className="w-28 text-[0.4rem] text-white/60 font-extralight text-justify mt-3 md:text-[0.55rem] md:w-44 lg:text-[0.5rem] lg:mt-7">
           Debbie put her hand into the hole, sliding her hand down as far as her
