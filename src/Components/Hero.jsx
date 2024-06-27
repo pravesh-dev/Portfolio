@@ -27,12 +27,12 @@ function Hero() {
   return (
     <div className="w-full h-screen relative">
       <HeroDecoration />
-      <div id="hero-top" className="h-[70%] w-full flex relative">
-        <div className="w-[20%] h-[75%] flex flex-col gap-[0.6rem] items-center justify-end absolute left-0">
+      <div id="hero-top" className="h-[70%] w-full flex relative border lg:h-[80%]">
+        <div className="w-[20%] h-[75%] flex flex-col gap-[0.6rem] items-center justify-end absolute left-0 lg:w-[10%] lg:gap-4">
           {socialIcons.map((item, index) => {
             return (
-              <a key={index} href="#" className={`${index === 3 && "mb-8"}`}>
-                <img src={item.name} alt="" />
+              <a key={index} href="#" className={`${index === 3 && "mb-8 lg:mb-14"}`}>
+                <img src={item.name} className="lg:w-5" alt="" />
               </a>
             );
           })}
@@ -77,26 +77,26 @@ function Hero() {
       </div>
       <div
         id="hero-bottom"
-        className="w-full h-[30%] flex justify-between pt-8 pl-11 pr-8 absolute"
+        className="w-full h-[30%] flex justify-between pt-8 pl-11 pr-8 absolute lg:h-[27%] lg:-mt-20 border lg:pr-20 lg:pl-24"
       >
-        <p className="w-28 text-[0.4rem] text-white/60 font-extralight text-justify mt-3">
+        <p className="w-28 text-[0.4rem] text-white/60 font-extralight text-justify mt-3 md:text-[0.55rem] md:w-44 lg:text-[0.5rem] lg:mt-7">
           Debbie put her hand into the hole, sliding her hand down as far as her
           arm could reach. Lorem ipsum dolor sit amet Lorem, ipsum.
         </p>
         <div className="w-[7.2rem]">
-          <h3 className="text-[0.6rem] text-white -mb-2 mt-1">Email</h3>
+          <h3 className="text-[0.6rem] text-white -mb-2 mt-1 lg:text-[0.9rem]">Email</h3>
           <a
-            className="text-[0.5rem] text-white/50"
+            className="text-[0.5rem] text-white/50 lg:text-[0.6rem]"
             href="mailto:praveshsaini.dev@gmail.com"
           >
             praveshsaini.dev@gmail.com
           </a>
-          <h3 className="text-[0.6rem] text-white -mb-2 mt-1">Phone</h3>
-          <a className="text-[0.5rem] text-white/50" href="tel:+9991831473">
+          <h3 className="text-[0.6rem] text-white -mb-2 mt-1 lg:text-[0.9rem]">Phone</h3>
+          <a className="text-[0.5rem] text-white/50 lg:text-[0.6rem]" href="tel:+9991831473">
             9991831473
           </a>
-          <h3 className="text-[0.6rem] text-white -mb-2 mt-1">Location</h3>
-          <p className="text-[0.5rem] text-white/50 mt-2">
+          <h3 className="text-[0.6rem] text-white -mb-2 mt-1 lg:text-[0.9rem]">Location</h3>
+          <p className="text-[0.5rem] text-white/50 mt-2 lg:text-[0.6rem]">
             123001 Niwaz Nagar <br /> Haryana India
           </p>
         </div>

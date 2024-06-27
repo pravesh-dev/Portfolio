@@ -51,17 +51,17 @@ function HeroDecoration() {
       <img
         src={heroCurveTop}
         alt="curve lines"
-        className="absolute right-0 top-0 w-24 md:w-36"
+        className="absolute right-0 top-0 w-24 md:w-36 lg:w-44"
       />
       <img
         src={heroCurveBottom}
         alt="curve lines"
-        className="absolute left-0 bottom-5 w-11 md:w-14"
+        className="absolute left-0 bottom-5 w-11 md:w-14 lg:w-20"
       />
       <img
         src={heroCurveLong}
         alt="curve lines"
-        className="absolute left-0 bottom-[28%] w-full md:bottom-[20%] md:opacity-25"
+        className="absolute left-0 bottom-[28%] w-full md:bottom-[20%] md:opacity-25 lg:bottom-[15%]"
       />
     </div>
   );
