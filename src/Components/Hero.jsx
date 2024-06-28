@@ -25,7 +25,7 @@ function Hero() {
     },
   ];
   return (
-    <div className="w-full h-screen relative">
+    <div className="w-full h-screen relative overflow-y-auto">
       <HeroDecoration />
       <div id="hero-top" className="h-[70%] w-full flex relative lg:h-[80%]">
         <div className="w-[20%] h-[75%] flex flex-col gap-[0.6rem] items-center justify-end absolute left-0 lg:w-[14%] lg:h-[70%] lg:gap-4 xl:w-[10%] xl:h-[60%]">
@@ -101,9 +101,9 @@ function Hero() {
           </p>
         </div>
       </div>
-      <div className="w-full absolute bottom-3  flex flex-col justify-center items-center">
-        <img className="w-[0.6rem]" src={mouse} alt="" />
-        <p className="text-center text-white/50 font-thin text-[0.6rem] tracking-widest">
+      <div className="w-full absolute bottom-3  flex flex-col justify-center items-center lg:bottom-1">
+        <img className="w-[0.6rem] lg:w-[0.9rem]" src={mouse} alt="" />
+        <p className="text-center text-white/50 font-thin text-[0.6rem] tracking-widest lg:text-[0.8rem]">
           Scroll Down
         </p>
       </div>

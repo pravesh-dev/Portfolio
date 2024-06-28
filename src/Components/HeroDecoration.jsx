@@ -8,22 +8,22 @@ function HeroDecoration() {
   return (
     <div className="w-full h-full absolute">
       {/* Small Circles */}
-      <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[13%] left-[30%]"></span>
-      <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[11%] left-[57%]"></span>
-      <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[25%] left-[80%]"></span>
-      <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[56%] left-[53%]"></span>
-      <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[69%] left-[42%]"></span>
-      <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[66%] left-[92%]"></span>
-      <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[73%] left-[73%]"></span>
+      <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[13%] left-[30%] lg:w-[0.5rem] lg:h-[0.5rem] lg:left-[35%] lg:top-[20%]"></span>
+      <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[11%] left-[57%] lg:w-[0.5rem] lg:h-[0.5rem]"></span>
+      <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[25%] left-[80%] lg:w-[0.5rem] lg:h-[0.5rem] lg:left-[70%] lg:top-[30%]"></span>
+      <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[56%] left-[53%] lg:w-[0.5rem] lg:h-[0.5rem]"></span>
+      <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[69%] left-[42%] lg:w-[0.5rem] lg:h-[0.5rem] lg:top-[65%]"></span>
+      <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[66%] left-[92%] lg:w-[0.5rem] lg:h-[0.5rem]"></span>
+      <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[73%] left-[73%] lg:w-[0.5rem] lg:h-[0.5rem]"></span>
 
       {/* Large Circles */}
-      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[14%] left-[15%]"></span>
-      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[8%] left-[70%]"></span>
-      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[32%] left-[88%]"></span>
-      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[31%] left-[14%]"></span>
-      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[57%] left-[24%]"></span>
-      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[53%] left-[77%]"></span>
-      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[70%] left-[6%]"></span>
+      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[14%] left-[15%] lg:w-[0.8rem] lg:h-[0.8rem]"></span>
+      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[8%] left-[70%] lg:w-[0.8rem] lg:h-[0.8rem]"></span>
+      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[32%] left-[88%] lg:w-[0.8rem] lg:h-[0.8rem]"></span>
+      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[31%] left-[14%] lg:w-[0.8rem] lg:h-[0.8rem] lg:left-[24%] lg:top-[38%]"></span>
+      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[57%] left-[24%] lg:w-[0.8rem] lg:h-[0.8rem] lg:left-[34%]"></span>
+      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[53%] left-[77%] lg:w-[0.8rem] lg:h-[0.8rem]"></span>
+      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[70%] left-[6%] lg:w-[0.8rem] lg:h-[0.8rem]"></span>
 
       {/* Triangles */}
       <img
