@@ -41,7 +41,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="border w-full h-[70%] flex flex-col gap-12 -mt-28 relative z-10 px-3">
+      <div className="border w-full h-[70%] flex flex-col gap-11 -mt-28 relative z-10 px-3">
         <div className="self-end">
           <h2 className="text-neutral-400 font-extralight text-[0.75rem] tracking-wider">
             Introduction
@@ -51,7 +51,7 @@ function About() {
             <span className="w-20 h-[0.11rem] bg-white relative left-5"></span>
           </h1>
         </div>
-        <p className="text-neutral-300 text-xs tracking-widest leading-[1.1rem] text-justify font-extralight">It was easy to spot her. All you needed to do was look at her socks. They were never a matching pair. One would be green while the other would be blue. One would reach her knee while the other barely touched her ankle. Every other part of her was perfect, but never the socks. They were her micro act of rebellion. It had been her dream for years but Dana had failed to take any action toward making it come true. There had always been a good excuse to delay or prioritize another project. As she woke, she realized she was once again at a crossroads. </p>
+        <p className="text-neutral-300 text-xs tracking-widest leading-[1.1rem] text-justify font-extralight flex flex-col gap-5">It was easy to spot her. All you needed to do was look at her socks. They were never a matching pair. One would be green while the other would be blue. One would reach her knee while the other barely touched her ankle. Every other part of her was perfect, but never the socks. They were her micro act of rebellion. It had been her dream for years but Dana had failed to take any action toward making it come true. There had always been a good excuse to delay or prioritize another project. As she woke, she realized she was once again at a crossroads.  <span className="w-14 h-[0.12rem] bg-white self-end mr-7"></span></p>
         <div className="flex gap-3">
           <button className="text-xs px-6 py-2 rounded-md bg-primary text-white shadow-[2px_1px_1px_1px_#000] tracking-wider font-light">Hire me</button>
           <button className="border border-primary text-white text-xs px-6 py-2 rounded-md tracking-wider font-light">View Portfolio</button>
