@@ -7,42 +7,42 @@ import myImage from "../assets/images/About/myImage.svg";
 
 function About() {
   return (
-    <div className="w-full h-screen relative box-border">
+    <div className="w-full h-screen relative box-border sm:flex sm:flex-row sm:items-center sm:justify-center sm:gap-5">
       {/* <AboutDecoration/> */}
-      <div className="w-full h-[40%] relative flex items-center px-3">
-        <div className="w-48 h-[11.3rem] relative">
+      <div className="w-full h-[40%] relative flex items-center px-3 sm:w-auto sm:h-auto">
+        <div className="w-48 h-[11.3rem] relative border sm:w-80 sm:h-[19.3rem]">
           <div className="w-[85%] h-[80%] relative flex items-end z-20 overflow-hidden">
             <img className="w-full h-[80%] object-cover" src={aboutBg} alt="" />
             <img
               src={myImage}
-              className="absolute -bottom-1 -left-3 w-36"
+              className="absolute -bottom-1 -left-3 w-36 sm:w-60"
               alt=""
             />
           </div>
           <img
             src={aboutBgRight}
-            className="w-12 absolute right-0 top-[3.1rem] z-10"
+            className="w-12 absolute right-0 top-[3.1rem] z-10 sm:w-[4.8rem] sm:top-[5.6rem]"
             alt=""
           />
 
           <div className="flex items-center gap-2 h-[20%]">
-            <div className="w-[4rem] h-[1.45rem] flex justify-center items-center gap-1 bg-white/30 rounded-[4px] lg:w-24 lg:h-[1.9rem]">
-              <h3 className="text-white font-bold text-[0.6rem]">20+</h3>
-              <p className="text-white text-[0.38rem] tracking-widest leading-[0.43rem] lg:text-[0.54rem] lg:leading-3">
+            <div className="w-[4rem] h-[1.45rem] flex justify-center items-center gap-1 bg-white/30 rounded-[4px] sm:w-[7rem] sm:h-[1.9rem]">
+              <h3 className="text-white font-bold text-[0.6rem] sm:text-[1rem]">20+</h3>
+              <p className="text-white text-[0.38rem] tracking-widest leading-[0.43rem] sm:text-[0.48rem]">
                 Completed <br /> <span className="text-primary">Projects</span>
               </p>
             </div>
-            <div className="w-[4rem] h-[1.45rem] flex justify-center items-center gap-1 bg-white/30 rounded-[4px] lg:w-24 lg:h-[1.9rem]">
-              <h3 className="text-white font-bold text-[0.6rem]">1+</h3>
-              <p className="text-white text-[0.38rem] tracking-widest leading-[0.43rem] lg:text-[0.54rem] lg:leading-3">
+            <div className="w-[4rem] h-[1.45rem] flex justify-center items-center gap-1 bg-white/30 rounded-[4px] sm:w-[7rem] sm:h-[1.9rem]">
+              <h3 className="text-white font-bold text-[0.6rem] sm:text-[1rem]">1+</h3>
+              <p className="text-white text-[0.38rem] tracking-widest leading-[0.43rem] sm:text-[0.48rem]">
                 Years of <br /> <span className="text-primary">Experience</span>
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div className="border w-full h-[70%] flex flex-col gap-11 -mt-28 relative z-10 px-3">
-        <div className="self-end">
+      <div className="border w-full h-[70%] flex flex-col gap-11 -mt-28 relative z-10 px-3 sm:mt-0 sm:gap-5 sm:w-1/2 sm:h-auto md:w-[25rem]">
+        <div className="self-end sm:self-start">
           <h2 className="text-neutral-400 font-extralight text-[0.75rem] tracking-wider">
             Introduction
           </h2>
