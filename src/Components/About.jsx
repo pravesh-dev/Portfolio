@@ -7,9 +7,9 @@ import myImage from "../assets/images/About/myImage.svg";
 
 function About() {
   return (
-    <div className="w-full h-screen relative px-3">
+    <div className="w-full h-screen relative box-border">
       {/* <AboutDecoration/> */}
-      <div className="w-full h-[40%] relative flex items-center">
+      <div className="w-full h-[40%] relative flex items-center px-3">
         <div className="w-48 h-[11.3rem] relative">
           <div className="w-[85%] h-[80%] relative flex items-end z-20 overflow-hidden">
             <img className="w-full h-[80%] object-cover" src={aboutBg} alt="" />
@@ -41,7 +41,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="border w-full h-[70%] flex flex-col gap-12 -mt-28 relative z-10">
+      <div className="border w-full h-[70%] flex flex-col gap-12 -mt-28 relative z-10 px-3">
         <div className="self-end">
           <h2 className="text-neutral-400 font-extralight text-[0.75rem] tracking-wider">
             Introduction
