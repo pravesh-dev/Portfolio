@@ -52,6 +52,10 @@ function About() {
           </h1>
         </div>
         <p className="text-neutral-300 text-xs tracking-widest leading-[1.1rem] text-justify font-extralight">It was easy to spot her. All you needed to do was look at her socks. They were never a matching pair. One would be green while the other would be blue. One would reach her knee while the other barely touched her ankle. Every other part of her was perfect, but never the socks. They were her micro act of rebellion. It had been her dream for years but Dana had failed to take any action toward making it come true. There had always been a good excuse to delay or prioritize another project. As she woke, she realized she was once again at a crossroads. </p>
+        <div className="flex gap-3">
+          <button className="text-xs px-6 py-2 rounded-md bg-primary text-white shadow-[2px_1px_1px_1px_#000] tracking-wider font-light">Hire me</button>
+          <button className="border border-primary text-white text-xs px-6 py-2 rounded-md tracking-wider font-light">View Portfolio</button>
+        </div>
       </div>
       <div className="w-full absolute bottom-3  flex flex-col justify-center items-center lg:bottom-1">
         <img className="w-[0.6rem] lg:w-[0.9rem]" src={mouse} alt="" />
