@@ -2,21 +2,22 @@ import React from "react";
 import triangle from "../assets/images/icon/triangle.svg";
 import aboutLongCurve from '../assets/images/About/aboutLongCurve.svg'
 import aboutLongCurve2 from '../assets/images/About/aboutLongCurve2.svg'
+import aboutShortCurve from '../assets/images/About/aboutShortCurve.svg'
 
 function AboutDecoration() {
   return (
     <div className="w-full h-full absolute overflow-hidden">
       {/* Small Circles */}
-      <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[50%] left-[1%] sm:top-[30%] sm:left-[8%] lg:w-[0.5rem] lg:h-[0.5rem] lg:top-[60%] lg:left-[98.5%]"></span>
+      <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[50%] left-[1%] sm:top-[30%] sm:left-[8%] lg:w-[0.5rem] lg:h-[0.5rem] lg:top-[60%] lg:left-[98.5%] xl:top-[53%]"></span>
       <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[94%] left-[33%] lg:w-[0.5rem] lg:h-[0.5rem]"></span>
       <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[19%] left-[76%] lg:w-[0.5rem] lg:h-[0.5rem] lg:top-[78%] lg:left-[45%]"></span>
 
       {/* Large Circles */}
       <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[14%] left-[0%] sm:left-[15%] lg:w-[0.8rem] lg:h-[0.8rem] lg:left-[3.5%]"></span>
-      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[8%] left-[80%] sm:top-[12%] sm:left-[88%] lg:w-[0.8rem] lg:h-[0.8rem] lg:left-[58%] lg:top-[8%]"></span>
+      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[8%] left-[80%] sm:top-[12%] sm:left-[88%] lg:w-[0.8rem] lg:h-[0.8rem] lg:left-[58%] lg:top-[8%] xl:top-[4.5%]"></span>
       <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[32%] left-[88%] sm:left-[50%] lg:w-[0.8rem] lg:h-[0.8rem] lg:left-[43%] lg:top-[22%]"></span>
       
-      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[74%] left-[89%] sm:left-[95%] sm:top-[70%] lg:w-[0.8rem] lg:h-[0.8rem] lg:left-[97%] lg:top-[53%]"></span>
+      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[74%] left-[89%] sm:left-[95%] sm:top-[70%] lg:w-[0.8rem] lg:h-[0.8rem] lg:left-[97%] lg:top-[53%] xl:top-[45%]"></span>
       <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[81%] left-[40%] lg:w-[0.8rem] lg:h-[0.8rem] lg:left-[14%] lg:top-[87%]"></span>
       <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[92%] left-[86%] sm:top-[87%] sm:left-[80%] lg:w-[0.8rem] lg:h-[0.8rem] lg:top-[20%] lg:left-[75%]"></span>
 
@@ -39,6 +40,7 @@ function AboutDecoration() {
 
       <img src={aboutLongCurve} className="w-full absolute left-0 top-0 sm:hidden" alt="" />
       <img src={aboutLongCurve2} className="w-full absolute left-0 top-10 hidden sm:block lg:-top-24 xl:rotate-6" alt="" />
+      <img src={aboutShortCurve} className="absolute bottom-0 right-0 lg:bottom-10 xl:w-36" alt="" />
     </div>
   );
 }

@@ -7,7 +7,7 @@ import myImage from "../assets/images/About/myImage.svg";
 
 function About() {
   return (
-    <div className="w-full h-screen relative box-border sm:flex sm:flex-row sm:items-center sm:justify-center sm:gap-5 lg:gap-12 xl:gap-44 border">
+    <div className="w-full h-screen relative box-border sm:flex sm:flex-row sm:items-center sm:justify-center sm:gap-5 lg:gap-12 xl:gap-44">
       <AboutDecoration/>
       <div className="w-full h-[40%] relative flex items-center px-3 sm:w-auto sm:h-auto">
         <div className="w-48 h-[11.3rem] relative sm:w-80 sm:h-[19.3rem] lg:w-[26rem] lg:h-[25.3rem]">
@@ -51,7 +51,7 @@ function About() {
             <span className="w-20 h-[0.11rem] bg-white relative left-5 lg:w-32 lg:h-[0.15rem]"></span>
           </h1>
         </div>
-        <p className="text-neutral-300 text-xs tracking-widest leading-[1.1rem] text-justify font-extralight flex flex-col gap-5 lg:text-[0.95rem] lg:leading-5 lg:tracking-[0.13rem] xl:tracking-[0.17rem] xl:leading-[1.3rem]">It was easy to spot her. All you needed to do was look at her socks. They were never a matching pair. One would be green while the other would be blue. One would reach her knee while the other barely touched her ankle. Every other part of her was perfect, but never the socks. They were her micro act of rebellion. It had been her dream for years but Dana had failed to take any action toward making it come true. There had always been a good excuse to delay or prioritize another project. As she woke, she realized she was once again at a crossroads.  <span className="w-14 h-[0.12rem] bg-white self-end mr-7 lg:h-[0.15rem]"></span></p>
+        <p className="text-neutral-300 text-xs tracking-widest leading-[1.1rem] text-justify font-extralight flex flex-col gap-5 lg:text-[0.95rem] lg:leading-5 lg:tracking-[0.13rem] xl:tracking-[0.17rem] xl:leading-[1.3rem]">It was easy to spot her. All you needed to do was look at her socks. They were never a matching pair. One would be green while the other would be blue. One would reach her knee while the other barely touched her ankle. Every other part of her was perfect, but never the socks. They were her micro act of rebellion. It had been her dream for years but Dana had failed to take any action toward making it come true. There had always been a good excuse to delay or prioritize another project. As she woke, she realized she was once again at a crossroads.  <span className="w-14 h-[0.12rem] bg-white self-end mr-7 lg:h-[0.15rem] xl:mr-20"></span></p>
         <div className="flex gap-3 lg:gap-10">
           <button className="text-xs px-6 py-2 rounded-md bg-primary text-white shadow-[2px_1px_1px_1px_#000] tracking-wider font-light lg:text-base lg:px-8">Hire me</button>
           <button className="border border-primary text-white text-xs px-6 py-2 rounded-md tracking-wider font-light lg:text-base lg:px-8">View Portfolio</button>
