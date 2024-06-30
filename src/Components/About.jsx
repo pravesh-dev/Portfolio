@@ -7,7 +7,7 @@ import myImage from "../assets/images/About/myImage.svg";
 
 function About() {
   return (
-    <div className="w-full h-screen relative box-border sm:flex sm:flex-row sm:items-center sm:justify-center sm:gap-5 lg:gap-12 xl:gap-44">
+    <div className="w-full h-screen relative box-border sm:flex sm:flex-row sm:items-center sm:justify-center sm:gap-5 lg:gap-12 xl:gap-44 border">
       <AboutDecoration/>
       <div className="w-full h-[40%] relative flex items-center px-3 sm:w-auto sm:h-auto">
         <div className="w-48 h-[11.3rem] relative sm:w-80 sm:h-[19.3rem] lg:w-[26rem] lg:h-[25.3rem]">
