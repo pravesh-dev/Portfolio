@@ -38,18 +38,18 @@ function Hero() {
           })}
         </div>
         <div className="w-full h-[80%] relative">
-          <div className=" w-60 h-60 absolute bottom-0 left-1/2 -translate-x-1/2 lg:w-80 lg:h-80 lg:-bottom-5">
+          <div className=" w-60 h-60 absolute bottom-0 left-1/2 -translate-x-1/2 lg:w-80 lg:h-96 lg:-bottom-10">
             <img
               src={imageBg}
-              className="w-44 z-10 absolute bottom-0 left-1/2 -translate-x-1/2 lg:w-56"
+              className="w-44 z-10 absolute bottom-0 left-1/2 -translate-x-1/2 lg:w-64 lg:-bottom-5"
               alt=""
             />
             <img
               src={myImage}
-              className="w-52 z-20 absolute bottom-[10%] left-1/2 -translate-x-[48%] lg:w-64 lg:bottom-[15%]"
+              className="w-52 z-20 absolute bottom-[10%] left-1/2 -translate-x-[48%] lg:w-[19rem] lg:bottom-[10%]"
               alt=""
             />
-            <div className="w-44 h-24 rounded-b-[5.5rem] bg-gradient-to-t from-[#1a1a1a] from-50% to-transparent z-30 absolute bottom-0 left-1/2 -translate-x-1/2 lg:w-56"></div>
+            <div className="w-44 h-24 rounded-b-[5.5rem] bg-gradient-to-t from-[#1a1a1a] from-50% to-transparent z-30 absolute bottom-0 left-1/2 -translate-x-1/2 lg:w-64"></div>
 
             
             <div className="w-16 h-[1.4rem] flex justify-center items-center gap-1 absolute top-[20%] -left-[10%] z-50 bg-white/30 rounded-[2.7px] lg:w-24 lg:h-[1.9rem]">
@@ -66,11 +66,11 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className="w-full absolute bottom-7 left-1/2 -translate-x-1/2 lg:bottom-4">
-          <h1 className=" text-center text-primary text-[2.1rem] font-monseret font-extrabold leading-7 lg:text-[3rem] lg:mb-3">
+        <div className="w-full absolute bottom-7 left-1/2 -translate-x-1/2 lg:bottom-0">
+          <h1 className=" text-center text-primary text-[2.1rem] font-monseret font-extrabold leading-7 xl:text-[3rem] lg:mb-3">
             Pravesh <span className="stroke-text">Sa</span>ini
           </h1>
-          <h2 className="w-full text-center uppercase text-white text-sm font-monseret font-bold lg:text-[1.3rem]">
+          <h2 className="w-full text-center uppercase text-white text-sm font-monseret font-bold xl:text-[1.3rem]">
             frontend <span className="stroke-text">developer</span>
           </h2>
         </div>
