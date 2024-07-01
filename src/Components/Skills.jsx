@@ -10,7 +10,7 @@ function Skills() {
     <div className="relative">
       {/* here will import decoration */}
 
-      <div className="w-80 h-screen relative flex justify-between items-center">
+      <div className="w-80 h-screen relative flex justify-between items-center mx-auto">
         <div className="w-36 flex flex-col gap-5 px-3 py-14 relative border-r-2 border-primary">
           {/* <img src={lineLeft} className="h-full absolute right-0 top-1/2 -translate-y-1/2" alt="" /> */}
           <img src={lineLeftTop} className="w-[92%] absolute right-0 top-0" alt="" />
