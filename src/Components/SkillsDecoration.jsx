@@ -1,6 +1,7 @@
 import React from "react";
 import triangle from "../assets/images/icon/triangle.svg";
 import shortCurve from "../assets/images/Skills/shortCurve.svg";
+import longCurve from "../assets/images/Skills/longCurve.svg";
 
 function SkillsDecoration() {
   return (
@@ -34,7 +35,12 @@ function SkillsDecoration() {
       {/* curves */}
       <img
         src={shortCurve}
-        className="w-full absolute left-0 top-0 sm:hidden"
+        className="w-48 absolute left-0 top-0 sm:hidden"
+        alt=""
+      />
+      <img
+        src={longCurve}
+        className="w-96 absolute left-0 bottom-0 sm:hidden"
         alt=""
       />
     </div>
