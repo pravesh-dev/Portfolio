@@ -13,7 +13,7 @@ import lineRightBottomBig from '../assets/images/Skills/lineRightBottomBig.svg'
 
 function Skills() {
   return (
-    <div className="relative pt-5">
+    <div className="relative pt-5 lg:pt-0">
       <SkillsDecoration/>
 
       <div className="w-full h-[110vh] relative flex justify-between items-center mx-auto sm:w-[35rem] lg:h-screen lg:w-[60rem] xl:w-[75rem]">
