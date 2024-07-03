@@ -8,9 +8,9 @@ function Footer() {
   return (
     <div className='w-full h-52 flex flex-col justify-center gap-4 px-2 bg-[#161616] md:h-32 lg:h-40'>
       <div className='w-full flex text-white flex-col gap-2 md:flex-row md:justify-between md:mt-6 lg:px-14 xl:px-32'>
-        <h2 className='text-white text-[0.9rem] font-yellowTail lg:text-2xl'>Developed By <span className='text-primary font-bold tracking-widest font-yellowTail'>Pravesh</span></h2>
-        <a href="tel:+91 9991831473" className='text-[0.8rem] flex items-center gap-1 lg:text-[0.9rem]'><span className='text-primary text-[1.2rem] lg:text-3xl'><IoIosCall/></span> +91 9991831473</a>
-        <h3 className='text-[0.8rem] flex items-center gap-1 lg:text-[0.9rem]'><span className='text-primary text-[1.2rem] lg:text-3xl'><IoIosPin/></span> 84/3 Niwaz Nagar, Narnaul, Haryana</h3>
+        <h2 className='text-white text-[0.9rem] font-yellowTail lg:text-2xl lg:tracking-widest'>Developed By <span className='text-primary font-bold tracking-widest font-yellowTail'>Pravesh</span></h2>
+        <a href="tel:+91 9991831473" className='text-[0.8rem] flex items-center gap-1 lg:text-[0.9rem] lg:tracking-wider'><span className='text-primary text-[1.2rem] lg:text-3xl'><IoIosCall/></span> +91 9991831473</a>
+        <h3 className='text-[0.8rem] flex items-center gap-1 lg:text-[0.9rem] lg:tracking-wider'><span className='text-primary text-[1.2rem] lg:text-3xl'><IoIosPin/></span> 84/3 Niwaz Nagar, Narnaul, Haryana</h3>
         <div className='flex gap-1 lg:gap-2'>
           <a className='text-[1rem] lg:text-xl' href="#"><FaLinkedin/></a>
           <a className='text-[1rem] lg:text-xl' href="#"><FaGithub /></a>
