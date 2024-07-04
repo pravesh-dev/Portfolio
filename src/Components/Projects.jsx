@@ -16,11 +16,11 @@ function Projects() {
         <button className={`text-sm font-semibold px-3 py-1 rounded-lg ${activeTab === 'full' ? 'bg-[#646464] text-primary' : 'text-neutral-300/70'}`} onClick={()=>{handleTabClick('full')}}>Full Stack</button>
       </div>
       <div className='w-full flex flex-wrap gap-3 px-2'>
-        <div className='w-36 h-52 bg-[#aaaaaa29] p-[0.33rem]'>
-            <h2 className='text-white text-xs font-semibold'>GolfClub Company Website Frontend Clone</h2>
+        <div className='w-36 bg-[#aaaaaa29] p-[0.33rem]'>
+            <h2 className='text-white text-[0.7rem] font-semibold'>GolfClub Company Website UI Clone</h2>
             <p className='text-neutral-500 text-[0.5rem] text-justify'>"It was so great to hear from you today and it was such weird timing," he said. "This is going to sound funny and a little strange, but you were in a dream I had just a couple of days ago.</p>
-            <a href="#">Visit Website <span className='text-primary'>→</span></a>
-            <img src={img} alt="" />
+            <a href="#" className='text-white text-[0.6rem] flex items-center gap-1'>Visit Website <span className='text-primary text-xl'>→</span></a>
+            <img src={img} className='rounded-lg' alt="" />
         </div>
       </div>
     </div>
