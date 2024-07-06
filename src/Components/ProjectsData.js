@@ -15,7 +15,7 @@ const projects = [
       para: `It was so great to hear from you today and it was such weird timing," he said. "This is going to sound funny and a little strange, but you were in a dream I had just a couple of days ago.`,
       link: '#',
       image: img,
-      type: 'frontend'
+      type: 'backend'
     },
     {
       name: "GolfClub Company Website UI Clone",

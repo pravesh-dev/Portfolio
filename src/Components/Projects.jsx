@@ -15,9 +15,9 @@ function Projects() {
       <div className='flex gap-3 items-center'>
         <button className={`text-sm font-semibold px-3 py-1 rounded-lg ${activeTab === 'all' ? 'bg-[#646464] text-primary' : 'text-neutral-300/70'}`} onClick={()=>{handleTabClick('all')}}>ALL</button>
         <button className={`text-sm font-semibold px-3 py-1 rounded-lg ${activeTab === 'frontend' ? 'bg-[#646464] text-primary' : 'text-neutral-300/70'}`} onClick={()=>{handleTabClick('frontend')}}>Frontend</button>
-        <button className={`text-sm font-semibold px-3 py-1 rounded-lg ${activeTab === 'full' ? 'bg-[#646464] text-primary' : 'text-neutral-300/70'}`} onClick={()=>{handleTabClick('full')}}>Full Stack</button>
+        <button className={`text-sm font-semibold px-3 py-1 rounded-lg ${activeTab === 'backend' ? 'bg-[#646464] text-primary' : 'text-neutral-300/70'}`} onClick={()=>{handleTabClick('backend')}}>Backend</button>
       </div>
-      <div className='w-80 flex flex-wrap gap-3 px-2 mx-auto'>
+      <div className={`w-80 flex-wrap gap-3 px-2 mx-auto ${activeTab === 'all' ? 'flex' : 'hidden'}`}>
         {projects.map((project, index)=>{
           return (
             <div key={index} className='w-36 bg-[#aaaaaa29] p-[0.33rem] rounded-md'>
@@ -27,6 +27,34 @@ function Projects() {
             <img src={project.image} className='rounded-lg' alt="" />
         </div>
           )
+        })}
+      </div>
+      <div className={`w-80 flex-wrap gap-3 px-2 mx-auto ${activeTab === 'frontend' ? 'flex' : 'hidden'}`}>
+        {projects.map((project, index)=>{
+          if(project.type === 'frontend'){
+            return (
+              <div key={index} className='w-36 bg-[#aaaaaa29] p-[0.33rem] rounded-md'>
+              <h2 className='text-white text-[0.7rem] font-semibold'>GolfClub Company Website UI Clone</h2>
+              <p className='text-neutral-500 text-[0.5rem] text-justify'>"It was so great to hear from you today and it was such weird timing," he said. "This is going to sound funny and a little strange, but you were in a dream I had just a couple of days ago.</p>
+              <a href="#" className='text-white text-[0.6rem] flex items-center gap-1'>Visit Website <span className='text-primary text-xl'>→</span></a>
+              <img src={project.image} className='rounded-lg' alt="" />
+          </div>
+            )
+          }
+        })}
+      </div>
+      <div className={`w-80 flex-wrap gap-3 px-2 mx-auto ${activeTab === 'backend' ? 'flex' : 'hidden'}`}>
+        {projects.map((project, index)=>{
+          if(project.type === 'backend'){
+            return (
+              <div key={index} className='w-36 bg-[#aaaaaa29] p-[0.33rem] rounded-md'>
+              <h2 className='text-white text-[0.7rem] font-semibold'>GolfClub Company Website UI Clone</h2>
+              <p className='text-neutral-500 text-[0.5rem] text-justify'>"It was so great to hear from you today and it was such weird timing," he said. "This is going to sound funny and a little strange, but you were in a dream I had just a couple of days ago.</p>
+              <a href="#" className='text-white text-[0.6rem] flex items-center gap-1'>Visit Website <span className='text-primary text-xl'>→</span></a>
+              <img src={project.image} className='rounded-lg' alt="" />
+          </div>
+            )
+          }
         })}
       </div>
     </div>
