@@ -28,7 +28,7 @@ function Projects() {
       : filteredProjects.slice(0, 6);
 
     return displayedProjects.map((project, index) => (
-      <div key={index} className="w-36 bg-[#aaaaaa29] p-[0.33rem] rounded-md sm:w-56 sm:flex flex-col gap-2 sm:p-3 lg:w-64">
+      <div key={index} className="w-36 bg-[#353535] p-[0.33rem] rounded-md sm:w-56 sm:flex flex-col gap-2 sm:p-3 lg:w-64">
         <h2 className="text-white text-[0.7rem] font-semibold sm:text-[1rem] lg:text-[1.3rem]">
           {project.name}
         </h2>
@@ -77,7 +77,7 @@ function Projects() {
           </button>
         ))}
       </div>
-      <div className="w-80 flex-wrap gap-3 px-2 flex sm:w-[31.5rem] sm:gap-8 lg:w-[56.5rem] lg:gap-14 xl:w-[60rem] xl:gap-20">
+      <div className="w-80 flex-wrap gap-3 px-2 flex relative z-30 sm:w-[31.5rem] sm:gap-8 lg:w-[56.5rem] lg:gap-14 xl:w-[60rem] xl:gap-20">
         {renderProjects(activeTab)}
       </div>
       <button

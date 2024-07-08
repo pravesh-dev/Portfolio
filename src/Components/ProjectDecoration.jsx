@@ -6,7 +6,7 @@ import roundCurveRight from '../assets/images/Projects/roundCurveRight.svg'
 
 function ProjectDecoration() {
   return (
-    <div className="w-full h-full absolute overflow-hidden top-0">
+    <div className="w-full h-full absolute overflow-hidden top-0 z-10">
       {/* Small Circles */}
       <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[50%] left-[1%] sm:top-[30%] sm:left-[8%] lg:w-[0.5rem] lg:h-[0.5rem] lg:top-[60%] lg:left-[98.5%] xl:top-[53%]"></span>
       <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[94%] left-[33%] lg:w-[0.5rem] lg:h-[0.5rem]"></span>
@@ -40,6 +40,8 @@ function ProjectDecoration() {
 
       {/* curves */}
       <img src={curve} className="w-[50vw] absolute top-0 left-0 lg:w-[38vw] lg:opacity-55" alt="" />
+      <img src={roundCurveRight} className="w-[5rem] absolute bottom-14 right-0 lg:w-[10rem] lg:opacity-55" alt="" />
+      <img src={roundCurveLeft} className="w-[5rem] absolute bottom-48 left-0 lg:w-[10rem] lg:opacity-55" alt="" />
     </div>
   );
 }
