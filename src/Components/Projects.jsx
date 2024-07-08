@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import triangle from "../assets/images/Projects/triangle.svg";
 import { projects } from "./ProjectsData";
 import mouse from '../assets/images/icon/scrollMouse.svg'
+import ProjectDecoration from "./ProjectDecoration";
 
 function Projects() {
   const [activeTab, setActiveTab] = useState("all");
@@ -27,7 +28,7 @@ function Projects() {
       : filteredProjects.slice(0, 6);
 
     return displayedProjects.map((project, index) => (
-      <div key={index} className="w-36 bg-[#aaaaaa29] p-[0.33rem] rounded-md sm:w-56 sm:flex flex-col gap-2 sm:p-3 lg:w-64">
+      <div key={index} className="w-36 bg-[#aaaaaa29] backdrop:blur-md p-[0.33rem] rounded-md sm:w-56 sm:flex flex-col gap-2 sm:p-3 lg:w-64">
         <h2 className="text-white text-[0.7rem] font-semibold sm:text-[1rem] lg:text-[1.3rem]">
           {project.name}
         </h2>
@@ -47,6 +48,7 @@ function Projects() {
 
   return (
     <div className="w-full min-h-screen flex flex-col items-center gap-8 relative p-16">
+        <ProjectDecoration/>
       <h1 className="text-primary text-center w-40 text-2xl font-semibold relative pb-1 uppercase lg:text-4xl lg:w-56">
         Projects
         <span className="w-full h-[0.1rem] bg-primary absolute left-0 bottom-0">
@@ -75,7 +77,7 @@ function Projects() {
           </button>
         ))}
       </div>
-      <div className="w-80 flex-wrap gap-3 px-2 flex sm:w-[31.5rem] sm:gap-8 lg:w-[56.5rem] lg:gap-14 xl:w-[60rem] xl:gap-20 border">
+      <div className="w-80 flex-wrap gap-3 px-2 flex sm:w-[31.5rem] sm:gap-8 lg:w-[56.5rem] lg:gap-14 xl:w-[60rem] xl:gap-20">
         {renderProjects(activeTab)}
       </div>
       <button
