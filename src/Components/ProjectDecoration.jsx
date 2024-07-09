@@ -18,9 +18,9 @@ function ProjectDecoration() {
 
       {/* Large Circles */}
       <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[10%] left-[5%] lg:w-[0.8rem] lg:h-[0.8rem] lg:top-[30%] lg:left-[7%]"></span>
-      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[3.5%] left-[40%] lg:w-[0.8rem] lg:h-[0.8rem] lg:top-[20%] lg:left-[58%]"></span>
-      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[12%] left-[85%] lg:w-[0.8rem] lg:h-[0.8rem] lg:top-[15%]"></span>
-      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[19%] left-[47%] lg:w-[0.8rem] lg:h-[0.8rem] lg:top-[48%] lg:left-[65%]"></span>
+      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[3.5%] left-[40%] lg:w-[0.8rem] lg:h-[0.8rem] lg:top-[20%] lg:left-[58%] xl:left-[56%]"></span>
+      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[12%] left-[85%] lg:w-[0.8rem] lg:h-[0.8rem] lg:top-[15%] xl:left-[80%]"></span>
+      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[19%] left-[47%] lg:w-[0.8rem] lg:h-[0.8rem] lg:top-[48%] lg:left-[63%] xl:left-[60%]"></span>
       <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[61%] left-[3.4%] lg:w-[0.8rem] lg:h-[0.8rem] lg:top-[42%] lg:left-[93%]"></span>
       <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[94%] left-[80%] lg:w-[0.8rem] lg:h-[0.8rem] lg:top-[57%] lg:left-[7%] xl:left-[17%]"></span>
       <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[97.5%] left-[25%] lg:w-[0.8rem] lg:h-[0.8rem] lg:left-[10%]"></span>
