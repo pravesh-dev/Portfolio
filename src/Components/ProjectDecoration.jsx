@@ -28,17 +28,17 @@ function ProjectDecoration() {
       {/* Triangles */}
       <img
         src={triangle}
-        className="w-[0.6rem] bg-green-700 absolute top-[54%] left-[3%] lg:w-[0.8rem]"
+        className="w-[0.6rem] absolute top-[54%] left-[3%] lg:w-[0.8rem] lg:top-[47%] lg:left-[6%] xl:left-[5%]"
         alt="Triangle"
       />
       <img
         src={triangle}
-        className="w-[0.6rem] bg-green-700 absolute top-[94%] left-[50%] -rotate-[30deg] lg:rotate-0 lg:w-[0.8rem]"
+        className="w-[0.6rem] absolute top-[94%] left-[50%] -rotate-[30deg] lg:rotate-[30deg] lg:w-[0.8rem] lg:left-[65%] xl:left-[61%]"
         alt="Triangle"
       />
       <img
         src={triangle}
-        className="w-[0.6rem] bg-green-700 absolute top-[97%] left-[75%] -rotate-[30deg] lg:rotate-0 lg:w-[0.8rem]"
+        className="w-[0.6rem] absolute top-[97%] left-[75%] -rotate-[30deg] lg:rotate-0 lg:w-[0.8rem] lg:top-[20%] lg:left-[94%] xl:left-[85%]"
         alt="Triangle"
       />
 
