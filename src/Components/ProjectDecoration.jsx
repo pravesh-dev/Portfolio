@@ -8,22 +8,22 @@ function ProjectDecoration() {
   return (
     <div className="w-full h-full absolute overflow-hidden top-0 z-10 pointer-events-none">
       {/* Small Circles */}
-      <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[50%] left-[1%] lg:w-[0.5rem] lg:h-[0.5rem]"></span>
-      <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[94%] left-[33%] lg:w-[0.5rem] lg:h-[0.5rem]"></span>
-      <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[19%] left-[76%] lg:w-[0.5rem] lg:h-[0.5rem]"></span>
-      <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[29%] left-[76%] lg:w-[0.5rem] lg:h-[0.5rem]"></span>
-      <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[39%] left-[76%] lg:w-[0.5rem] lg:h-[0.5rem]"></span>
-      <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[49%] left-[76%] lg:w-[0.5rem] lg:h-[0.5rem]"></span>
-      <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[59%] left-[76%] lg:w-[0.5rem] lg:h-[0.5rem]"></span>
+      <span className="circle w-[0.3rem] bg-green-600 h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[14%] left-[10%] lg:w-[0.5rem] lg:h-[0.5rem]"></span>
+      <span className="circle w-[0.3rem] bg-green-600 h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[28%] left-[2%] lg:w-[0.5rem] lg:h-[0.5rem]"></span>
+      <span className="circle w-[0.3rem] bg-green-600 h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[26%] left-[93%] lg:w-[0.5rem] lg:h-[0.5rem]"></span>
+      <span className="circle w-[0.3rem] bg-green-600 h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[34%] left-[97.5%] lg:w-[0.5rem] lg:h-[0.5rem]"></span>
+      <span className="circle w-[0.3rem] bg-green-600 h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[53%] left-[93%] lg:w-[0.5rem] lg:h-[0.5rem]"></span>
+      <span className="circle w-[0.3rem] bg-green-600 h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[94.5%] left-[3%] lg:w-[0.5rem] lg:h-[0.5rem]"></span>
+      <span className="circle w-[0.3rem] bg-green-600 h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[82%] left-[95%] lg:w-[0.5rem] lg:h-[0.5rem]"></span>
 
       {/* Large Circles */}
-      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[14%] left-[0%] lg:w-[0.8rem] lg:h-[0.8rem]"></span>
-      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[8%] left-[80%] lg:w-[0.8rem] lg:h-[0.8rem]"></span>
-      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[32%] left-[88%] lg:w-[0.8rem] lg:h-[0.8rem]"></span>
-      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[74%] left-[89%] lg:w-[0.8rem] lg:h-[0.8rem]"></span>
-      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[81%] left-[40%] lg:w-[0.8rem] lg:h-[0.8rem]"></span>
-      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[92%] left-[86%] lg:w-[0.8rem] lg:h-[0.8rem]"></span>
-      <span className="circle w-[0.6rem] h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[92%] left-[86%] lg:w-[0.8rem] lg:h-[0.8rem]"></span>
+      <span className="circle w-[0.6rem] bg-green-600 h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[10%] left-[5%] lg:w-[0.8rem] lg:h-[0.8rem]"></span>
+      <span className="circle w-[0.6rem] bg-green-600 h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[3.5%] left-[40%] lg:w-[0.8rem] lg:h-[0.8rem]"></span>
+      <span className="circle w-[0.6rem] bg-green-600 h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[12%] left-[85%] lg:w-[0.8rem] lg:h-[0.8rem]"></span>
+      <span className="circle w-[0.6rem] bg-green-600 h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[19%] left-[47%] lg:w-[0.8rem] lg:h-[0.8rem]"></span>
+      <span className="circle w-[0.6rem] bg-green-600 h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[61%] left-[3.4%] lg:w-[0.8rem] lg:h-[0.8rem]"></span>
+      <span className="circle w-[0.6rem] bg-green-600 h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[94%] left-[80%] lg:w-[0.8rem] lg:h-[0.8rem]"></span>
+      <span className="circle w-[0.6rem] bg-green-600 h-[0.6rem] border border-[#A5A5A5] rounded-full absolute top-[97.5%] left-[25%] lg:w-[0.8rem] lg:h-[0.8rem]"></span>
 
       {/* Triangles */}
       <img
