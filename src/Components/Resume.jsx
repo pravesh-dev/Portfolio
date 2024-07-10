@@ -9,6 +9,30 @@ function Resume() {
     setActiveTab(tab);
   };
 
+  const renderTabs = (type) => {
+    const filteredType = projects.filter(
+      (project) => type === "experience" || project.type === type
+    );
+
+    return filteredType.map((project, index) => (
+      <div key={index} className="w-36 bg-[#353535] p-[0.33rem] rounded-md sm:w-56 sm:flex flex-col gap-2 sm:p-3 lg:w-64">
+        <h2 className="text-white text-[0.7rem] font-semibold sm:text-[1rem] lg:text-[1.3rem]">
+          {project.name}
+        </h2>
+        <p className="text-neutral-500 text-[0.5rem] text-justify sm:text-[0.65rem] lg:text-[0.8rem]">
+          {project.para}
+        </p>
+        <a
+          href={project.link}
+          className="text-white text-[0.6rem] flex items-center gap-1 sm:text-[0.9rem] lg:text-[1.2rem]"
+        >
+          Visit Website <span className="text-primary text-xl sm:text-[1.5rem] lg:text-[2.25rem] lg:-mt-1">→</span>
+        </a>
+        <img src={project.image} className="rounded-lg" alt={project.name} />
+      </div>
+    ));
+  };
+
   return (
     <div className="w-full min-h-screen flex flex-col items-center relative py-7">
       {/* <ProjectDecoration/> */}
@@ -40,6 +64,9 @@ function Resume() {
             {tab}
           </button>
         ))}
+      </div>
+      <div className="w-80 flex-wrap gap-3 px-2 flex relative z-30 sm:w-[31.5rem] sm:gap-8 lg:w-[56.5rem] lg:gap-14 xl:w-[60rem] xl:gap-20">
+        {renderTabs(activeTab)}
       </div>
 
       <div className="w-full absolute bottom-3  flex flex-col justify-center items-center lg:bottom-1">
