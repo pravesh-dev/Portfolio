@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import triangle from "../assets/images/Projects/triangle.svg";
 import mouse from "../assets/images/icon/scrollMouse.svg";
 
 function Resume() {
+  const [activeTab, setActiveTab] = useState("experience");
+
+  const handleTabClick = (tab) => {
+    setActiveTab(tab);
+  };
+
   return (
     <div className="w-full min-h-screen flex flex-col items-center relative py-7">
       {/* <ProjectDecoration/> */}
@@ -19,6 +25,22 @@ function Resume() {
           />
         </span>
       </h1>
+
+      <div className="flex gap-4 items-center mt-5 lg:mb-7">
+        {["experience", "education"].map((tab) => (
+          <button
+            key={tab}
+            className={`text-sm font-semibold px-1 capitalize tracking-wider ${
+              activeTab === tab
+                ? "text-primary border-b-2 border-white"
+                : "text-neutral-300/70"
+            } lg:text-lg`}
+            onClick={() => handleTabClick(tab)}
+          >
+            {tab}
+          </button>
+        ))}
+      </div>
 
       <div className="w-full absolute bottom-3  flex flex-col justify-center items-center lg:bottom-1">
         <img className="w-[0.6rem] lg:w-[0.9rem]" src={mouse} alt="" />
