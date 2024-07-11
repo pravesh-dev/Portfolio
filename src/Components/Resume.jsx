@@ -17,7 +17,7 @@ function Resume() {
     return filteredType.map((data, index) => (
       <div
         key={index}
-        className="data_box w-max border p-[0.33rem] flex items-start gap-3 sm:w-56 sm:p-3 lg:w-64"
+        className="data_box w-max border p-[0.33rem] flex items-start gap-3"
       >
         <div className="flex items-center gap-3">
           <div className="relative">
@@ -30,15 +30,15 @@ function Resume() {
         <div className="mid flex gap-2 flex-col justify-between border">
           <div className="flex gap-2 items-center">
             <span className="w-5 h-5 rounded-full bg-primary"></span>
-            <h2 className="text-white text-[1rem] font-semibold">
+            <h2 className="text-white text-[1rem] uppercase font-semibold">
               {data.heading}
             </h2>
           </div>
           <div className="border-l-2 border-white pl-5 ml-[0.55rem]">
-            <h3 className="text-white/60 font-yellowTail text-[0.8rem] tracking-wider">
+            <h3 className="w-48 text-white/60 font-yellowTail text-[0.7rem] uppercase tracking-wider sm:w-72">
               {data.subHeading}
             </h3>
-            <p className="w-48 text-neutral-500 text-[0.5rem] text-justify sm:text-[0.65rem] lg:text-[0.8rem]">
+            <p className="w-48 text-neutral-500 text-[0.5rem] text-justify sm:w-72">
               {data.para}
             </p>
           </div>

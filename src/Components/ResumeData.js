@@ -1,7 +1,7 @@
 const userData = [
     {
       heading: "Hexadefend",
-      subHeading: "Frontend web developer",
+      subHeading: "FRONTEND WEB DEVELOPER",
       para: `It was so great to hear from you today and it was such weird timing," he said. "This is going to sound funny and a little strange, but you were in a dream I had just a couple of days ago.It was so great to hear from you today and it was such weird timing," he said. "This is going to sound funny and a little strange, but you were in a dream I had just a couple of days ago.`,
       timeStart: '2023',
       timeEnd: 2024,
