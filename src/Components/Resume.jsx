@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import triangle from "../assets/images/Projects/triangle.svg";
 import mouse from "../assets/images/icon/scrollMouse.svg";
 import { userData } from "./ResumeData";
@@ -6,19 +6,10 @@ import dateBox from "../assets/images/Resume/dateBox.svg";
 
 function Resume() {
   const [activeTab, setActiveTab] = useState("experience");
-  const [heights, setHeights] = useState([]);
-  const dataBoxRefs = useRef([]);
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
-
-  useEffect(() => {
-    const newHeights = dataBoxRefs.current.map((ref) => {
-      return ref ? ref.getBoundingClientRect().height : 0;
-    });
-    setHeights(newHeights);
-  }, [userData]);
 
   const renderTabs = (type) => {
     const filteredType = userData.filter((data) => data.type === type);
@@ -27,7 +18,6 @@ function Resume() {
       <div
         key={index}
         className="data_box w-max border p-[0.33rem] flex items-start gap-3 sm:w-56 sm:p-3 lg:w-64"
-        ref={(el) => (dataBoxRefs.current[index] = el)}
       >
         <div className="flex items-center gap-3">
           <div className="relative">
@@ -37,29 +27,29 @@ function Resume() {
             </span>
           </div>
         </div>
-        <div
-          className="mid flex gap-1 flex-col items-center justify-between border"
-          style={{ height: heights[index] ? `${heights[index]}px` : "auto" }}
-        >
-          <span className="w-5 h-5 rounded-full bg-primary"></span>
-          <span className="w-[0.15rem] h-[57%] bg-white"></span>
-          <span className="w-5 h-5 rounded-full bg-primary"></span>
-        </div>
-        <div className="flex flex-col items-start">
-          <h2 className="text-white text-[1rem] font-semibold">
-            {data.heading}
-          </h2>
-          <h3 className="text-white/60 font-yellowTail text-[0.8rem] tracking-wider">
-            {data.subHeading}
-          </h3>
-          <p className="w-48 text-neutral-500 text-[0.5rem] text-justify sm:text-[0.65rem] lg:text-[0.8rem]">
-            {data.para}
-          </p>
-          <div className="relative mt-2 rotate-180">
-            <img src={dateBox} className="w-14" alt="date container" />
-            <span className="absolute top-1/2 left-1/2 rotate-180 -translate-x-[55%] -translate-y-1/2 text-[#979797] font-semibold text-sm">
-              {data.timeEnd}
-            </span>
+        <div className="mid flex gap-2 flex-col justify-between border">
+          <div className="flex gap-2 items-center">
+            <span className="w-5 h-5 rounded-full bg-primary"></span>
+            <h2 className="text-white text-[1rem] font-semibold">
+              {data.heading}
+            </h2>
+          </div>
+          <div className="border-l-2 border-white pl-5 ml-[0.55rem]">
+            <h3 className="text-white/60 font-yellowTail text-[0.8rem] tracking-wider">
+              {data.subHeading}
+            </h3>
+            <p className="w-48 text-neutral-500 text-[0.5rem] text-justify sm:text-[0.65rem] lg:text-[0.8rem]">
+              {data.para}
+            </p>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="w-5 h-5 rounded-full bg-primary"></span>
+            <div className="relative rotate-180">
+              <img src={dateBox} className="w-14" alt="date container" />
+              <span className="absolute top-1/2 left-1/2 rotate-180 -translate-x-[55%] -translate-y-1/2 text-[#979797] font-semibold text-sm">
+                {data.timeEnd}
+              </span>
+            </div>
           </div>
         </div>
       </div>
