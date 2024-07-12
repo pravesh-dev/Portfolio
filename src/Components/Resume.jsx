@@ -17,7 +17,7 @@ function Resume() {
     return filteredType.map((data, index) => (
       <div
         key={index}
-        className="data_box w-max border p-[0.33rem] flex items-start gap-3"
+        className="data_box w-max p-[0.33rem] flex items-start gap-3"
       >
         <div className="flex items-center gap-3">
           <div className="relative">
@@ -27,7 +27,7 @@ function Resume() {
             </span>
           </div>
         </div>
-        <div className="mid flex gap-2 flex-col justify-between border lg:gap-1">
+        <div className="mid flex gap-2 flex-col justify-between lg:gap-1">
           <div className="flex gap-2 items-center lg:gap-4">
             <span className="w-5 h-5 rounded-full bg-primary shadow-[0_0_7px_2px_#FD563C] lg:w-7 lg:h-7"></span>
             <h2 className="text-white text-[1rem] uppercase font-semibold lg:text-[1.3rem]">
@@ -57,7 +57,7 @@ function Resume() {
   };
 
   return (
-    <div className="w-full min-h-screen flex flex-col items-center relative py-7">
+    <div className="w-full min-h-[60vh] flex flex-col items-center relative py-7">
       {/* <ProjectDecoration/> */}
       <h1 className="text-primary text-center w-40 text-2xl font-semibold relative pb-1 uppercase lg:text-4xl lg:w-56">
         Resume
@@ -88,7 +88,7 @@ function Resume() {
           </button>
         ))}
       </div>
-      <div className="w-80 gap-3 px-2 flex flex-col items-center relative z-30 sm:w-[31.5rem] lg:w-[56.5rem] xl:w-[60rem] border">
+      <div className="w-80 gap-3 px-2 flex flex-col items-center relative z-30 sm:w-[31.5rem] lg:w-[56.5rem] xl:w-[60rem]">
         {renderTabs(activeTab)}
       </div>
 
