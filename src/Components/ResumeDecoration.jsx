@@ -15,9 +15,9 @@ function ResumeDecoration() {
       {/* Triangles */}
 
       {/* curves */}
-      <img src={curveTop} className="w-24 absolute top-0 left-0" alt="curve" />
-      <img src={curveRight} className="w-36 absolute top-0 right-0" alt="curve" />
-      <img src={curveBottom} className="w-28 absolute bottom-0 left-0" alt="curve" />
+      <img src={curveTop} className="w-24 absolute top-0 left-0 sm:w-40" alt="curve" />
+      <img src={curveRight} className="w-36 absolute top-0 right-0 sm:w-56" alt="curve" />
+      <img src={curveBottom} className="w-28 absolute bottom-0 left-0 sm:w-32" alt="curve" />
     </div>
   );
 }
