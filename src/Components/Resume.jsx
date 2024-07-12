@@ -21,32 +21,32 @@ function Resume() {
       >
         <div className="flex items-center gap-3">
           <div className="relative">
-            <img src={dateBox} className="w-14" alt="date container" />
-            <span className="absolute top-1/2 left-1/2 -translate-x-[55%] -translate-y-1/2 text-[#979797] font-semibold text-sm">
+            <img src={dateBox} className="w-14 lg:w-24" alt="date container" />
+            <span className="absolute top-1/2 left-1/2 -translate-x-[55%] -translate-y-1/2 text-[#979797] font-semibold text-sm lg:text-[1.4rem] lg:-translate-x-[60%]">
               {data.timeStart}
             </span>
           </div>
         </div>
-        <div className="mid flex gap-2 flex-col justify-between border">
-          <div className="flex gap-2 items-center">
-            <span className="w-5 h-5 rounded-full bg-primary"></span>
-            <h2 className="text-white text-[1rem] uppercase font-semibold">
+        <div className="mid flex gap-2 flex-col justify-between border lg:gap-1">
+          <div className="flex gap-2 items-center lg:gap-4">
+            <span className="w-5 h-5 rounded-full bg-primary shadow-[0_0_7px_2px_#FD563C] lg:w-7 lg:h-7"></span>
+            <h2 className="text-white text-[1rem] uppercase font-semibold lg:text-[1.3rem]">
               {data.heading}
             </h2>
           </div>
-          <div className="border-l-2 border-white pl-5 ml-[0.55rem]">
-            <h3 className="w-48 text-white/60 font-yellowTail text-[0.7rem] uppercase tracking-wider sm:w-72">
+          <div className="border-l-2 border-[#c3c3c3] pl-5 ml-[0.55rem] lg:ml-[0.75rem] lg:border-l-[3px] lg:pl-7">
+            <h3 className="w-48 text-white/60 font-yellowTail text-[0.7rem] uppercase tracking-wider sm:w-72 lg:text-[0.95rem] lg:w-[35rem] lg:mb-2">
               {data.subHeading}
             </h3>
-            <p className="w-48 text-neutral-500 text-[0.5rem] text-justify sm:w-72">
+            <p className="w-48 text-neutral-500 text-[0.5rem] text-justify sm:w-72 lg:text-[0.75rem] lg:w-[35rem]">
               {data.para}
             </p>
           </div>
-          <div className="flex items-center gap-2">
-            <span className="w-5 h-5 rounded-full bg-primary"></span>
+          <div className="flex items-center gap-2 lg:gap-4">
+            <span className="w-5 h-5 rounded-full bg-primary shadow-[0_0_7px_2px_#FD563C] lg:w-7 lg:h-7"></span>
             <div className="relative rotate-180">
-              <img src={dateBox} className="w-14" alt="date container" />
-              <span className="absolute top-1/2 left-1/2 rotate-180 -translate-x-[55%] -translate-y-1/2 text-[#979797] font-semibold text-sm">
+              <img src={dateBox} className="w-14 lg:w-24" alt="date container" />
+              <span className="absolute top-1/2 left-1/2 rotate-180 -translate-x-[55%] -translate-y-1/2 text-[#979797] font-semibold text-sm lg:text-[1.4rem] lg:-translate-x-[60%]">
                 {data.timeEnd}
               </span>
             </div>
