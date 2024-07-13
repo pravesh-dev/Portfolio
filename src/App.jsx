@@ -6,6 +6,7 @@ import Skills from './Components/Skills'
 import Footer from './Components/Footer'
 import Projects from './Components/Projects'
 import Resume from './Components/Resume'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
