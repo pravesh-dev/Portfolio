@@ -12,7 +12,7 @@ function Header() {
     <>
       <header className="w-full py-5  flex items-center justify-between px-7 absolute top-0 left-0 z-[99] lg:px-16">
         <h2 className="font-yellowTail text-white text-xl lg:text-2xl">Pravesh</h2>
-        <img src={bar} onClick={handleNav} className="cursor-pointer md:hidden" alt="" />
+        <img loading="lazy" src={bar} onClick={handleNav} className="cursor-pointer md:hidden" alt="" />
         <nav className="gap-5 lg:gap-12 hidden md:flex">
           <Link to='/' className={`text-xs font-extralight tracking-wider ${activeTab === 'home' ? 'text-neutral-400' : 'text-white'} duration-500 hover:scale-105`} onClick={()=>{setActiveTab('home')}}>Home</Link>
           <Link to='/about' className={`text-xs font-extralight tracking-wider ${activeTab === 'about' ? 'text-neutral-400' : 'text-white'} duration-500 hover:scale-105`} onClick={()=>{setActiveTab('about')}}>About</Link>

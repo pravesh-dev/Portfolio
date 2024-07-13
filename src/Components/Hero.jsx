@@ -32,19 +32,19 @@ function Hero() {
           {socialIcons.map((item, index) => {
             return (
               <a key={index} href="#" className={`${index === 3 && "mb-8 lg:mb-14"}`}>
-                <img src={item.name} className="lg:w-5" alt="" />
+                <img loading="lazy" src={item.name} className="lg:w-5" alt="" />
               </a>
             );
           })}
         </div>
         <div className="w-full h-[80%] relative">
           <div className=" w-60 h-60 absolute bottom-0 left-1/2 -translate-x-1/2 lg:w-80 lg:h-96 lg:-bottom-10">
-            <img
+            <img loading="lazy"
               src={imageBg}
               className="w-44 z-10 absolute bottom-0 left-1/2 -translate-x-1/2 lg:w-64 lg:-bottom-5"
               alt=""
             />
-            <img
+            <img loading="lazy"
               src={myImage}
               className="w-52 z-20 absolute bottom-[10%] left-1/2 -translate-x-[48%] lg:w-[19rem] lg:bottom-[10%]"
               alt=""
@@ -102,7 +102,7 @@ function Hero() {
         </div>
       </div>
       <div className="w-full absolute bottom-3  flex flex-col justify-center items-center lg:bottom-1">
-        <img className="w-[0.6rem] lg:w-[0.9rem]" src={mouse} alt="" />
+        <img loading="lazy" className="w-[0.6rem] lg:w-[0.9rem]" src={mouse} alt="" />
         <p className="text-center text-white/50 font-thin text-[0.6rem] tracking-widest lg:text-[0.8rem]">
           Scroll Down
         </p>

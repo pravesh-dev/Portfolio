@@ -12,14 +12,14 @@ function About() {
       <div className="w-full h-[40%] relative flex items-center px-3 sm:w-auto sm:h-auto">
         <div className="w-48 h-[11.3rem] relative sm:w-80 sm:h-[19.3rem] lg:w-[26rem] lg:h-[25.3rem]">
           <div className="w-[85%] h-[80%] relative flex items-end z-20 overflow-hidden">
-            <img className="w-full h-[80%] object-cover" src={aboutBg} alt="" />
-            <img
+            <img loading="lazy" className="w-full h-[80%] object-cover" src={aboutBg} alt="" />
+            <img loading="lazy"
               src={myImage}
               className="absolute -bottom-1 -left-3 w-36 sm:w-60 lg:w-80 lg:-left-6"
               alt=""
             />
           </div>
-          <img
+          <img loading="lazy"
             src={aboutBgRight}
             className="w-12 absolute right-0 top-[3.1rem] z-10 sm:w-[4.8rem] sm:top-[5.6rem] lg:w-[6.3rem] lg:top-[7.3rem]"
             alt=""
@@ -58,7 +58,7 @@ function About() {
         </div>
       </div>
       <div className="w-full absolute bottom-3  flex flex-col justify-center items-center lg:bottom-1">
-        <img className="w-[0.6rem] lg:w-[0.9rem]" src={mouse} alt="" />
+        <img loading="lazy" className="w-[0.6rem] lg:w-[0.9rem]" src={mouse} alt="" />
         <p className="text-center text-white/50 font-thin text-[0.6rem] tracking-widest lg:text-[0.8rem]">
           Scroll Down
         </p>

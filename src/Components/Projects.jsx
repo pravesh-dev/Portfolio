@@ -41,7 +41,7 @@ function Projects() {
         >
           Visit Website <span className="text-primary text-xl sm:text-[1.5rem] lg:text-[2.25rem] lg:-mt-1">→</span>
         </a>
-        <img src={project.image} className="rounded-lg" alt={project.name} />
+        <img loading="lazy" src={project.image} className="rounded-lg" alt={project.name} />
       </div>
     ));
   };
@@ -52,11 +52,11 @@ function Projects() {
       <h1 className="text-primary text-center w-40 text-2xl font-semibold relative pb-1 uppercase lg:text-4xl lg:w-56">
         Projects
         <span className="w-full h-[0.1rem] bg-primary absolute left-0 bottom-0">
-          <img
+          <img loading="lazy"
             src={triangle}
             className="w-3 absolute -left-1 top-1/2 -translate-y-1/2 rotate-90"
           />
-          <img
+          <img loading="lazy"
             src={triangle}
             className="w-3 absolute -right-1 top-1/2 -translate-y-1/2 -rotate-90"
           />
@@ -88,7 +88,7 @@ function Projects() {
         View All
       </button>
       <div className="w-full absolute bottom-3  flex flex-col justify-center items-center lg:bottom-1">
-        <img className="w-[0.6rem] lg:w-[0.9rem]" src={mouse} alt="" />
+        <img loading="lazy" className="w-[0.6rem] lg:w-[0.9rem]" src={mouse} alt="" />
         <p className="text-center text-white/50 font-thin text-[0.6rem] tracking-widest lg:text-[0.8rem]">
           Scroll Down
         </p>
