@@ -2,3 +2,11 @@
     -webkit-text-stroke: 0.5px #fd563caf;
     color: transparent;
 }
+.icon_name{
+    display: none;
+}
+@media (min-width: 1024px) {
+    .icon:hover+.icon_name{
+            display: block;
+        }
+}

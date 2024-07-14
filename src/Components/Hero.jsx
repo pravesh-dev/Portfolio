@@ -16,17 +16,21 @@ function Hero() {
       <HeroDecoration />
       <div id="hero-top" className="h-[70%] w-full flex relative lg:h-[80%]">
         <div className="w-[20%] h-[75%] flex flex-col gap-[0.6rem] items-center justify-end absolute z-20 left-0 lg:w-[14%] lg:h-[70%] lg:gap-4 xl:w-[10%] xl:h-[60%]">
-        <a href="https://www.instagram.com/dev_pravesh/" target="_blank" rel="noopener noreferrer" className="duration-300 hover:rotate-12 hover:scale-125">
-            <span className="text-lg text-primary lg:text-2xl duration-300 hover:text-[#F71635]"><RiInstagramFill/></span>
+        <a href="https://www.instagram.com/dev_pravesh/" target="_blank" rel="noopener noreferrer" className="relative duration-300 hover:rotate-6 hover:scale-125">
+            <span className="icon text-lg text-primary lg:text-2xl duration-300 hover:text-[#F71635]"><RiInstagramFill/></span>
+            <span className="icon_name px-1 bg-[#F71635] text-white absolute top-0 left-[130%] rounded-[0.2rem]">Instagram <span className="absolute w-2 h-2 bg-[#F71635] top-1/2 -translate-y-1/2 rotate-45 -left-1"></span></span>
           </a>
-          <a href="whatsapp://send?phone=919991831473" target="_blank" rel="noopener noreferrer" className="duration-300 hover:rotate-12 hover:scale-125">
-            <span className="text-lg text-primary lg:text-2xl duration-300 hover:text-[#009A11]"><IoLogoWhatsapp/></span>
+          <a href="whatsapp://send?phone=919991831473" target="_blank" rel="noopener noreferrer" className="relative duration-300 hover:rotate-6 hover:scale-125">
+            <span className="icon text-lg text-primary lg:text-2xl duration-300 hover:text-[#009A11]"><IoLogoWhatsapp/></span>
+            <span className="icon_name px-1 bg-[#009A11] text-white absolute top-0 left-[130%] rounded-[0.2rem]">WhatsApp <span className="absolute w-2 h-2 bg-[#009A11] top-1/2 -translate-y-1/2 rotate-45 -left-1"></span></span>
           </a>
-          <a href="https://www.linkedin.com/in/pravesh-saini-b7ab39280/" target="_blank" rel="noopener noreferrer" className="duration-300 hover:rotate-12 hover:scale-125">
-            <span className="text-lg text-primary lg:text-2xl duration-300 hover:text-[#2864AA]"><FaLinkedin/></span>
+          <a href="https://www.linkedin.com/in/pravesh-saini-b7ab39280/" target="_blank" rel="noopener noreferrer" className="relative duration-300 hover:rotate-6 hover:scale-125">
+            <span className="icon text-lg text-primary lg:text-2xl duration-300 hover:text-[#2864AA]"><FaLinkedin/></span>
+            <span className="icon_name px-1 bg-[#2864AA] text-white absolute top-0 left-[130%] rounded-[0.2rem]">LinkedIn <span className="absolute w-2 h-2 bg-[#2864AA] top-1/2 -translate-y-1/2 rotate-45 -left-1"></span></span>
           </a>
-          <a href="https://github.com/pravesh-dev" target="_blank" rel="noopener noreferrer" className={`mb-8 lg:mb-14 duration-300 hover:rotate-12 hover:scale-125`}>
-            <span className="text-lg text-primary lg:text-2xl duration-300 hover:text-[#010101]"><FaGithub/></span>
+          <a href="https://github.com/pravesh-dev" target="_blank" rel="noopener noreferrer" className={`relative mb-8 lg:mb-14 duration-300 hover:rotate-6 hover:scale-125`}>
+            <span className="icon text-lg text-primary lg:text-2xl duration-300 hover:text-[#010101]"><FaGithub/></span>
+            <span className="icon_name px-1 bg-[#010101] text-white absolute top-0 left-[130%] rounded-[0.2rem]">GitHub <span className="absolute w-2 h-2 bg-[#010101] top-1/2 -translate-y-1/2 rotate-45 -left-1"></span></span>
           </a>
         </div>
         <div className="w-full h-[80%] relative">
