@@ -8,6 +8,7 @@ import HeroDecoration from "./HeroDecoration";
 import { RiInstagramFill } from "react-icons/ri";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaLinkedin, FaGithub } from "react-icons/fa6";
+import ScrollMouse from "./ScrollMouse";
 
 function Hero() {
   return (
@@ -92,12 +93,7 @@ function Hero() {
           </p>
         </div>
       </div>
-      <div className="w-full absolute bottom-3  flex flex-col justify-center items-center lg:bottom-1">
-        <img loading="lazy" className="w-[0.6rem] lg:w-[0.9rem]" src={mouse} alt="" />
-        <p className="text-center text-white/50 font-thin text-[0.6rem] tracking-widest lg:text-[0.8rem]">
-          Scroll Down
-        </p>
-      </div>
+      <ScrollMouse mouse={mouse}/>
     </div>
   );
 }

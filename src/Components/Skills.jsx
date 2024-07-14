@@ -10,6 +10,7 @@ import lineRightTop from '../assets/images/Skills/lineRightTop.svg'
 import lineRightTopBig from '../assets/images/Skills/lineRightTopBig.svg'
 import lineRightBottom from '../assets/images/Skills/lineRightBottom.svg'
 import lineRightBottomBig from '../assets/images/Skills/lineRightBottomBig.svg'
+import ScrollMouse from "./ScrollMouse";
 
 function Skills() {
   return (
@@ -77,12 +78,7 @@ function Skills() {
           </div>
         </div>
 
-        <div className="w-full absolute bottom-3  flex flex-col justify-center items-center lg:bottom-1">
-          <img loading="lazy" className="w-[0.6rem] lg:w-[0.9rem]" src={mouse} alt="" />
-          <p className="text-center text-white/50 font-thin text-[0.6rem] tracking-widest lg:text-[0.8rem]">
-            Scroll Down
-          </p>
-        </div>
+        <ScrollMouse mouse={mouse}/>
       </div>
     </div>
   );

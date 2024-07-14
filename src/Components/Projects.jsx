@@ -3,6 +3,7 @@ import triangle from "../assets/images/Projects/triangle.svg";
 import { projects } from "./ProjectsData";
 import mouse from '../assets/images/icon/scrollMouse.svg'
 import ProjectDecoration from "./ProjectDecoration";
+import ScrollMouse from "./ScrollMouse";
 
 function Projects() {
   const [activeTab, setActiveTab] = useState("all");
@@ -87,12 +88,7 @@ function Projects() {
       >
         View All
       </button>
-      <div className="w-full absolute bottom-3  flex flex-col justify-center items-center lg:bottom-1">
-        <img loading="lazy" className="w-[0.6rem] lg:w-[0.9rem]" src={mouse} alt="" />
-        <p className="text-center text-white/50 font-thin text-[0.6rem] tracking-widest lg:text-[0.8rem]">
-          Scroll Down
-        </p>
-      </div>
+      <ScrollMouse mouse={mouse}/>
     </div>
   );
 }

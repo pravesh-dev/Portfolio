@@ -6,6 +6,7 @@ import aboutBg from "../assets/images/About/aboutBg.svg";
 import aboutBgRight from "../assets/images/About/aboutBgRight.svg";
 import myImage from "../assets/images/About/myImage.svg";
 import HireButton from "./HireButton";
+import ScrollMouse from "./ScrollMouse";
 
 function About() {
   return (
@@ -59,12 +60,7 @@ function About() {
           <button className="resumeDownload relative border border-primary text-white text-[0.65rem] rounded-md tracking-wider font-light lg:text-base cursor-pointer active:scale-95 duration-300 overflow-hidden"><a className="text-transparent px-5 py-2 lg:px-8" href="/Resume/PRAVESH-RESUME.pdf" download='PRAVESH-RESUME' aria-label="Download Resume">Download Resume</a> <span className="inner_circle bg-primary/60 rounded-full pointer-events-none"></span></button>
         </div>
       </div>
-      <div className="w-full absolute bottom-3  flex flex-col justify-center items-center lg:bottom-1">
-        <img loading="lazy" className="w-[0.6rem] lg:w-[0.9rem]" src={mouse} alt="" />
-        <p className="text-center text-white/50 font-thin text-[0.6rem] tracking-widest lg:text-[0.8rem]">
-          Scroll Down
-        </p>
-      </div>
+      <ScrollMouse mouse={mouse}/>
     </div>
   );
 }

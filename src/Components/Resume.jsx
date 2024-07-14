@@ -4,6 +4,7 @@ import mouse from "../assets/images/icon/scrollMouse.svg";
 import { userData } from "./ResumeData";
 import dateBox from "../assets/images/Resume/dateBox.svg";
 import ResumeDecoration from "./ResumeDecoration";
+import ScrollMouse from "./ScrollMouse";
 
 function Resume() {
   const [activeTab, setActiveTab] = useState("experience");
@@ -93,12 +94,7 @@ function Resume() {
         {renderTabs(activeTab)}
       </div>
 
-      <div className="w-full absolute bottom-3  flex flex-col justify-center items-center lg:bottom-1">
-        <img loading="lazy" className="w-[0.6rem] lg:w-[0.9rem]" src={mouse} alt="" />
-        <p className="text-center text-white/50 font-thin text-[0.6rem] tracking-widest lg:text-[0.8rem]">
-          Scroll Down
-        </p>
-      </div>
+      <ScrollMouse mouse={mouse}/>
     </div>
   );
 }
