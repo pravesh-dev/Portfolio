@@ -15,17 +15,17 @@ function Hero() {
       <HeroDecoration />
       <div id="hero-top" className="h-[70%] w-full flex relative lg:h-[80%]">
         <div className="w-[20%] h-[75%] flex flex-col gap-[0.6rem] items-center justify-end absolute z-20 left-0 lg:w-[14%] lg:h-[70%] lg:gap-4 xl:w-[10%] xl:h-[60%]">
-        <a href="https://www.instagram.com/dev_pravesh/" target="_blank" rel="noopener noreferrer">
-            <span className="text-lg text-primary lg:text-2xl"><RiInstagramFill/></span>
+        <a href="https://www.instagram.com/dev_pravesh/" target="_blank" rel="noopener noreferrer" className="duration-300 hover:rotate-12 hover:scale-125">
+            <span className="text-lg text-primary lg:text-2xl duration-300 hover:text-[#F71635]"><RiInstagramFill/></span>
           </a>
-          <a href="whatsapp://send?phone=919991831473" target="_blank" rel="noopener noreferrer">
-            <span className="text-lg text-primary lg:text-2xl"><IoLogoWhatsapp/></span>
+          <a href="whatsapp://send?phone=919991831473" target="_blank" rel="noopener noreferrer" className="duration-300 hover:rotate-12 hover:scale-125">
+            <span className="text-lg text-primary lg:text-2xl duration-300 hover:text-[#009A11]"><IoLogoWhatsapp/></span>
           </a>
-          <a href="https://www.linkedin.com/in/pravesh-saini-b7ab39280/" target="_blank" rel="noopener noreferrer">
-            <span className="text-lg text-primary lg:text-2xl"><FaLinkedin/></span>
+          <a href="https://www.linkedin.com/in/pravesh-saini-b7ab39280/" target="_blank" rel="noopener noreferrer" className="duration-300 hover:rotate-12 hover:scale-125">
+            <span className="text-lg text-primary lg:text-2xl duration-300 hover:text-[#2864AA]"><FaLinkedin/></span>
           </a>
-          <a href="https://github.com/pravesh-dev" target="_blank" rel="noopener noreferrer" className={`mb-8 lg:mb-14`}>
-            <span className="text-lg text-primary lg:text-2xl"><FaGithub/></span>
+          <a href="https://github.com/pravesh-dev" target="_blank" rel="noopener noreferrer" className={`mb-8 lg:mb-14 duration-300 hover:rotate-12 hover:scale-125`}>
+            <span className="text-lg text-primary lg:text-2xl duration-300 hover:text-[#010101]"><FaGithub/></span>
           </a>
         </div>
         <div className="w-full h-[80%] relative">
