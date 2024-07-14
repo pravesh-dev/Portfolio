@@ -6,7 +6,7 @@ import heroCurveLong from "../assets/images/heroCurveLong.svg";
 
 function HeroDecoration() {
   return (
-    <div className="w-full h-full absolute">
+    <div className="w-full h-full absolute pointer-events-none z-10 ">
       {/* Small Circles */}
       <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[13%] left-[30%] lg:w-[0.5rem] lg:h-[0.5rem] lg:left-[35%] lg:top-[20%]"></span>
       <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[11%] left-[57%] lg:w-[0.5rem] lg:h-[0.5rem]"></span>
