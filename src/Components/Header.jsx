@@ -19,7 +19,7 @@ function Header() {
           <Link to='/projects' className={`text-xs font-extralight tracking-wider ${activeTab === 'project' ? 'text-neutral-400' : 'text-white'} duration-500 hover:scale-105`} onClick={()=>{setActiveTab('project')}}>Projects</Link>
           <Link to='resume' className={`text-xs font-extralight tracking-wider ${activeTab === 'resume' ? 'text-neutral-400' : 'text-white'} duration-500 hover:scale-105`} onClick={()=>{setActiveTab('resume')}}>Resume</Link>
         </nav>
-        <a href="mailto:praveshsaini.dev@gmail.com" className="bg-primary text-white rounded-[1rem] text-sm px-3 py-1 hidden md:block shadow-md shadow-white/80 lg:px-4 hover:translate-y-1 hover:shadow-none duration-500 active:scale-90" aria-label="Send an email to Pravesh">Let's Talk</a>
+        <a href="mailto:praveshsaini.dev@gmail.com" className="bg-primary text-white rounded-[1rem] text-sm px-3 py-1 hidden md:block shadow-md shadow-white/80 lg:px-4 hover:translate-y-1 hover:shadow-none duration-500 active:duration-100 active:scale-90" aria-label="Send an email to Pravesh">Let's Talk</a>
       </header>
       <div
         className={`w-[80%] h-screen bg-red-500 fixed z-[100] ${
