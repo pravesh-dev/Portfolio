@@ -1,13 +1,13 @@
 import React from "react";
-import insta from "../assets/images/icon/insta.svg";
-import whatsapp from "../assets/images/icon/whatsapp.svg";
-import linkedIn from "../assets/images/icon/linkedIn.svg";
-import gitHub from "../assets/images/icon/gitHub.svg";
 import imageBg from "../assets/images/image-bg.svg";
 import myImage from "../assets/images/myImage.svg";
 import mouse from "../assets/images/icon/scrollMouse.svg";
 import "./Hero.css";
 import HeroDecoration from "./HeroDecoration";
+
+import { RiInstagramFill } from "react-icons/ri";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { FaLinkedin, FaGithub } from "react-icons/fa6";
 
 function Hero() {
   return (
@@ -16,16 +16,16 @@ function Hero() {
       <div id="hero-top" className="h-[70%] w-full flex relative lg:h-[80%]">
         <div className="w-[20%] h-[75%] flex flex-col gap-[0.6rem] items-center justify-end absolute z-20 left-0 lg:w-[14%] lg:h-[70%] lg:gap-4 xl:w-[10%] xl:h-[60%]">
         <a href="https://www.instagram.com/dev_pravesh/" target="_blank" rel="noopener noreferrer">
-            <img loading="lazy" src={insta} className="lg:w-5" alt="instagram icon" />
+            <span className="text-lg text-primary lg:text-2xl"><RiInstagramFill/></span>
           </a>
           <a href="whatsapp://send?phone=919991831473" target="_blank" rel="noopener noreferrer">
-            <img loading="lazy" src={whatsapp} className="lg:w-5" alt="whatsapp icon" />
+            <span className="text-lg text-primary lg:text-2xl"><IoLogoWhatsapp/></span>
           </a>
           <a href="https://www.linkedin.com/in/pravesh-saini-b7ab39280/" target="_blank" rel="noopener noreferrer">
-            <img loading="lazy" src={linkedIn} className="lg:w-5" alt="linkedIn icon" />
+            <span className="text-lg text-primary lg:text-2xl"><FaLinkedin/></span>
           </a>
           <a href="https://github.com/pravesh-dev" target="_blank" rel="noopener noreferrer" className={`mb-8 lg:mb-14`}>
-            <img loading="lazy" src={gitHub} className="lg:w-5" alt="gitHub icon" />
+            <span className="text-lg text-primary lg:text-2xl"><FaGithub/></span>
           </a>
         </div>
         <div className="w-full h-[80%] relative">
