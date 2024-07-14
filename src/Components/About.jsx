@@ -54,7 +54,7 @@ function About() {
         <p className="text-neutral-300 text-xs tracking-widest leading-[1.1rem] text-justify font-extralight flex flex-col gap-5 lg:text-[0.95rem] lg:leading-5 lg:tracking-[0.13rem] xl:tracking-[0.17rem] xl:leading-[1.3rem]">It was easy to spot her. All you needed to do was look at her socks. They were never a matching pair. One would be green while the other would be blue. One would reach her knee while the other barely touched her ankle. Every other part of her was perfect, but never the socks. They were her micro act of rebellion. It had been her dream for years but Dana had failed to take any action toward making it come true. There had always been a good excuse to delay or prioritize another project. As she woke, she realized she was once again at a crossroads.  <span className="w-14 h-[0.12rem] bg-white self-end mr-7 lg:h-[0.15rem] xl:mr-20"></span></p>
         <div className="flex gap-3 lg:gap-10">
           <button className="text-xs px-6 py-2 rounded-md bg-primary text-white shadow-[2px_1px_1px_1px_#000] tracking-wider font-light lg:text-base lg:px-8">Hire me</button>
-          <button className="border border-primary text-white text-xs px-6 py-2 rounded-md tracking-wider font-light lg:text-base lg:px-8">View Portfolio</button>
+          <a href="/Resume/PRAVESH-RESUME.pdf" download='PRAVESH-RESUME' aria-label="Download Resume" className="border border-primary text-white text-xs px-6 py-2 rounded-md tracking-wider font-light lg:text-base lg:px-8 hover:bg-primary duration-300 cursor-pointer">Download Resume</a>
         </div>
       </div>
       <div className="w-full absolute bottom-3  flex flex-col justify-center items-center lg:bottom-1">
