@@ -26,6 +26,18 @@
 .resumeDownload:hover::after {
   top: 0%;
 }
+.inner_circle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 15rem;
+  height: 15rem;
+  transition: transform 0.5s;
+}
+.resumeDownload:hover .inner_circle{
+  transform: translate(-50%, -50%) scale(1);
+}
 
 @media (min-width: 1024px) {
   .resumeDownload::before,
