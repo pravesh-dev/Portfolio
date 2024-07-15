@@ -24,21 +24,21 @@ function Skills() {
           <img loading="lazy" src={lineLeftTopBig} className="w-[97%] absolute -right-[0.1rem] top-0 hidden lg:block" alt="" />
           <img loading="lazy" src={lineLeftBottomBig} className="w-[97%] absolute -right-[0.1rem] bottom-0 hidden lg:block" alt="" />
           <div className="flex flex-col gap-1">
-            <h2 className="text-white text-xl font-bold lg:text-2xl">HTML</h2>
+            <h2 className="text-white text-sm font-bold lg:text-xl">HTML, CSS, JAVASCRIPT</h2>
             <p className="text-[0.6rem] text-neutral-300 font-extralight tracking-[0.16rem] leading-[0.8rem] text-justify lg:text-[0.8rem] lg:tracking-[0.18rem] lg:leading-[1rem]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
               esse cum incidunt similique. Totam, aliquam.
             </p>
           </div>
           <div className="flex flex-col gap-1">
-            <h2 className="text-white text-xl font-bold lg:text-2xl">HTML</h2>
+            <h2 className="text-white text-sm font-bold lg:text-xl">REACT, REDUX</h2>
             <p className="text-[0.6rem] text-neutral-300 font-extralight tracking-[0.16rem] leading-[0.8rem] text-justify lg:text-[0.8rem] lg:tracking-[0.18rem] lg:leading-[1rem]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
               esse cum incidunt similique. Totam, aliquam.
             </p>
           </div>
           <div className="flex flex-col gap-1">
-            <h2 className="text-white text-xl font-bold lg:text-2xl">HTML</h2>
+            <h2 className="text-white text-sm font-bold lg:text-xl">TAILWIND CSS, GSAP</h2>
             <p className="text-[0.6rem] text-neutral-300 font-extralight tracking-[0.16rem] leading-[0.8rem] text-justify lg:text-[0.8rem] lg:tracking-[0.18rem] lg:leading-[1rem]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
               esse cum incidunt similique. Totam, aliquam.
@@ -56,21 +56,21 @@ function Skills() {
         <img loading="lazy" src={lineRightTopBig} className="w-[24%] absolute -left-[0.1rem] top-0 hidden lg:block" alt="" />
         <img loading="lazy" src={lineRightBottomBig} className="w-[24%] absolute -left-[0.1rem] -bottom-[0.1rem] hidden lg:block" alt="" />
           <div className="flex flex-col gap-1">
-            <h2 className="text-white text-xl font-bold lg:text-2xl">HTML</h2>
+            <h2 className="text-white text-sm font-bold lg:text-xl">GIT & GITHUB</h2>
             <p className="text-[0.6rem] text-neutral-300 font-extralight tracking-[0.16rem] leading-[0.8rem] text-justify lg:text-[0.8rem] lg:tracking-[0.18rem] lg:leading-[1rem]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
               esse cum incidunt similique. Totam, aliquam.
             </p>
           </div>
           <div className="flex flex-col gap-1">
-            <h2 className="text-white text-xl font-bold lg:text-2xl">HTML</h2>
+            <h2 className="text-white text-sm font-bold lg:text-xl">NODE.JS, EXPRESS.JS</h2>
             <p className="text-[0.6rem] text-neutral-300 font-extralight tracking-[0.16rem] leading-[0.8rem] text-justify lg:text-[0.8rem] lg:tracking-[0.18rem] lg:leading-[1rem]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
               esse cum incidunt similique. Totam, aliquam.
             </p>
           </div>
           <div className="flex flex-col gap-1">
-            <h2 className="text-white text-xl font-bold lg:text-2xl">HTML</h2>
+            <h2 className="text-white text-sm font-bold lg:text-xl">MONGODB, MONGOOSE</h2>
             <p className="text-[0.6rem] text-neutral-300 font-extralight tracking-[0.16rem] leading-[0.8rem] text-justify lg:text-[0.8rem] lg:tracking-[0.18rem] lg:leading-[1rem]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
               esse cum incidunt similique. Totam, aliquam.
