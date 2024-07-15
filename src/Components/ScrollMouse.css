@@ -1,5 +1,5 @@
 .mouseImage{
-    filter: drop-shadow(0 0 5px #f473028c);
+    filter: drop-shadow(0 0 5px #f473026d);
     animation: mouseAnime 0.8s ease-out infinite alternate;
 }
 
