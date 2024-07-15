@@ -22,3 +22,9 @@ body {
   position: relative;
   background-color: #1a1a1a;
 }
+.skills_para{
+  @apply text-[0.6rem] text-neutral-300 font-extralight tracking-[0.05rem] leading-[0.8rem] text-justify lg:text-[0.8rem] lg:tracking-[0.12rem] lg:leading-[1rem]
+}
+.skills_heading{
+  @apply text-white text-sm font-bold lg:text-xl
+}

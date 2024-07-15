@@ -44,30 +44,30 @@ function Skills() {
             alt=""
           />
           <div className="flex flex-col gap-1">
-            <h2 className="text-white text-sm font-bold lg:text-xl">
+            <h2 className="skills_heading">
               HTML, CSS, JAVASCRIPT
             </h2>
-            <p className="text-[0.6rem] text-neutral-300 font-extralight tracking-[0.05rem] leading-[0.8rem] text-justify lg:text-[0.8rem] lg:tracking-[0.12rem] lg:leading-[1rem]">
+            <p className="skills_para">
               Proficient in building modern web applications with HTML5 for
               structure, CSS3 for styling, and JavaScript (ES6+) for
               interactivity and functionality.
             </p>
           </div>
           <div className="flex flex-col gap-1">
-            <h2 className="text-white text-sm font-bold lg:text-xl">
+            <h2 className="skills_heading">
               REACT, REDUX
             </h2>
-            <p className="text-[0.6rem] text-neutral-300 font-extralight tracking-[0.05rem] leading-[0.8rem] text-justify lg:text-[0.8rem] lg:tracking-[0.12rem] lg:leading-[1rem]">
+            <p className="skills_para">
               Experienced in creating dynamic and responsive user interfaces
               using React. Skilled in managing application state with Redux for
               efficient data handling.
             </p>
           </div>
           <div className="flex flex-col gap-1">
-            <h2 className="text-white text-sm font-bold lg:text-xl">
+            <h2 className="skills_heading">
               TAILWIND CSS, GSAP
             </h2>
-            <p className="text-[0.6rem] text-neutral-300 font-extralight tracking-[0.05rem] leading-[0.8rem] text-justify lg:text-[0.8rem] lg:tracking-[0.12rem] lg:leading-[1rem]">
+            <p className="skills_para">
               Utilizing Tailwind CSS for quickly styling applications with a
               utility-first approach and GSAP for creating high-performance
               animations and interactions.
@@ -105,29 +105,29 @@ function Skills() {
             alt=""
           />
           <div className="flex flex-col gap-1">
-            <h2 className="text-white text-sm font-bold lg:text-xl">
+            <h2 className="skills_heading">
               GIT & GITHUB
             </h2>
-            <p className="text-[0.6rem] text-neutral-300 font-extralight tracking-[0.05rem] leading-[0.8rem] text-justify lg:text-[0.8rem] lg:tracking-[0.12rem] lg:leading-[1rem]">
+            <p className="skills_para">
               Proficient in using Git for version control and GitHub for
               repository management, collaboration, and showcasing code
               projects.
             </p>
           </div>
           <div className="flex flex-col gap-1">
-            <h2 className="text-white text-sm font-bold lg:text-xl">
+            <h2 className="skills_heading">
               NODE.JS, EXPRESS.JS
             </h2>
-            <p className="text-[0.6rem] text-neutral-300 font-extralight tracking-[0.05rem] leading-[0.8rem] text-justify lg:text-[0.8rem] lg:tracking-[0.12rem] lg:leading-[1rem]">
+            <p className="skills_para">
               Experienced in building server-side applications and RESTful APIs
               using Node.js and Express.js for robust backend development.
             </p>
           </div>
           <div className="flex flex-col gap-1">
-            <h2 className="text-white text-sm font-bold lg:text-xl">
+            <h2 className="skills_heading">
               MONGODB, MONGOOSE
             </h2>
-            <p className="text-[0.6rem] text-neutral-300 font-extralight tracking-[0.05rem] leading-[0.8rem] text-justify lg:text-[0.8rem] lg:tracking-[0.12rem] lg:leading-[1rem]">
+            <p className="skills_para">
               Skilled in using MongoDB as a NoSQL database and Mongoose for
               object data modeling (ODM) to interact with MongoDB seamlessly.
             </p>
