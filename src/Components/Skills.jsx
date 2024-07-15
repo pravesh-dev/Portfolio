@@ -1,4 +1,5 @@
 import React from "react";
+import './Skills.css'
 import SkillsDecoration from "./SkillsDecoration";
 
 import mouse from "../assets/images/icon/scrollMouse.svg";
