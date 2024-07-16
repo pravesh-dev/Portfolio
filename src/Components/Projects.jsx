@@ -38,7 +38,8 @@ function Projects() {
         </p>
         <a
           href={project.link}
-          className="text-white text-[0.6rem] flex items-center gap-1 sm:text-[0.9rem] lg:text-[1.2rem]"
+          target="_blank"
+          className="text-white text-[0.6rem] flex items-center gap-1 sm:text-[0.9rem] lg:text-[1.2rem] hover:gap-4 duration-300"
         >
           Visit Website <span className="text-primary text-xl sm:text-[1.5rem] lg:text-[2.25rem] lg:-mt-1">→</span>
         </a>
