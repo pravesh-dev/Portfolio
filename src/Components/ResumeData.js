@@ -1,28 +1,28 @@
 const userData = [
-    {
-      heading: "Hexadefend",
-      subHeading: "FRONTEND WEB DEVELOPER",
-      para: `It was so great to hear from you today and it was such weird timing," he said. "This is going to sound funny and a little strange, but you were in a dream I had just a couple of days ago.It was so great to hear from you today and it was such weird timing," he said. "This is going to sound funny and a little strange, but you were in a dream I had just a couple of days ago.`,
-      timeStart: '2023',
-      timeEnd: 2024,
-      type: 'experience'
-    },
-    {
-      heading: "Higher Education",
-      subHeading: "KLP Sr. Sec. School, Niwaz Nagar, Haryana",
-      para: `It was so great to hear from you today and it was such weird timing," he said. "This is going to sound funny and a little strange, but you were in a dream I had just a couple of days ago.`,
-      timeStart: '2018',
-      timeEnd: 2020,
-      type: 'education'
-    },
-    {
-      heading: "Graduation (BCA)",
-      subHeading: "Indra Gandhi University, Meerpur, Haryana",
-      para: `It was so great to hear from you today and it was such weird timing," he said. "This is going to sound funny and a little strange, but you were in a dream I had just a couple of days ago.`,
-      timeStart: '2020',
-      timeEnd: 2023,
-      type: 'education'
-    },
-  ]
+  {
+    heading: "HexaDefend",
+    subHeading: "FRONTEND WEB DEVELOPER",
+    para: `As a frontend web developer at HexaDefend, I worked on building responsive web applications using HTML, CSS, JavaScript, React, Tailwind CSS, and GSAP. I collaborated with a talented team to create visually appealing and user-friendly websites, contributing to various exciting projects.`,
+    timeStart: '2023',
+    timeEnd: 2024,
+    type: 'experience'
+  },
+  {
+    heading: "Higher Education",
+    subHeading: "KLP Sr. Sec. School, Niwaz Nagar, Haryana",
+    para: `I completed my higher education at KLP Sr. Sec. School, where I developed a strong foundation in various subjects and actively participated in extracurricular activities.`,
+    timeStart: '2018',
+    timeEnd: 2020,
+    type: 'education'
+  },
+  {
+    heading: "Graduation (BCA)",
+    subHeading: "Indra Gandhi University, Meerpur, Haryana",
+    para: `I pursued my Bachelor of Computer Applications (BCA) at Indra Gandhi University, focusing on computer science fundamentals, programming languages, and software development. This education provided me with the technical skills and knowledge required for my career in web development.`,
+    timeStart: '2020',
+    timeEnd: 2023,
+    type: 'education'
+  }
+];
 
-export {userData}
+export { userData };
