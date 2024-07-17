@@ -29,7 +29,7 @@ function Projects() {
       : filteredProjects.slice(0, 6);
 
     return displayedProjects.map((project, index) => (
-      <div key={index} className="w-36 bg-[#353535] p-[0.33rem] rounded-md sm:w-56 flex flex-col justify-between sm:gap-2 sm:p-3 lg:w-64">
+      <div key={index} className="w-36 bg-[#353535] p-[0.33rem] rounded-md sm:w-56 flex flex-col justify-between sm:gap-2 sm:p-3 lg:w-64 cursor-default">
         <h2 className="text-white text-[0.7rem] font-semibold sm:text-[1rem] lg:text-[1.3rem]">
           {project.name}
         </h2>
@@ -43,7 +43,9 @@ function Projects() {
         >
           Visit Website <span className="text-primary text-xl sm:text-[1.5rem] lg:text-[2.25rem] lg:-mt-1">→</span>
         </a>
-        <img loading="lazy" src={project.image} className="rounded-lg" alt={project.name} />
+        <div className="w-full overflow-hidden rounded-lg">
+        <img loading="lazy" src={project.image} className="rounded-lg hover:scale-105 duration-300" alt={project.name} />
+        </div>
       </div>
     ));
   };
