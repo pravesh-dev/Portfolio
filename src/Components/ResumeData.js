@@ -15,6 +15,14 @@ const userData = [
       timeEnd: 2020,
       type: 'education'
     },
+    {
+      heading: "Graduation (BCA)",
+      subHeading: "Indra Gandhi University, Meerpur, Haryana",
+      para: `It was so great to hear from you today and it was such weird timing," he said. "This is going to sound funny and a little strange, but you were in a dream I had just a couple of days ago.`,
+      timeStart: '2020',
+      timeEnd: 2023,
+      type: 'education'
+    },
   ]
 
 export {userData}
