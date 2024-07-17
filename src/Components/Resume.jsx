@@ -19,7 +19,7 @@ function Resume() {
     return filteredType.map((data, index) => (
       <div
         key={index}
-        className="data_box w-max p-[0.33rem] flex items-start gap-3"
+        className="data_box w-max p-[0.33rem] flex items-start gap-3 cursor-default"
       >
         <div className="flex items-center gap-3">
           <div className="relative">
