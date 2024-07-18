@@ -29,7 +29,7 @@ function Projects() {
       : filteredProjects.slice(0, 6);
 
     return displayedProjects.map((project, index) => (
-      <div key={index} className="w-36 bg-[#353535] p-[0.33rem] rounded-md sm:w-56 flex flex-col justify-between sm:gap-2 sm:p-3 lg:w-64 xl:w-72 cursor-default">
+      <div key={index} className="w-36 bg-[#353535] p-[0.33rem] rounded-md sm:w-56 flex flex-col justify-between sm:gap-2 sm:p-3 lg:w-64 xl:w-72">
         <h2 className="text-white text-[0.7rem] font-semibold sm:text-[1rem] lg:text-[1.3rem]">
           {project.name}
         </h2>
