@@ -2,6 +2,9 @@
     --Primary: '#fff';
 }
 .hireButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     width: 5rem;
     height: 2rem;
@@ -45,13 +48,13 @@
     left: 102%;
   }
   
-  button:hover #rightArrow {
+  .hireButton:hover #rightArrow {
     background-color: #e40026;
     left: -15%;
     animation: 0.6s ease-in-out both infinite alternate rightArrow8;
   }
   
-  button:hover #leftArrow {
+  .hireButton:hover #leftArrow {
     background-color: #e40026;
     left: 103%;
     animation: 0.6s ease-in-out both infinite alternate leftArrow8;
@@ -87,31 +90,31 @@
     left: 88%;
   }
   
-  button:hover #leftTop {
+  .hireButton:hover #leftTop {
     animation: 0.1s ease-in-out 0.05s both changeColor8,
     0.2s linear 0.4s both lightEffect8;
   }
   
-  button:hover #rightTop {
+  .hireButton:hover #rightTop {
     animation: 0.1s ease-in-out 0.15s both changeColor8,
     0.2s linear 0.4s both lightEffect8;
   }
   
-  button:hover #rightBottom {
+  .hireButton:hover #rightBottom {
     animation: 0.1s ease-in-out 0.25s both changeColor8,
     0.2s linear 0.4s both lightEffect8;
   }
   
-  button:hover #leftBottom {
+  .hireButton:hover #leftBottom {
     animation: 0.1s ease-in-out 0.35s both changeColor8,
     0.2s linear 0.4s both lightEffect8;
   }
   
-  button:hover .corner {
+  .hireButton:hover .corner {
     transform: scale(1.25) rotate(45deg);
   }
   
-  button:hover #clip {
+  .hireButton:hover #clip {
     animation: 0.2s ease-in-out 0.55s both greenLight8;
     --color: #e40026;
   }
