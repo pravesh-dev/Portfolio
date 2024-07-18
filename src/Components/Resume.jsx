@@ -19,7 +19,7 @@ function Resume() {
     return filteredType.map((data, index) => (
       <div
         key={index}
-        className="data_box w-max p-[0.33rem] flex items-start gap-3 cursor-default"
+        className="data_box w-max p-[0.33rem] flex items-start gap-3"
       >
         <div className="flex items-center gap-3">
           <div className="relative">
@@ -83,7 +83,7 @@ function Resume() {
               activeTab === tab
                 ? "text-primary border-b-2 border-white"
                 : "text-neutral-300/70"
-            } lg:text-lg`}
+            } lg:text-lg cursor_pointer`}
             onClick={() => handleTabClick(tab)}
           >
             {tab}

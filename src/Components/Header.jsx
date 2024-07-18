@@ -14,12 +14,12 @@ function Header() {
         <Link to='/' className="font-yellowTail text-white text-xl lg:text-2xl">Pravesh</Link>
         <img loading="lazy" src={bar} onClick={handleNav} className="cursor-pointer md:hidden" alt="" />
         <nav className="gap-5 lg:gap-12 hidden md:flex">
-          <Link to='/' className={`text-xs font-extralight tracking-wider ${activeTab === 'home' ? 'text-neutral-400' : 'text-white'} duration-500 hover:scale-105`} onClick={()=>{setActiveTab('home')}}>Home</Link>
-          <Link to='/about' className={`text-xs font-extralight tracking-wider ${activeTab === 'about' ? 'text-neutral-400' : 'text-white'} duration-500 hover:scale-105`} onClick={()=>{setActiveTab('about')}}>About</Link>
-          <Link to='/projects' className={`text-xs font-extralight tracking-wider ${activeTab === 'project' ? 'text-neutral-400' : 'text-white'} duration-500 hover:scale-105`} onClick={()=>{setActiveTab('project')}}>Projects</Link>
-          <Link to='resume' className={`text-xs font-extralight tracking-wider ${activeTab === 'resume' ? 'text-neutral-400' : 'text-white'} duration-500 hover:scale-105`} onClick={()=>{setActiveTab('resume')}}>Resume</Link>
+          <Link to='/' className={`text-xs font-extralight tracking-wider ${activeTab === 'home' ? 'text-neutral-400' : 'text-white'} duration-500 hover:scale-105 cursor_pointer`} onClick={()=>{setActiveTab('home')}}>Home</Link>
+          <Link to='/about' className={`text-xs font-extralight tracking-wider ${activeTab === 'about' ? 'text-neutral-400' : 'text-white'} duration-500 hover:scale-105 cursor_pointer`} onClick={()=>{setActiveTab('about')}}>About</Link>
+          <Link to='/projects' className={`text-xs font-extralight tracking-wider ${activeTab === 'project' ? 'text-neutral-400' : 'text-white'} duration-500 hover:scale-105 cursor_pointer`} onClick={()=>{setActiveTab('project')}}>Projects</Link>
+          <Link to='resume' className={`text-xs font-extralight tracking-wider ${activeTab === 'resume' ? 'text-neutral-400' : 'text-white'} duration-500 hover:scale-105 cursor_pointer`} onClick={()=>{setActiveTab('resume')}}>Resume</Link>
         </nav>
-        <a href="mailto:praveshsaini.dev@gmail.com" className="bg-primary text-white rounded-[1rem] text-sm px-3 py-1 hidden md:block shadow-md shadow-white/80 lg:px-4 hover:translate-y-1 hover:shadow-none duration-500 active:duration-100 active:scale-90" aria-label="Send an email to Pravesh">Let's Talk</a>
+        <a href="mailto:praveshsaini.dev@gmail.com" className="bg-primary text-white rounded-[1rem] text-sm px-3 py-1 hidden md:block shadow-md shadow-white/80 lg:px-4 hover:translate-y-1 hover:shadow-none duration-500 active:duration-100 active:scale-90 cursor_pointer" aria-label="Send an email to Pravesh">Let's Talk</a>
       </header>
       <div
         className={`w-[80%] h-screen bg-red-500 fixed z-[100] ${

@@ -39,7 +39,7 @@ function Projects() {
         <a
           href={project.link}
           target="_blank"
-          className="text-white text-[0.6rem] flex items-center gap-1 sm:text-[0.9rem] lg:text-[1.2rem] hover:gap-4 duration-300"
+          className="text-white text-[0.6rem] flex items-center gap-1 sm:text-[0.9rem] lg:text-[1.2rem] hover:gap-4 duration-300 cursor_pointer"
         >
           Visit Website <span className="text-primary text-xl sm:text-[1.5rem] lg:text-[2.25rem] lg:-mt-1">→</span>
         </a>
@@ -74,7 +74,7 @@ function Projects() {
               activeTab === tab
                 ? "bg-[#646464] text-primary"
                 : "text-neutral-300/70"
-            } lg:text-lg`}
+            } lg:text-lg cursor_pointer`}
             onClick={() => handleTabClick(tab)}
           >
             {tab}
