@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import triangle from "../assets/images/Projects/triangle.svg";
 import { projects } from "./ProjectsData";
-import mouse from '../assets/images/icon/scrollMouse.svg'
+import mouse from "../assets/images/icon/scrollMouse.svg";
 import ProjectDecoration from "./ProjectDecoration";
 import ScrollMouse from "./ScrollMouse";
 
@@ -29,7 +29,10 @@ function Projects() {
       : filteredProjects.slice(0, 6);
 
     return displayedProjects.map((project, index) => (
-      <div key={index} className="w-36 bg-[#353535] p-[0.33rem] rounded-md sm:w-56 flex flex-col justify-between sm:gap-2 sm:p-3 lg:w-64 xl:w-72">
+      <div
+        key={index}
+        className="w-36 bg-[#353535] p-[0.33rem] rounded-md sm:w-56 flex flex-col justify-between sm:gap-2 sm:p-3 lg:w-64 xl:w-72"
+      >
         <h2 className="text-white text-[0.7rem] font-semibold sm:text-[1rem] lg:text-[1.3rem]">
           {project.name}
         </h2>
@@ -41,10 +44,20 @@ function Projects() {
           target="_blank"
           className="text-white text-[0.6rem] flex items-center gap-1 sm:text-[0.9rem] lg:text-[1.2rem] hover:gap-4 duration-300 cursor_pointer"
         >
-          Visit Website <span className="text-primary text-xl sm:text-[1.5rem] lg:text-[2.25rem] lg:-mt-1">→</span>
+          Visit Website{" "}
+          <span className="text-primary text-xl sm:text-[1.5rem] lg:text-[2.25rem] lg:-mt-1">
+            →
+          </span>
         </a>
         <div className="w-full overflow-hidden rounded-lg">
-        <img loading="lazy" src={project.image} className="rounded-lg hover:scale-110 duration-300" alt={project.name} />
+          <a href={project.link} target="_blank">
+            <img
+              loading="lazy"
+              src={project.image}
+              className="rounded-lg hover:scale-110 duration-300"
+              alt={project.name}
+            />
+          </a>
         </div>
       </div>
     ));
@@ -52,15 +65,17 @@ function Projects() {
 
   return (
     <div className="w-full min-h-screen flex flex-col items-center gap-8 relative p-16 lg:p-28">
-        <ProjectDecoration/>
+      <ProjectDecoration />
       <h1 className="text-primary text-center w-40 text-2xl font-semibold relative pb-1 uppercase lg:text-4xl lg:w-56">
         Projects
         <span className="w-full h-[0.1rem] bg-primary absolute left-0 bottom-0">
-          <img loading="lazy"
+          <img
+            loading="lazy"
             src={triangle}
             className="w-3 absolute -left-1 top-1/2 -translate-y-1/2 rotate-90"
           />
-          <img loading="lazy"
+          <img
+            loading="lazy"
             src={triangle}
             className="w-3 absolute -right-1 top-1/2 -translate-y-1/2 -rotate-90"
           />
@@ -91,7 +106,7 @@ function Projects() {
       >
         View All
       </button>
-      <ScrollMouse mouse={mouse}/>
+      <ScrollMouse mouse={mouse} />
     </div>
   );
 }
