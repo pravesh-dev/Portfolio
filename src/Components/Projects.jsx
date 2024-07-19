@@ -50,7 +50,7 @@ function Projects() {
           </span>
         </a>
         <div className="w-full overflow-hidden rounded-lg">
-          <a href={project.link} target="_blank">
+          <a href={project.link} target="_blank" className="cursor_pointer">
             <img
               loading="lazy"
               src={project.image}
