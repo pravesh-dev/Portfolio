@@ -18,7 +18,7 @@ function Skills() {
     <div className="relative pt-5 lg:pt-0 overflow-hidden">
       <SkillsDecoration />
 
-      <div className="w-full h-[110vh] relative flex justify-between items-center mx-auto sm:w-[35rem] lg:h-screen lg:w-[60rem] xl:w-[75rem]">
+      <div className="w-full h-[110svh] relative flex justify-between items-center mx-auto sm:w-[35rem] lg:h-screen lg:w-[60rem] xl:w-[75rem]">
         <div className="w-36 flex flex-col gap-5 px-3 py-14 relative border-r-2 border-primary lg:w-[26rem] lg:py-20 lg:border-r-[2.3px] lg:pr-16">
           <img
             loading="lazy"

@@ -12,7 +12,7 @@ import ScrollMouse from "./ScrollMouse";
 
 function Hero() {
   return (
-    <div className="w-full h-screen relative overflow-y-auto">
+    <div className="w-full h-[100svh] relative overflow-y-auto">
       <HeroDecoration />
       <div id="hero-top" className="h-[70%] w-full flex relative lg:h-[80%]">
         <div className="w-[20%] h-[75%] flex flex-col gap-[0.6rem] items-center justify-end absolute z-20 left-0 lg:w-[14%] lg:h-[70%] lg:gap-4 xl:w-[10%] xl:h-[60%]">
