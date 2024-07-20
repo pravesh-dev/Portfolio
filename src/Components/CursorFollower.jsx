@@ -16,8 +16,9 @@ function CursorFollower() {
   
   return (
     <div className='pointer-events-none'>
-      <div className={`w-5 h-5 rounded-full bg-[#fd563c1c] shadow-[0_0_12px_#ff7337] fixed -translate-x-1/2 -translate-y-1/2 duration-100`} style={{ top: `${cursorPosition.top}px`, left: `${cursorPosition.left}px` }}></div>
-      {/* <div className={`w-20 h-20 rounded-full bg-[#fd563c1c] shadow-[0_0_15px_#ff7337] fixed -translate-x-1/2 -translate-y-1/2 duration-100 delay-[0.01s]`} style={{ top: `${cursorPosition.top}px`, left: `${cursorPosition.left}px` }}></div> */}
+      <div className={`w-1 h-1 rounded-full bg-[#fd563c0f] border-[0.5px] border-white/15 fixed -translate-x-1/2 -translate-y-1/2 duration-100`} style={{ top: `${cursorPosition.top}px`, left: `${cursorPosition.left}px` }}></div>
+      {/* <div className={`w-8 h-8 rounded-full bg-[#fd563c0f] border-[0.5px] border-white/15 fixed -translate-x-1/2 -translate-y-1/2 duration-100`} style={{ top: `${cursorPosition.top}px`, left: `${cursorPosition.left}px` }}></div> */}
+      <div className={`w-[27rem] h-[27rem] rounded-full bg-[#ff30101a] filter blur-2xl fixed -translate-x-1/2 -translate-y-1/2 duration-100`} style={{ top: `${cursorPosition.top}px`, left: `${cursorPosition.left}px` }}></div>
     </div>
   )
 }
