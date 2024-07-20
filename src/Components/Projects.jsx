@@ -31,7 +31,7 @@ function Projects() {
     return displayedProjects.map((project, index) => (
       <div
         key={index}
-        className="w-36 bg-[#353535] p-[0.33rem] rounded-md sm:w-56 flex flex-col justify-between sm:gap-2 sm:p-3 lg:w-64 xl:w-72"
+        className="w-36 bg-[#353535] p-[0.33rem] rounded-md sm:w-56 flex gap-1 flex-col justify-between sm:gap-2 sm:p-3 lg:w-64 xl:w-72"
       >
         <h2 className="text-white text-[0.7rem] font-semibold sm:text-[1rem] lg:text-[1.3rem]">
           {project.name}
@@ -39,6 +39,9 @@ function Projects() {
         <p className="text-neutral-500 text-[0.5rem] text-justify sm:text-[0.65rem] lg:text-[0.8rem]">
           {project.para}
         </p>
+        <div className="w-full flex flex-wrap gap-1">
+          <button className="px-2 py-[0.11rem] rounded-full bg-[#fd563c60] text-primary font-bold text-[0.6rem]">HTML</button>
+        </div>
         <a
           href={project.link}
           target="_blank"
