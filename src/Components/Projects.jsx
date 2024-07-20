@@ -40,7 +40,10 @@ function Projects() {
           {project.para}
         </p>
         <div className="w-full flex flex-wrap gap-1">
-          <button className="px-2 py-[0.11rem] rounded-full bg-[#fd563c60] text-primary font-bold text-[0.6rem]">HTML</button>
+          {/* <button className="px-2 py-[0.11rem] rounded-full bg-[#fd563c60] text-primary font-bold text-[0.6rem]">HTML</button> */}
+          {project.skills.map((skill, idx)=>{
+            return <button key={idx} className="px-2 py-[0.11rem] rounded-full bg-[#fd563c60] text-primary font-bold text-[0.6rem]">{skill}</button>
+          })}
         </div>
         <a
           href={project.link}
