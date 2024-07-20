@@ -10,7 +10,7 @@ import ScrollMouse from "./ScrollMouse";
 
 function About() {
   return (
-    <div className="w-full h-screen relative box-border sm:flex sm:flex-row sm:items-center sm:justify-center sm:gap-5 lg:gap-12 xl:gap-44">
+    <div className="w-full h-screen relative box-border pb-28 sm:flex sm:flex-row sm:items-center sm:justify-center sm:gap-5 lg:pb-0 lg:gap-12 xl:gap-44">
       <AboutDecoration/>
       <div className="w-full h-[40%] relative flex items-center px-3 sm:w-auto sm:h-auto">
         <div className="w-48 h-[11.3rem] relative sm:w-80 sm:h-[19.3rem] lg:w-[26rem] lg:h-[25.3rem]">
@@ -44,7 +44,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="w-full h-[70%] flex flex-col gap-11 -mt-28 relative z-10 px-3 sm:mt-0 sm:gap-5 sm:w-1/2 sm:h-auto md:w-[25rem] lg:w-[33rem] lg:gap-8 xl:w-[37rem]">
+      <div className="w-full flex flex-col gap-11 -mt-28 relative z-10 px-3 sm:mt-0 sm:gap-5 sm:w-1/2 sm:h-auto md:w-[25rem] lg:w-[33rem] lg:gap-8 xl:w-[37rem]">
         <div className="self-end sm:self-start">
           <h2 className="text-neutral-400 font-extralight text-[0.75rem] tracking-wider lg:text-base">
             Introduction
@@ -54,7 +54,7 @@ function About() {
             <span className="w-20 h-[0.11rem] bg-white relative left-5 lg:w-32 lg:h-[0.15rem]"></span>
           </h1>
         </div>
-        <p className="text-neutral-300 text-xs tracking-widest leading-[1.1rem] text-justify font-extralight flex flex-col gap-5 lg:text-[0.95rem] lg:leading-5 lg:tracking-[0.13rem] xl:tracking-[0.17rem] xl:leading-[1.3rem]">It was easy to spot her. All you needed to do was look at her socks. They were never a matching pair. One would be green while the other would be blue. One would reach her knee while the other barely touched her ankle. Every other part of her was perfect, but never the socks. They were her micro act of rebellion. It had been her dream for years but Dana had failed to take any action toward making it come true. There had always been a good excuse to delay or prioritize another project. As she woke, she realized she was once again at a crossroads.  <span className="w-14 h-[0.12rem] bg-white self-end mr-7 lg:h-[0.15rem] xl:mr-20"></span></p>
+        <p className="text-neutral-300 text-xs tracking-widest leading-[1.1rem] text-justify font-extralight flex flex-col gap-5 lg:text-[0.95rem] lg:leading-5 lg:tracking-[0.13rem] xl:tracking-[0.17rem] xl:leading-[1.3rem]">I'm Pravesh Saini, a frontend web developer passionate about creating intuitive and stylish websites. With expertise in HTML, CSS, JavaScript, React, Tailwind CSS, and GSAP, I focus on transforming designs into functional, user-centric experiences. From my experience at HexaDefend, I've honed my skills in delivering responsive and visually appealing web solutions, collaborating with talented team. My commitment to clean, efficient code and seamless user experiences drives my work, and I'm always eager to tackle new challenges and stay updated with the latest web development trends to continually elevate my skills. <span className="w-14 h-[0.12rem] bg-white self-end mr-7 lg:h-[0.15rem] xl:mr-20"></span></p>
         <div className="flex gap-7 pl-3 sm:gap-4 sm:justify-between md:justify-start md:gap-10 lg:gap-14">
           <HireButton/>
           <button className="resumeDownload relative border border-primary text-white text-[0.65rem] rounded-md tracking-wider font-light lg:text-base cursor_pointer active:scale-95 duration-300 overflow-hidden"><a className="text-transparent px-5 py-2 lg:px-8 cursor_pointer" href="/Resume/PRAVESH-RESUME.pdf" download='PRAVESH-RESUME' aria-label="Download Resume">Download Resume</a> <span className="inner_circle bg-primary/60 rounded-full pointer-events-none"></span></button>
