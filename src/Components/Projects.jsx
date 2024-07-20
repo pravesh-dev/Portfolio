@@ -39,9 +39,16 @@ function Projects() {
         <p className="text-neutral-500 text-[0.5rem] text-justify sm:text-[0.65rem] lg:text-[0.8rem]">
           {project.para}
         </p>
-        <div className="w-full flex flex-wrap gap-1">
-          {project.skills.map((skill, idx)=>{
-            return <button key={idx} className="px-2 py-[0.11rem] rounded-full bg-[#fd563c60] text-primary font-bold text-[0.6rem]">{skill}</button>
+        <div className="w-full flex flex-wrap gap-x-2 gap-y-1 sm:gap-2">
+          {project.skills.map((skill, idx) => {
+            return (
+              <span
+                key={idx}
+                className="px-2 py-[0.11rem] rounded-full bg-[#fd563c60] text-primary font-bold text-[0.6rem] sm:text-[0.7rem] sm:px-3 lg:text-[0.85rem]"
+              >
+                {skill}
+              </span>
+            );
           })}
         </div>
         <a
