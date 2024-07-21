@@ -30,11 +30,11 @@
     height: 100%;
     background: #ff2403;
     position: absolute;
-    left: 0%;
-    top: -100%;
+    top: 0%;
+    left: 100%;
     z-index: 1;
     transition: all ease-in-out 0.4s;
 }
 .nav_items:hover::after{
-    top: 0;
+    left: 0;
 }
