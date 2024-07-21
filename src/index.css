@@ -21,10 +21,10 @@ body {
   height: 100%;
   position: relative;
   background-color: #1a1a1a;
-  cursor: url('/cursor.png'),auto;
+  cursor: url('/cursor1.png'),auto;
 }
 .cursor_pointer{
-  cursor: url('/cursorHand.png'),pointer;
+  cursor: url('/cursorHand1.png'),pointer;
 }
 .skills_para{
   @apply text-[0.6rem] text-neutral-300 font-extralight tracking-[0.05rem] leading-[0.8rem] text-justify lg:text-[0.8rem] lg:tracking-[0.12rem] lg:leading-[1rem]
