@@ -31,7 +31,7 @@ function Projects() {
     return displayedProjects.map((project, index) => (
       <div
         key={index}
-        className="w-36 bg-[#353535] p-[0.33rem] rounded-md sm:w-56 flex gap-1 flex-col justify-between sm:gap-2 sm:p-3 lg:w-64 xl:w-72 lg:hover:scale-[1.14] lg:hover:rotate-3 duration-300 lg:hover:bg-[#202020]"
+        className="w-36 bg-[#353535] p-[0.33rem] rounded-md sm:w-56 flex gap-1 flex-col justify-between sm:gap-2 sm:p-3 lg:w-64 xl:w-72 lg:hover:scale-[1.12] lg:hover:rotate-3 duration-300 lg:hover:bg-[#202020]"
       >
         <h2 className="text-white text-[0.7rem] font-semibold sm:text-[1rem] lg:text-[1.3rem]">
           {project.name}
