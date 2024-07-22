@@ -78,7 +78,7 @@ function Header() {
         </a>
       </header>
       <div
-        className={`w-full h-screen bg-[#111] fixed z-[100] duration-300 top-0 ${
+        className={`w-full h-screen bg-[#111] fixed z-[100] duration-300 md:hidden top-0 ${
           activeNav ? "left-0" : "-left-full"
         } flex flex-col gap-10 px-3 py-5`}
       >
