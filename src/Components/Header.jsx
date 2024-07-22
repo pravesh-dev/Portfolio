@@ -1,16 +1,24 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import bar from "../assets/images/icon/bar.svg";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import { IoClose } from "react-icons/io5";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 function Header() {
   const [activeNav, setActiveNav] = useState(false);
   const [activeTab, setActiveTab] = useState("home");
-
+  const headerRef = useRef(null);
+  useGSAP(()=>{
+    gsap.from(headerRef.current,{
+      y: '-100%',
+      duration: 0.5,
+    })
+  })
   return (
     <>
-      <header className="w-full py-5  flex items-center justify-between px-7 absolute top-0 left-0 z-[99] lg:px-16">
+      <header ref={headerRef} className="w-full py-5  flex items-center justify-between px-7 absolute top-0 left-0 z-[99] lg:px-16">
         <Link to="/" className="font-yellowTail text-white text-xl lg:text-2xl">
           Pravesh
         </Link>
@@ -77,7 +85,7 @@ function Header() {
           Let's Talk
         </a>
       </header>
-      <div
+      <nav
         className={`w-full h-screen bg-[#111] fixed z-[100] duration-300 md:hidden top-0 ${
           activeNav ? "left-0" : "-left-full"
         } flex flex-col gap-10 px-3 py-5`}
@@ -148,7 +156,7 @@ function Header() {
             Resume
           </Link>
         </div>
-      </div>
+      </nav>
     </>
   );
 }
