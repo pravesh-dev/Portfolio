@@ -13,7 +13,7 @@ function Header() {
   useGSAP(()=>{
     gsap.from(headerRef.current,{
       y: '-100%',
-      duration: 0.5,
+      duration: 0.8,
     })
   })
   return (
