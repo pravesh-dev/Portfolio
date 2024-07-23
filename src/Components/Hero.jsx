@@ -17,8 +17,19 @@ function Hero() {
   useGSAP(()=>{
     gsap.from('.socialIcons', {
       left: '-100%',
+      opacity: 0,
       stagger: 0.1,
+    });
+    gsap.from('.bgImg', {
+      scale: 1.3,
+      duration: 1
+    });
+    gsap.from('.myImg, .myImgSh', {
+      y: 100,
+      opacity: 0,
+      duration: 0.7
     })
+
   }, {scope: componentRef})
   return (
     <div ref={componentRef} className="w-full h-[100svh] relative overflow-y-auto">
@@ -87,16 +98,16 @@ function Hero() {
             <img
               loading="lazy"
               src={imageBg}
-              className="w-44 z-10 absolute bottom-0 left-1/2 -translate-x-1/2 lg:w-64 lg:-bottom-5"
+              className="bgImg w-44 z-10 absolute bottom-0 left-1/2 -translate-x-1/2 lg:w-64 lg:-bottom-5"
               alt=""
             />
             <img
               loading="lazy"
               src={myImage}
-              className="w-52 z-20 absolute bottom-[10%] left-1/2 -translate-x-[48%] lg:w-[19rem] lg:bottom-[10%]"
+              className="myImg w-52 z-20 absolute bottom-[10%] left-1/2 -translate-x-[48%] lg:w-[19rem] lg:bottom-[10%]"
               alt=""
             />
-            <div className="w-44 h-24 rounded-b-[5.5rem] bg-gradient-to-t from-[#1a1a1a] from-50% to-transparent z-30 absolute bottom-0 left-1/2 -translate-x-1/2 lg:w-64"></div>
+            <div className="myImgSh w-44 h-24 rounded-b-[5.5rem] bg-gradient-to-t from-[#1a1a1a] from-50% to-transparent z-30 absolute bottom-0 left-1/2 -translate-x-1/2 lg:w-64"></div>
 
             <div className="w-16 h-[1.4rem] flex justify-center items-center gap-1 absolute top-[20%] -left-[10%] z-50 bg-white/30 rounded-[2.7px] lg:w-24 lg:h-[1.9rem]">
               <h3 className="text-white font-bold text-[0.5rem] lg:text-[0.7rem]">
