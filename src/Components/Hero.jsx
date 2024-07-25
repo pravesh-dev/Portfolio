@@ -16,24 +16,28 @@ function Hero() {
   const componentRef = useRef();
   useGSAP(()=>{
     const tl = gsap.timeline();
-    tl.from('.socialIcons', {
-      left: '-100%',
-      stagger: 0.1,
-    });
-    tl.from('.bgImg', {
-      scale: 1.3,
-      opacity: 0,
-      duration: 0.4
-    });
-    tl.from('.myImg, .myImgSh', {
-      y: 100,
-      opacity: 0,
-      duration: 1
-    })
+    // tl.from('.socialIcons', {
+    //   left: '-100%',
+    //   stagger: 0.1,
+    // });
+    // tl.from('.bgImg', {
+    //   scale: 1.3,
+    //   opacity: 0,
+    //   duration: 0.4
+    // });
+    // tl.from('.myImg, .myImgSh', {
+    //   y: 100,
+    //   opacity: 0,
+    //   duration: 1
+    // })
     tl.from('.popCards', {
       scale: 0,
       duration: 0.6,
       stagger: 0.3
+    })
+    tl.from('.nameBox', {
+      height: '0',
+      duration: 1
     })
 
   }, {scope: componentRef, dependencies: []})
@@ -133,11 +137,11 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className="w-full absolute bottom-7 left-1/2 -translate-x-1/2 lg:bottom-0">
-          <h1 className=" text-center text-primary text-[2.1rem] font-monseret font-extrabold leading-7 xl:text-[3rem] lg:mb-3">
+        <div className="nameBox w-full h-14 absolute bottom-7 left-1/2 -translate-x-1/2 lg:bottom-0 overflow-hidden flex flex-col justify-center items-center lg:h-20">
+          <h1 className="text-center text-primary text-[2.1rem] font-monseret font-extrabold leading-7 xl:text-[3rem] lg:mb-3">
             Pravesh <span className="stroke-text">Sa</span>ini
           </h1>
-          <h2 className="w-full text-center uppercase text-white text-sm font-monseret font-bold xl:text-[1.3rem]">
+          <h2 className="text-center uppercase text-white text-sm font-monseret font-bold xl:text-[1.3rem]">
             frontend <span className="stroke-text">developer</span>
           </h2>
         </div>
