@@ -16,20 +16,20 @@ function Hero() {
   const componentRef = useRef();
   useGSAP(()=>{
     const tl = gsap.timeline();
-    // tl.from('.socialIcons', {
-    //   left: '-100%',
-    //   stagger: 0.1,
-    // });
-    // tl.from('.bgImg', {
-    //   scale: 1.3,
-    //   opacity: 0,
-    //   duration: 0.4
-    // });
-    // tl.from('.myImg, .myImgSh', {
-    //   y: 100,
-    //   opacity: 0,
-    //   duration: 1
-    // })
+    tl.from('.socialIcons', {
+      left: '-100%',
+      stagger: 0.1,
+    });
+    tl.from('.bgImg', {
+      scale: 1.3,
+      opacity: 0,
+      duration: 0.4
+    });
+    tl.from('.myImg, .myImgSh', {
+      y: 100,
+      opacity: 0,
+      duration: 1
+    })
     tl.from('.popCards', {
       scale: 0,
       duration: 0.6,
