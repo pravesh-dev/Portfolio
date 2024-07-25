@@ -15,22 +15,24 @@ import gsap from "gsap";
 function Hero() {
   const componentRef = useRef();
   useGSAP(()=>{
-    gsap.from('.socialIcons', {
+    const tl = gsap.timeline();
+    tl.from('.socialIcons', {
       left: '-100%',
-      opacity: 0,
+      // opacity: 0,
       stagger: 0.1,
     });
-    gsap.from('.bgImg', {
+    tl.from('.bgImg', {
       scale: 1.3,
-      duration: 1
+      opacity: 0,
+      duration: 0.4
     });
-    gsap.from('.myImg, .myImgSh', {
+    tl.from('.myImg, .myImgSh', {
       y: 100,
       opacity: 0,
-      duration: 0.7
+      duration: 1
     })
 
-  }, {scope: componentRef})
+  }, {scope: componentRef, dependencies: []})
   return (
     <div ref={componentRef} className="w-full h-[100svh] relative overflow-y-auto">
       <HeroDecoration />
@@ -109,7 +111,7 @@ function Hero() {
             />
             <div className="myImgSh w-44 h-24 rounded-b-[5.5rem] bg-gradient-to-t from-[#1a1a1a] from-50% to-transparent z-30 absolute bottom-0 left-1/2 -translate-x-1/2 lg:w-64"></div>
 
-            <div className="w-16 h-[1.4rem] flex justify-center items-center gap-1 absolute top-[20%] -left-[10%] z-50 bg-white/30 rounded-[2.7px] lg:w-24 lg:h-[1.9rem]">
+            <div className=" w-16 h-[1.4rem] flex justify-center items-center gap-1 absolute top-[20%] -left-[10%] z-50 bg-white/30 rounded-[2.7px] lg:w-24 lg:h-[1.9rem]">
               <h3 className="text-white font-bold text-[0.5rem] lg:text-[0.7rem]">
                 20+
               </h3>
@@ -117,7 +119,7 @@ function Hero() {
                 Completed <br /> <span className="text-primary">Projects</span>
               </p>
             </div>
-            <div className="w-16 h-[1.4rem] flex justify-center items-center gap-1 absolute top-[51%] left-[80%] z-50 bg-white/30 rounded-[2.7px] lg:w-24 lg:h-[1.9rem]">
+            <div className=" w-16 h-[1.4rem] flex justify-center items-center gap-1 absolute top-[51%] left-[80%] z-50 bg-white/30 rounded-[2.7px] lg:w-24 lg:h-[1.9rem]">
               <h3 className="text-white font-bold text-[0.5rem] lg:text-[0.7rem]">
                 1+
               </h3>
