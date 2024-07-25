@@ -18,7 +18,6 @@ function Hero() {
     const tl = gsap.timeline();
     tl.from('.socialIcons', {
       left: '-100%',
-      // opacity: 0,
       stagger: 0.1,
     });
     tl.from('.bgImg', {
@@ -30,6 +29,11 @@ function Hero() {
       y: 100,
       opacity: 0,
       duration: 1
+    })
+    tl.from('.popCards', {
+      scale: 0,
+      duration: 0.6,
+      stagger: 0.3
     })
 
   }, {scope: componentRef, dependencies: []})
@@ -111,7 +115,7 @@ function Hero() {
             />
             <div className="myImgSh w-44 h-24 rounded-b-[5.5rem] bg-gradient-to-t from-[#1a1a1a] from-50% to-transparent z-30 absolute bottom-0 left-1/2 -translate-x-1/2 lg:w-64"></div>
 
-            <div className=" w-16 h-[1.4rem] flex justify-center items-center gap-1 absolute top-[20%] -left-[10%] z-50 bg-white/30 rounded-[2.7px] lg:w-24 lg:h-[1.9rem]">
+            <div className="popCards w-16 h-[1.4rem] flex justify-center items-center gap-1 absolute top-[20%] -left-[10%] z-50 bg-white/30 rounded-[2.7px] lg:w-24 lg:h-[1.9rem]">
               <h3 className="text-white font-bold text-[0.5rem] lg:text-[0.7rem]">
                 20+
               </h3>
@@ -119,7 +123,7 @@ function Hero() {
                 Completed <br /> <span className="text-primary">Projects</span>
               </p>
             </div>
-            <div className=" w-16 h-[1.4rem] flex justify-center items-center gap-1 absolute top-[51%] left-[80%] z-50 bg-white/30 rounded-[2.7px] lg:w-24 lg:h-[1.9rem]">
+            <div className="popCards w-16 h-[1.4rem] flex justify-center items-center gap-1 absolute top-[51%] left-[80%] z-50 bg-white/30 rounded-[2.7px] lg:w-24 lg:h-[1.9rem]">
               <h3 className="text-white font-bold text-[0.5rem] lg:text-[0.7rem]">
                 1+
               </h3>
