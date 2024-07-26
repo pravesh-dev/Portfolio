@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import imageBg from "../assets/images/image-bg.svg";
 import myImage from "../assets/images/myImage.svg";
 import mouse from "../assets/images/icon/scrollMouse.svg";

@@ -5,13 +5,13 @@ function HireButton() {
     <a href="mailto:praveshsaini.dev@gmail.com" className="hireButton cursor_pointer">
       H I R E
       <div id="clip">
-        <div id="leftTop" class="corner"></div>
-        <div id="rightBottom" class="corner"></div>
-        <div id="rightTop" class="corner"></div>
-        <div id="leftBottom" class="corner"></div>
+        <div id="leftTop" className="corner"></div>
+        <div id="rightBottom" className="corner"></div>
+        <div id="rightTop" className="corner"></div>
+        <div id="leftBottom" className="corner"></div>
       </div>
-      <span id="rightArrow" class="arrow"></span>
-      <span id="leftArrow" class="arrow"></span>
+      <span id="rightArrow" className="arrow"></span>
+      <span id="leftArrow" className="arrow"></span>
     </a>
   );
 }
