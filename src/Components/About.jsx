@@ -9,25 +9,36 @@ import HireButton from "./HireButton";
 import ScrollMouse from "./ScrollMouse";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function About() {
 
   const componentRef = useRef(null)
   useGSAP(()=>{
-    const tl = gsap.timeline();
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: componentRef.current,
+        start: "15% center",
+        end: "center center",
+        scrub: true,
+        markers: true,
+      }
+    });
     tl.from('.imgBg', {
       y: -100,
-      duration: 0.5,
+      // duration: 0.5,
       opacity: 0,
     }, 'a');
     tl.from('.img', {
       y: 100,
-      duration: 0.5,
+      // duration: 0.5,
       opacity: 0,
     }, 'a');
     tl.from('.imgRight', {
       x: 100,
-      duration: 0.5,
+      // duration: 0.5,
       opacity: 0,
     });
     tl.from('.popCards', {
@@ -42,12 +53,12 @@ function About() {
     tl.from('.btn1', {
       x: -100,
       opacity: 0,
-      duration: 1
+      // duration: 1
     }, 'b');
     tl.to('.resumeDownload', {
       x: 0,
       opacity: '1',
-      duration: 1
+      // duration: 1
     }, 'b')
   })
 
