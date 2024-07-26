@@ -12,9 +12,12 @@
     content: 'About';
 }
 .nav_items:nth-child(3)::before{
-    content: 'Projects';
+    content: 'Skills';
 }
 .nav_items:nth-child(4)::before{
+    content: 'Projects';
+}
+.nav_items:nth-child(5)::before{
     content: 'Resume';
 }
 .nav_items:before{

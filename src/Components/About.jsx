@@ -1,5 +1,5 @@
-import React, { useRef } from "react";
-import './About.css'
+import React, { useRef, useEffect } from "react";
+import './About.css';
 import AboutDecoration from "./AboutDecoration";
 import mouse from "../assets/images/icon/scrollMouse.svg";
 import aboutBg from "../assets/images/About/aboutBg.svg";
@@ -7,63 +7,66 @@ import aboutBgRight from "../assets/images/About/aboutBgRight.svg";
 import myImage from "../assets/images/About/myImage.svg";
 import HireButton from "./HireButton";
 import ScrollMouse from "./ScrollMouse";
-import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function About() {
+  const componentRef = useRef(null);
 
-  const componentRef = useRef(null)
-  useGSAP(()=>{
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: componentRef.current,
-        start: "15% center",
-        end: "center center",
-        scrub: true,
-        markers: true,
-      }
-    });
-    tl.from('.imgBg', {
-      y: -100,
-      // duration: 0.5,
-      opacity: 0,
-    }, 'a');
-    tl.from('.img', {
-      y: 100,
-      // duration: 0.5,
-      opacity: 0,
-    }, 'a');
-    tl.from('.imgRight', {
-      x: 100,
-      // duration: 0.5,
-      opacity: 0,
-    });
-    tl.from('.popCards', {
-      scale: 0,
-      stagger: 0.2,
-    });
-    tl.from('.aboutContent', {
-      y: 100,
-      stagger: 0.3,
-      opacity: 0,
-    });
-    tl.from('.btn1', {
-      x: -100,
-      opacity: 0,
-      // duration: 1
-    }, 'b');
-    tl.to('.resumeDownload', {
-      x: 0,
-      opacity: '1',
-      // duration: 1
-    }, 'b')
-  })
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: componentRef.current,
+          start: "15% center",
+          end: "center center",
+          scrub: true
+        }
+      });
+
+      tl.from('.imgBg', {
+        y: -100,
+        duration: 0.5,
+        opacity: 0,
+      }, 'a');
+      tl.from('.img', {
+        y: 100,
+        duration: 0.5,
+        opacity: 0,
+      }, 'a');
+      tl.from('.imgRight', {
+        x: 100,
+        duration: 0.5,
+        opacity: 0,
+      });
+      tl.from('.popCards', {
+        scale: 0,
+        stagger: 0.2,
+      });
+      tl.from('.aboutContent', {
+        y: 100,
+        stagger: 0.3,
+        opacity: 0,
+      });
+      tl.from('.btn1', {
+        x: -100,
+        opacity: 0,
+        duration: 1
+      }, 'b');
+      tl.to('.resumeDownload', {
+        x: 0,
+        opacity: '1',
+        duration: 1
+      }, 'b');
+    }, componentRef);
+
+    return () => ctx.revert();
+  }, []);
 
   return (
-    <div ref={componentRef} className="w-full h-[100svh] relative box-border sm:flex sm:flex-row sm:items-center sm:justify-center sm:gap-5 lg:gap-12 xl:gap-44">
+    <div ref={componentRef} id="about" className="w-full h-[100svh] relative box-border sm:flex sm:flex-row sm:items-center sm:justify-center sm:gap-5 lg:gap-12 xl:gap-44 overflow-x-hidden">
       <AboutDecoration/>
       <div className="w-full h-[40%] relative flex items-center px-3 sm:w-auto sm:h-auto">
         <div className="w-48 h-[11.3rem] relative sm:w-80 sm:h-[19.3rem] lg:w-[26rem] lg:h-[25.3rem]">

@@ -15,7 +15,7 @@ import ScrollMouse from "./ScrollMouse";
 
 function Skills() {
   return (
-    <div className="relative pt-5 lg:pt-0 overflow-hidden">
+    <div id="skills" className="relative pt-5 lg:pt-0 overflow-hidden">
       <SkillsDecoration />
 
       <div className="w-full h-[110svh] relative flex justify-between items-center mx-auto sm:w-[35rem] lg:h-screen lg:w-[60rem] xl:w-[75rem]">

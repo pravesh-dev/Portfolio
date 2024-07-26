@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import bar from "../assets/images/icon/bar.svg";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import "./Header.css";
 import { IoClose } from "react-icons/io5";
 import { useGSAP } from "@gsap/react";
@@ -18,8 +18,8 @@ function Header() {
   })
   return (
     <>
-      <header ref={headerRef} className="w-full py-5  flex items-center justify-between px-7 absolute top-0 left-0 z-[99] lg:px-16">
-        <Link to="/" className="font-yellowTail text-white text-xl lg:text-2xl">
+      <header ref={headerRef} className="w-full py-5  flex items-center justify-between px-7 fixed top-0 left-0 z-[99] lg:px-16">
+        <Link to="home" spy={true} smooth={true} offset={0} duration={500} className="font-yellowTail text-white text-xl lg:text-2xl">
           Pravesh
         </Link>
         <img
@@ -33,7 +33,8 @@ function Header() {
         />
         <nav className="gap-5 lg:gap-12 hidden md:flex">
           <Link
-            to="/"
+            to="home"
+            spy={true} smooth={true} offset={0} duration={500}
             className={`nav_items text-xs font-normal tracking-wider lg:text-base cursor_pointer ${
               activeTab === "home" ? "bg-[#ff2403]" : ""
             }`}
@@ -44,7 +45,8 @@ function Header() {
             Home
           </Link>
           <Link
-            to="/about"
+            to="about"
+            spy={true} smooth={true} offset={50} duration={500}
             className={`nav_items text-xs font-normal tracking-wider lg:text-base cursor_pointer ${
               activeTab === "about" ? "bg-[#ff2403]" : ""
             }`}
@@ -55,7 +57,20 @@ function Header() {
             About
           </Link>
           <Link
-            to="/projects"
+            to="skills"
+            spy={true} smooth={true} offset={50} duration={500}
+            className={`nav_items text-xs font-normal tracking-wider lg:text-base cursor_pointer ${
+              activeTab === "skills" ? "bg-[#ff2403]" : ""
+            }`}
+            onClick={() => {
+              setActiveTab("skills");
+            }}
+          >
+            About
+          </Link>
+          <Link
+            to="projects"
+            spy={true} smooth={true} offset={0} duration={500}
             className={`nav_items text-xs font-normal tracking-wider lg:text-base cursor_pointer ${
               activeTab === "projects" ? "bg-[#ff2403]" : ""
             }`}
@@ -67,6 +82,7 @@ function Header() {
           </Link>
           <Link
             to="resume"
+            spy={true} smooth={true} offset={50} duration={500}
             className={`nav_items text-xs font-normal tracking-wider lg:text-base cursor_pointer ${
               activeTab === "resume" ? "bg-[#ff2403]" : ""
             }`}
@@ -92,7 +108,8 @@ function Header() {
       >
         <div className="flex justify-between items-center">
           <Link
-            to="/"
+            to="home"
+            spy={true} smooth={true} offset={0} duration={500}
             className="font-yellowTail text-white text-3xl tracking-wide"
           >
             Pravesh
@@ -108,7 +125,8 @@ function Header() {
         </div>
         <div className="flex flex-col gap-3">
           <Link
-            to="/"
+            to="home"
+            spy={true} smooth={true} offset={0} duration={500}
             className={`text-white text-sm font-semibold tracking-widest py-3 px-3 rounded-sm lg:text-base cursor_pointer ${
               activeTab === "home" ? "bg-[#ff250322]" : ""
             }`}
@@ -120,7 +138,8 @@ function Header() {
             Home
           </Link>
           <Link
-            to="/about"
+            to="about"
+            spy={true} smooth={true} offset={0} duration={500}
             className={`text-white text-sm font-semibold tracking-widest py-3 px-3 rounded-sm lg:text-base cursor_pointer ${
               activeTab === "about" ? "bg-[#ff250322]" : ""
             }`}
@@ -132,7 +151,21 @@ function Header() {
             About
           </Link>
           <Link
-            to="/projects"
+            to="skills"
+            spy={true} smooth={true} offset={0} duration={500}
+            className={`text-white text-sm font-semibold tracking-widest py-3 px-3 rounded-sm lg:text-base cursor_pointer ${
+              activeTab === "skills" ? "bg-[#ff250322]" : ""
+            }`}
+            onClick={() => {
+              setActiveTab("skills");
+              setActiveNav(false)
+            }}
+          >
+            About
+          </Link>
+          <Link
+            to="projects"
+            spy={true} smooth={true} offset={0} duration={500}
             className={`text-white text-sm font-semibold tracking-widest py-3 px-3 rounded-sm lg:text-base cursor_pointer ${
               activeTab === "projects" ? "bg-[#ff250322]" : ""
             }`}
@@ -145,6 +178,7 @@ function Header() {
           </Link>
           <Link
             to="resume"
+            spy={true} smooth={true} offset={0} duration={500}
             className={`text-white text-sm font-semibold tracking-widest py-3 px-3 rounded-sm lg:text-base cursor_pointer ${
               activeTab === "resume" ? "bg-[#ff250322]" : ""
             }`}
