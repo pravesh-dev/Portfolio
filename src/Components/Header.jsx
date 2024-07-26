@@ -70,7 +70,7 @@ function Header() {
           </Link>
           <Link
             to="projects"
-            spy={true} smooth={true} offset={0} duration={500}
+            spy={true} smooth={true} offset={-220} duration={500}
             className={`nav_items text-xs font-normal tracking-wider lg:text-base cursor_pointer ${
               activeTab === "projects" ? "bg-[#ff2403]" : ""
             }`}
@@ -82,7 +82,7 @@ function Header() {
           </Link>
           <Link
             to="resume"
-            spy={true} smooth={true} offset={50} duration={500}
+            spy={true} smooth={true} offset={-180} duration={500}
             className={`nav_items text-xs font-normal tracking-wider lg:text-base cursor_pointer ${
               activeTab === "resume" ? "bg-[#ff2403]" : ""
             }`}
