@@ -39,10 +39,19 @@ function Hero() {
       height: '0',
       duration: 1
     })
+    tl.from('.heroPara', {
+      opacity: 0,
+      duration: 0.4,
+    })
+    tl.from('.contacts', {
+      // x: 50,
+      stagger: 0.2,
+      opacity: 0
+    })
 
-  }, {scope: componentRef, dependencies: []})
+  }, {scope: componentRef})
   return (
-    <div ref={componentRef} className="w-full h-[100svh] relative overflow-y-auto">
+    <div ref={componentRef} className="w-full h-[100svh] relative overflow-y-auto overflow-x-hidden">
       <HeroDecoration />
       <div id="hero-top" className="h-[70%] w-full flex relative lg:h-[80%]">
         <div className="w-[20%] h-[75%] flex flex-col gap-[0.6rem] items-center justify-end absolute z-20 left-0 lg:w-[14%] lg:h-[70%] lg:gap-4 xl:w-[10%] xl:h-[60%]">
@@ -50,7 +59,7 @@ function Hero() {
             href="https://www.instagram.com/dev_pravesh/"
             target="_blank"
             rel="noopener noreferrer"
-            className="socialIcons relative duration-300 hover:rotate-6 hover:scale-125 cursor_pointer"
+            className="socialIcons relative duration-300 hover:rotate-6 hover:scale-125 cursor_pointer inline-block"
           >
             <span className="icon text-lg text-primary lg:text-2xl duration-300 hover:text-[#F71635]">
               <RiInstagramFill />
@@ -64,7 +73,7 @@ function Hero() {
             href="whatsapp://send?phone=919991831473"
             target="_blank"
             rel="noopener noreferrer"
-            className="socialIcons relative duration-300 hover:rotate-6 hover:scale-125 cursor_pointer"
+            className="socialIcons relative duration-300 hover:rotate-6 hover:scale-125 cursor_pointer inline-block"
           >
             <span className="icon text-lg text-primary lg:text-2xl duration-300 hover:text-[#009A11]">
               <IoLogoWhatsapp />
@@ -78,7 +87,7 @@ function Hero() {
             href="https://www.linkedin.com/in/pravesh-saini-b7ab39280/"
             target="_blank"
             rel="noopener noreferrer"
-            className="socialIcons relative duration-300 hover:rotate-6 hover:scale-125 cursor_pointer"
+            className="socialIcons relative duration-300 hover:rotate-6 hover:scale-125 cursor_pointer inline-block"
           >
             <span className="icon text-lg text-primary lg:text-2xl duration-300 hover:text-[#2864AA]">
               <FaLinkedin />
@@ -92,7 +101,7 @@ function Hero() {
             href="https://github.com/pravesh-dev"
             target="_blank"
             rel="noopener noreferrer"
-            className={`socialIcons relative mb-8 lg:mb-14 duration-300 hover:rotate-6 hover:scale-125 cursor_pointer`}
+            className={`socialIcons relative mb-8 lg:mb-14 duration-300 hover:rotate-6 hover:scale-125 cursor_pointer inline-block`}
           >
             <span className="icon text-lg text-primary lg:text-2xl duration-300 hover:text-[#010101]">
               <FaGithub />
@@ -150,33 +159,33 @@ function Hero() {
         id="hero-bottom"
         className="w-full h-[30%] flex justify-between pt-8 pl-11 pr-8 absolute lg:h-[27%] lg:-mt-20 lg:pr-20 lg:pl-24"
       >
-        <p className="w-28 text-[0.4rem] text-white/60 font-extralight text-justify mt-3 md:text-[0.55rem] md:w-44 lg:text-[0.5rem] lg:mt-7">
+        <p className="heroPara w-28 text-[0.4rem] text-white/60 font-extralight text-justify mt-3 md:text-[0.55rem] md:w-44 lg:text-[0.65rem] lg:w-48 lg:mt-7">
           Debbie put her hand into the hole, sliding her hand down as far as her
           arm could reach. Lorem ipsum dolor sit amet Lorem, ipsum.
         </p>
         <div className="w-[7.2rem]">
-          <h3 className="text-[0.6rem] text-white -mb-2 mt-1 lg:text-[0.9rem]">
+          <h3 className="contacts text-[0.6rem] text-white -mb-2 mt-1 lg:text-[0.9rem]">
             Email
           </h3>
           <a
-            className="text-[0.5rem] text-white/50 lg:text-[0.6rem] cursor_pointer"
+            className="contacts text-[0.5rem] text-white/50 lg:text-[0.6rem] cursor_pointer inline-block"
             href="mailto:praveshsaini.dev@gmail.com"
           >
             praveshsaini.dev@gmail.com
           </a>
-          <h3 className="text-[0.6rem] text-white -mb-2 mt-1 lg:text-[0.9rem]">
+          <h3 className="contacts text-[0.6rem] text-white -mb-2 mt-1 lg:text-[0.9rem]">
             Phone
           </h3>
           <a
-            className="text-[0.5rem] text-white/50 lg:text-[0.6rem] cursor_pointer"
+            className="contacts text-[0.5rem] text-white/50 lg:text-[0.6rem] cursor_pointer inline-block"
             href="tel:+9991831473"
           >
             9991831473
           </a>
-          <h3 className="text-[0.6rem] text-white -mb-2 mt-1 lg:text-[0.9rem]">
+          <h3 className="contacts text-[0.6rem] text-white -mb-2 mt-1 lg:text-[0.9rem]">
             Location
           </h3>
-          <p className="text-[0.5rem] text-white/50 mt-2 lg:text-[0.6rem]">
+          <p className="contacts text-[0.5rem] text-white/50 mt-2 lg:text-[0.6rem]">
             123001 Niwaz Nagar <br /> Haryana India
           </p>
         </div>
