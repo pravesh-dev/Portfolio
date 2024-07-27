@@ -17,7 +17,14 @@ function About() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      const tl = gsap.timeline();
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: componentRef.current,
+          start: "15% center",
+          end: "center center",
+          scrub: true,
+        },
+      });
 
       tl.from(
         ".imgBg",
