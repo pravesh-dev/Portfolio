@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import './Skills.css'
 import SkillsDecoration from "./SkillsDecoration";
 
@@ -12,10 +12,39 @@ import lineRightTopBig from "../assets/images/Skills/lineRightTopBig.svg";
 import lineRightBottom from "../assets/images/Skills/lineRightBottom.svg";
 import lineRightBottomBig from "../assets/images/Skills/lineRightBottomBig.svg";
 import ScrollMouse from "./ScrollMouse";
+import gsap from "gsap";
 
 function Skills() {
+  const componentRef = useRef(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: componentRef.current,
+          start: "15% center",
+          end: "center center",
+          scrub: true,
+          markers: true,
+        },
+      });
+
+      // tl.from(
+      //   ".imgBg",
+      //   {
+      //     y: -100,
+      //     duration: 1,
+      //     opacity: 0,
+      //   },
+      //   "a"
+      // );
+    }, componentRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <div id="skills" className="relative pt-5 lg:pt-0 overflow-hidden">
+    <div id="skills" ref={componentRef} className="relative pt-5 lg:pt-0 overflow-hidden">
       <SkillsDecoration />
 
       <div className="w-full h-[110svh] relative flex justify-between items-center mx-auto sm:w-[35rem] lg:h-screen lg:w-[60rem] xl:w-[75rem]">
