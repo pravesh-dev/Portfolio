@@ -29,15 +29,10 @@ function Skills() {
         },
       });
 
-      // tl.from(
-      //   ".imgBg",
-      //   {
-      //     y: -100,
-      //     duration: 1,
-      //     opacity: 0,
-      //   },
-      //   "a"
-      // );
+      tl.from(".skills_heading", {
+          y: -100,
+          stagger: 0.3,
+        });
     }, componentRef);
 
     return () => ctx.revert();
