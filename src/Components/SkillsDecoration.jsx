@@ -7,7 +7,7 @@ import longCurveBig from "../assets/images/Skills/longCurveBig.svg";
 
 function SkillsDecoration() {
   return (
-    <div data-scroll-section className="w-full h-full absolute overflow-hidden">
+    <div className="w-full h-full absolute overflow-hidden">
       {/* Small Circles */}
       <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[7%] left-[35%] lg:w-[0.5rem] lg:h-[0.5rem] lg:left-[41%]"></span>
       <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[40%] left-[90%] lg:w-[0.5rem] lg:h-[0.5rem] lg:top-[9%] lg:left-[91%]"></span>

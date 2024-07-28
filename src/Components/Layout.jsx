@@ -6,7 +6,7 @@ import useLocoscroll from "./UseLocoscroll";
 
 function Layout() {
   const [preLoader, setPreloader] = useState(true);
-  // useLocoscroll(!preLoader);
+  useLocoscroll(!preLoader);
 
   const [timer, setTimer] = useState(3);
   const id = useRef(null);
