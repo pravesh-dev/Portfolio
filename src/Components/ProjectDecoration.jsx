@@ -6,7 +6,7 @@ import roundCurveRight from '../assets/images/Projects/roundCurveRight.svg'
 
 function ProjectDecoration() {
   return (
-    <div className="w-full h-full absolute overflow-hidden top-0 z-10 pointer-events-none">
+    <div data-scroll-section className="w-full h-full absolute overflow-hidden top-0 z-10 pointer-events-none">
       {/* Small Circles */}
       <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[14%] left-[10%] lg:w-[0.5rem] lg:h-[0.5rem]"></span>
       <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[28%] left-[2%] lg:w-[0.5rem] lg:h-[0.5rem] lg:top-[14%] lg:left-[37%]"></span>

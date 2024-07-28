@@ -6,7 +6,7 @@ import aboutShortCurve from "../assets/images/About/aboutShortCurve.svg";
 
 function AboutDecoration() {
   return (
-    <div className="w-full h-full absolute overflow-hidden">
+    <div data-scroll-section className="w-full h-full absolute overflow-hidden">
       {/* Small Circles */}
       <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[50%] left-[1%] sm:top-[30%] sm:left-[8%] lg:w-[0.5rem] lg:h-[0.5rem] lg:top-[60%] lg:left-[98.5%] xl:top-[53%]"></span>
       <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[94%] left-[33%] lg:w-[0.5rem] lg:h-[0.5rem]"></span>

@@ -3,7 +3,7 @@ import './ScrollMouse.css'
 
 function ScrollMouse(props) {
   return (
-    <div className="w-full absolute bottom-3  flex flex-col justify-center items-center lg:bottom-1">
+    <div data-scroll-section className="w-full absolute bottom-3  flex flex-col justify-center items-center lg:bottom-1">
       <img
         loading="lazy"
         className="mouseImage w-[0.6rem] lg:w-[0.9rem]"

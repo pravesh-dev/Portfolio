@@ -18,7 +18,7 @@ function Header() {
   })
   return (
     <>
-      <header ref={headerRef} className="w-full py-5  flex items-center justify-between px-7 absolute top-0 left-0 z-[99] lg:px-16">
+      <header ref={headerRef} className="w-full py-5  flex items-center justify-between px-7 absolute top-0 left-0 z-[99] lg:px-16" data-scroll-section>
         <Link to="/" className="font-yellowTail text-white text-xl lg:text-2xl">
           Pravesh
         </Link>
