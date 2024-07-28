@@ -39,7 +39,7 @@ function Skills() {
   }, []);
 
   return (
-    <div id="skills" ref={componentRef} className="relative pt-5 lg:pt-0 overflow-hidden">
+    <section data-scroll-section id="skills" ref={componentRef} className="relative pt-5 lg:pt-0 overflow-hidden">
       <SkillsDecoration />
 
       <div className="w-full h-[110svh] relative flex justify-between items-center mx-auto sm:w-[35rem] lg:h-screen lg:w-[60rem] xl:w-[75rem]">
@@ -161,7 +161,7 @@ function Skills() {
 
         <ScrollMouse mouse={mouse} />
       </div>
-    </div>
+    </section>
   );
 }
 

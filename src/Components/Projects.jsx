@@ -77,7 +77,7 @@ function Projects() {
   };
 
   return (
-    <div className="w-full min-h-[100svh] flex flex-col items-center gap-8 relative p-16 lg:p-28">
+    <section data-scroll-section className="w-full min-h-[100svh] flex flex-col items-center gap-8 relative p-16 lg:p-28">
       <ProjectDecoration />
       <h1 className="text-primary text-center w-40 text-2xl font-semibold relative pb-1 uppercase lg:text-4xl lg:w-56">
         Projects
@@ -120,7 +120,7 @@ function Projects() {
         View All
       </button>
       <ScrollMouse mouse={mouse} />
-    </div>
+    </section>
   );
 }
 

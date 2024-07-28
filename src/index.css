@@ -15,6 +15,16 @@
   font-family: monsert;
   src: url(assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
+/* App.css or appropriate CSS file */
+#main-container {
+  overflow: hidden;
+}
+
+[data-scroll-container] {
+  height: 100%;
+  width: 100%;
+}
+
 html,
 body {
   width: 100%;
