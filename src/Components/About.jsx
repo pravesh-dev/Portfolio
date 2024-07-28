@@ -84,7 +84,6 @@ function About() {
   return (
     <section
       ref={componentRef}
-      data-scroll-section
       id="about"
       className="w-full h-[100svh] relative box-border sm:flex sm:flex-row sm:items-center sm:justify-center sm:gap-5 lg:gap-12 xl:gap-44 overflow-x-hidden"
     >

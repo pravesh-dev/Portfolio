@@ -34,7 +34,7 @@ function Layout() {
           <h1 className="text-white text-3xl">loading...</h1>
         </div>
       ) : (
-        <main id="main-container" data-scroll-container>
+        <main id="main-container">
           <CursorFollower />
           <Header />
           <Outlet />

@@ -60,7 +60,7 @@ function Resume() {
   };
 
   return (
-    <section data-scroll-section className="w-full min-h-[100svh] flex flex-col items-center relative pt-20 py-7">
+    <section className="w-full min-h-[100svh] flex flex-col items-center relative pt-20 py-7">
       <ResumeDecoration />
       <h1 className="text-primary text-center w-40 text-2xl font-semibold relative pb-1 uppercase lg:text-4xl lg:w-56">
         Resume

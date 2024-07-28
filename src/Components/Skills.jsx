@@ -13,6 +13,9 @@ import lineRightBottom from "../assets/images/Skills/lineRightBottom.svg";
 import lineRightBottomBig from "../assets/images/Skills/lineRightBottomBig.svg";
 import ScrollMouse from "./ScrollMouse";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Skills() {
   const componentRef = useRef(null);
@@ -22,16 +25,16 @@ function Skills() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: componentRef.current,
-          start: "15% center",
+          start: "top center",
           end: "center center",
-          scrub: true,
+          scrub: 3,
           markers: true,
         },
       });
 
       tl.from(".skills_heading", {
-          y: -100,
-          stagger: 0.3,
+          y: 100,
+          opacity: 0,
         });
     }, componentRef);
 
@@ -39,7 +42,7 @@ function Skills() {
   }, []);
 
   return (
-    <section data-scroll-section id="skills" ref={componentRef} className="relative pt-5 lg:pt-0 overflow-hidden">
+    <section id="skills" ref={componentRef} className="relative pt-5 lg:pt-0 overflow-hidden">
       <SkillsDecoration />
 
       <div className="w-full h-[110svh] relative flex justify-between items-center mx-auto sm:w-[35rem] lg:h-screen lg:w-[60rem] xl:w-[75rem]">
