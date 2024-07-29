@@ -33,8 +33,8 @@ function Skills() {
       });
 
       tl.from(".skills_heading", {
-          y: 100,
-          opacity: 0,
+          // y: 100,
+          // opacity: 0,
         });
     }, componentRef);
 
