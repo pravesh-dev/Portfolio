@@ -20,26 +20,26 @@ gsap.registerPlugin(ScrollTrigger);
 function Skills() {
   const componentRef = useRef(null);
 
-  // useEffect(() => {
-  //   const ctx = gsap.context(() => {
-  //     const tl = gsap.timeline({
-  //       scrollTrigger: {
-  //         trigger: componentRef.current,
-  //         start: "top center",
-  //         end: "center center",
-  //         scrub: 3,
-  //         markers: true,
-  //       },
-  //     });
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: componentRef.current,
+          start: "15% center",
+          end: "center center",
+          scrub: 6,
+          markers: true,
+        },
+      });
 
-  //     tl.from(".skills_heading", {
-  //         y: 100,
-  //         opacity: 0,
-  //       });
-  //   }, componentRef);
+      tl.to(".skills_heading", {
+          y: 0,
+          opacity: 1,
+        });
+    }, componentRef);
 
-  //   return () => ctx.revert();
-  // }, []);
+    return () => ctx.revert();
+  }, []);
 
   return (
     <section id="skills" ref={componentRef} className="relative pt-5 lg:pt-0 overflow-hidden">
@@ -72,7 +72,7 @@ function Skills() {
             alt=""
           />
           <div className="flex flex-col gap-1">
-            <h2 className="skills_heading">
+            <h2 className="skills_heading opacity-0 translate-y-[100%]">
               HTML, CSS, JAVASCRIPT
             </h2>
             <p className="skills_para">
@@ -82,7 +82,7 @@ function Skills() {
             </p>
           </div>
           <div className="flex flex-col gap-1">
-            <h2 className="skills_heading">
+            <h2 className="skills_heading opacity-0 translate-y-[100%]">
               REACT, REDUX
             </h2>
             <p className="skills_para">
@@ -92,7 +92,7 @@ function Skills() {
             </p>
           </div>
           <div className="flex flex-col gap-1">
-            <h2 className="skills_heading">
+            <h2 className="skills_heading opacity-0 translate-y-[100%]">
               TAILWIND CSS, GSAP
             </h2>
             <p className="skills_para">
@@ -133,7 +133,7 @@ function Skills() {
             alt=""
           />
           <div className="flex flex-col gap-1">
-            <h2 className="skills_heading">
+            <h2 className="skills_heading opacity-0 translate-y-[100%]">
               GIT & GITHUB
             </h2>
             <p className="skills_para">
@@ -143,7 +143,7 @@ function Skills() {
             </p>
           </div>
           <div className="flex flex-col gap-1">
-            <h2 className="skills_heading">
+            <h2 className="skills_heading opacity-0 translate-y-[100%]">
               NODE.JS, EXPRESS.JS
             </h2>
             <p className="skills_para">
@@ -152,7 +152,7 @@ function Skills() {
             </p>
           </div>
           <div className="flex flex-col gap-1">
-            <h2 className="skills_heading">
+            <h2 className="skills_heading opacity-0 translate-y-[100%]">
               MONGODB, MONGOOSE
             </h2>
             <p className="skills_para">
