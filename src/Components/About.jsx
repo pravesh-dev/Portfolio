@@ -21,61 +21,19 @@ function About() {
         scrollTrigger: {
           trigger: componentRef.current,
           start: "15% center",
-          end: "center center",
-          scrub: 3,
+          end: "60% center",
+          scrub: 9,
+          markers: true
         },
       });
 
-      tl.from(
-        ".imgBg",
-        {
-          y: -100,
-          duration: 1,
-          opacity: 0,
-        },
-        "a"
-      );
-      tl.from(
-        ".img",
-        {
-          y: 100,
-          duration: 1,
-          opacity: 0,
-        },
-        "a"
-      );
-      tl.from(".imgRight", {
-        x: 100,
-        duration: 0.5,
-        opacity: 0,
-      });
-      tl.from(".popCards", {
-        scale: 0,
-        stagger: 0.2,
-      });
-      tl.from(".aboutContent", {
-        y: 100,
-        stagger: 0.3,
-        opacity: 0,
-      });
-      tl.from(
-        ".btn1",
-        {
-          x: -100,
-          opacity: 0,
-          duration: 1,
-        },
-        "b"
-      );
-      tl.to(
-        ".resumeDownload",
-        {
-          x: 0,
-          opacity: 1,
-          duration: 1,
-        },
-        "b"
-      );
+      tl.from(".imgBg", { y: -100,  opacity: 0 }, "a")
+        .from(".img", { y: 100,  opacity: 0 }, "a")
+        .from(".imgRight", { x: 100,  opacity: 0 })
+        .from(".popCards", { scale: 0, stagger: 0.2 })
+        .from(".aboutContent", { y: 100, stagger: 0.3, opacity: 0 })
+        .from(".btn1", { x: -100, opacity: 0  }, "b")
+        .to(".resumeDownload", { x: 0, opacity: 1 }, "b");
     }, componentRef);
 
     return () => ctx.revert();
@@ -95,20 +53,20 @@ function About() {
               loading="lazy"
               className="imgBg w-full h-[80%] object-cover"
               src={aboutBg}
-              alt=""
+              alt="Background"
             />
             <img
               loading="lazy"
               src={myImage}
               className="img absolute -bottom-1 -left-3 w-36 sm:w-60 lg:w-80 lg:-left-6"
-              alt=""
+              alt="Pravesh Saini"
             />
           </div>
           <img
             loading="lazy"
             src={aboutBgRight}
             className="imgRight w-12 absolute right-0 top-[3.1rem] z-10 sm:w-[4.8rem] sm:top-[5.6rem] lg:w-[6.3rem] lg:top-[7.3rem]"
-            alt=""
+            alt="Decoration"
           />
 
           <div className="flex items-center gap-2 h-[20%] lg:gap-6">
