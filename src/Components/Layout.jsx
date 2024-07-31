@@ -2,8 +2,35 @@ import React, { useEffect, useRef, useState } from "react";
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import CursorFollower from "./CursorFollower";
+import Lenis from "lenis";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from "gsap";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Layout() {
+  const lenis = new Lenis();
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  lenis.on("scroll", ScrollTrigger.update);
+
+  gsap.ticker.add((time) => {
+    lenis.raf(time * 1000);
+  });
+
+  gsap.ticker.lagSmoothing(0);
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
+
   const [preLoader, setPreloader] = useState(true);
 
   const [timer, setTimer] = useState(3);
@@ -22,7 +49,7 @@ function Layout() {
         }
         return timer - 1;
       });
-    }, 1000);
+    }, 500);
 
     return () => window.clearInterval(id.current);
   }, []);

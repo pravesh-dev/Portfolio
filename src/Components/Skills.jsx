@@ -20,26 +20,26 @@ gsap.registerPlugin(ScrollTrigger);
 function Skills() {
   const componentRef = useRef(null);
 
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: componentRef.current,
-          start: "top center",
-          end: "center center",
-          scrub: 3,
-          markers: true,
-        },
-      });
+  // useEffect(() => {
+  //   const ctx = gsap.context(() => {
+  //     const tl = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: componentRef.current,
+  //         start: "top center",
+  //         end: "center center",
+  //         scrub: 3,
+  //         markers: true,
+  //       },
+  //     });
 
-      tl.from(".skills_heading", {
-          // y: 100,
-          // opacity: 0,
-        });
-    }, componentRef);
+  //     tl.from(".skills_heading", {
+  //         y: 100,
+  //         opacity: 0,
+  //       });
+  //   }, componentRef);
 
-    return () => ctx.revert();
-  }, []);
+  //   return () => ctx.revert();
+  // }, []);
 
   return (
     <section id="skills" ref={componentRef} className="relative pt-5 lg:pt-0 overflow-hidden">
