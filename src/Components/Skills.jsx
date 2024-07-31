@@ -25,17 +25,17 @@ function Skills() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: componentRef.current,
-          start: "15% center",
+          start: "12% center",
           end: "center center",
-          scrub: 6,
+          scrub: 5,
           markers: true,
         },
       });
 
-      tl.to(".skills_heading", {
-          y: 0,
-          opacity: 1,
-        });
+      tl.fromTo(".skills_heading", {
+          y: 50,
+          opacity: 0,
+        }, { y: 0, opacity: 1}, "-=0.5");
     }, componentRef);
 
     return () => ctx.revert();
@@ -72,7 +72,7 @@ function Skills() {
             alt=""
           />
           <div className="flex flex-col gap-1">
-            <h2 className="skills_heading opacity-0 translate-y-[100%]">
+            <h2 className="skills_heading">
               HTML, CSS, JAVASCRIPT
             </h2>
             <p className="skills_para">
@@ -82,7 +82,7 @@ function Skills() {
             </p>
           </div>
           <div className="flex flex-col gap-1">
-            <h2 className="skills_heading opacity-0 translate-y-[100%]">
+            <h2 className="skills_heading">
               REACT, REDUX
             </h2>
             <p className="skills_para">
@@ -92,7 +92,7 @@ function Skills() {
             </p>
           </div>
           <div className="flex flex-col gap-1">
-            <h2 className="skills_heading opacity-0 translate-y-[100%]">
+            <h2 className="skills_heading">
               TAILWIND CSS, GSAP
             </h2>
             <p className="skills_para">
@@ -133,7 +133,7 @@ function Skills() {
             alt=""
           />
           <div className="flex flex-col gap-1">
-            <h2 className="skills_heading opacity-0 translate-y-[100%]">
+            <h2 className="skills_heading">
               GIT & GITHUB
             </h2>
             <p className="skills_para">
@@ -143,7 +143,7 @@ function Skills() {
             </p>
           </div>
           <div className="flex flex-col gap-1">
-            <h2 className="skills_heading opacity-0 translate-y-[100%]">
+            <h2 className="skills_heading">
               NODE.JS, EXPRESS.JS
             </h2>
             <p className="skills_para">
@@ -152,7 +152,7 @@ function Skills() {
             </p>
           </div>
           <div className="flex flex-col gap-1">
-            <h2 className="skills_heading opacity-0 translate-y-[100%]">
+            <h2 className="skills_heading">
               MONGODB, MONGOOSE
             </h2>
             <p className="skills_para">
