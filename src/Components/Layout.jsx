@@ -9,30 +9,36 @@ import gsap from "gsap";
 gsap.registerPlugin(ScrollTrigger);
 
 function Layout() {
-  const lenis = new Lenis();
+  const lenis = useRef(null);
 
-  function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
+  useEffect(() => {
+    lenis.current = new Lenis({
+      lerp: 0.1,
+      smooth: true,
+    });
 
-  lenis.on("scroll", ScrollTrigger.update);
+    const handleRaf = (time) => {
+      lenis.current.raf(time);
+      requestAnimationFrame(handleRaf);
+    };
 
-  gsap.ticker.add((time) => {
-    lenis.raf(time * 1000);
-  });
+    lenis.current.on("scroll", ScrollTrigger.update);
 
-  gsap.ticker.lagSmoothing(0);
+    gsap.ticker.add((time) => {
+      lenis.current.raf(time * 1000);
+    });
 
-  function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
+    gsap.ticker.lagSmoothing(0);
 
-  requestAnimationFrame(raf);
+    requestAnimationFrame(handleRaf);
+
+    return () => {
+      lenis.current.destroy();
+      gsap.ticker.remove(handleRaf);
+    };
+  }, []);
 
   const [preLoader, setPreloader] = useState(true);
-
   const [timer, setTimer] = useState(3);
   const id = useRef(null);
 
@@ -49,7 +55,7 @@ function Layout() {
         }
         return timer - 1;
       });
-    }, 500);
+    }, 1000); // Changed interval to 1000ms for a 3-second preloader
 
     return () => window.clearInterval(id.current);
   }, []);
