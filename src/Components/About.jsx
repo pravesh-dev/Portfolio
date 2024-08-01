@@ -21,9 +21,8 @@ function About() {
         scrollTrigger: {
           trigger: componentRef.current,
           start: "15% center",
-          end: "60% center",
-          scrub: 9,
-          markers: true
+          end: "40% center",
+          scrub: 8,
         },
       });
 

@@ -28,7 +28,6 @@ function Skills() {
           start: "12% center",
           end: "20% center",
           scrub: 3,
-          markers: true,
         },
       });
 
