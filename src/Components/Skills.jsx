@@ -26,16 +26,28 @@ function Skills() {
         scrollTrigger: {
           trigger: componentRef.current,
           start: "12% center",
-          end: "center center",
-          scrub: 5,
+          end: "20% center",
+          scrub: 3,
           markers: true,
         },
       });
 
-      tl.fromTo(".skills_heading", {
-          y: 50,
-          opacity: 0,
-        }, { y: 0, opacity: 1}, "-=0.5");
+      // tl.fromTo(".skills_heading", {
+      //     y: 50,
+      //     opacity: 0,
+      //   }, { y: 0, opacity: 1}, "-=0.5");
+      tl.from('.skill_left', {
+        x: -100,
+        opacity: 0,
+      }, 'a')
+      tl.from('.skill_right', {
+        x: 100,
+        opacity: 0,
+      }, 'a')
+      tl.from('.skills_title', {
+        y: 100,
+        opacity: 0,
+      }, 'a')
     }, componentRef);
 
     return () => ctx.revert();
@@ -46,7 +58,7 @@ function Skills() {
       <SkillsDecoration />
 
       <div className="w-full h-[110svh] relative flex justify-between items-center mx-auto sm:w-[35rem] lg:h-screen lg:w-[60rem] xl:w-[75rem]">
-        <div className="w-36 flex flex-col gap-5 px-3 py-14 relative border-r-2 border-primary lg:w-[26rem] lg:py-20 lg:border-r-[2.3px] lg:pr-16">
+        <div className="skill_left w-36 flex flex-col gap-5 px-3 py-14 relative border-r-2 border-primary lg:w-[26rem] lg:py-20 lg:border-r-[2.3px] lg:pr-16">
           <img
             loading="lazy"
             src={lineLeftTop}
@@ -103,11 +115,11 @@ function Skills() {
           </div>
         </div>
 
-        <h1 className="text-primary text-xl font-bold tracking-widest -rotate-90 whitespace-nowrap absolute left-1/2 -translate-x-1/2 sm:text-3xl lg:tracking-[0.36rem]">
+        <h1 className="skills_title text-primary text-xl font-bold tracking-widest -rotate-90 whitespace-nowrap absolute left-1/2 -translate-x-1/2 sm:text-3xl lg:tracking-[0.36rem]">
           PROFESSIONAL SKILLS
         </h1>
 
-        <div className="w-36 flex flex-col gap-5 px-3 py-14 relative border-l-2 border-primary lg:w-[26rem] lg:py-20 lg:border-l-[2.3px] lg:pl-16">
+        <div className="skill_right w-36 flex flex-col gap-5 px-3 py-14 relative border-l-2 border-primary lg:w-[26rem] lg:py-20 lg:border-l-[2.3px] lg:pl-16">
           <img
             loading="lazy"
             src={lineRightTop}

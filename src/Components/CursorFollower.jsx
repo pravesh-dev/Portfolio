@@ -33,7 +33,7 @@ function CursorFollower() {
         className={`cursor_Circs w-1 h-1 rounded-full bg-[#fd563c0f] border-[0.5px] border-white/20 fixed -translate-x-1/2 -translate-y-1/2 duration-100`}></div>
       <div
         className={`cursor_Circs w-8 h-8 rounded-full  border-[0.5px] border-white/20 fixed -translate-x-1/2 -translate-y-1/2 duration-100`}></div>
-      {/* <div className={`cursor_Circs w-[27rem] h-[27rem] rounded-full bg-[#ff30101a] filter blur-2xl fixed -translate-x-1/2 -translate-y-1/2 duration-100`} style={{ top: `${cursorPosition.top}px`, left: `${cursorPosition.left}px` }}></div> */}
+      {/* <div className={`cursor_Circs w-[27rem] h-[27rem] rounded-full bg-[#ff30101a] filter blur-2xl fixed -translate-x-1/2 -translate-y-1/2 duration-100`}></div> */}
     </div>
   );
 }
