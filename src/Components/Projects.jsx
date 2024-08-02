@@ -19,13 +19,15 @@ function Projects() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: componentRef.current,
-          start: "15% center",
-          end: "40% center",
-          scrub: 8,
+          start: "0% center",
+          end: "0% center",
+          scrub: 3,
+          markers: true,
         },
       });
 
-      // tl.from(".projectItem", { opacity: 0, y: 100, stagger: 0.2 });
+      tl.from(".heading", { opacity: 0, y: 20})
+        .from('.bottom_border', { width: '10px', opacity: 0 })
     }, componentRef);
 
     return () => ctx.revert();
@@ -104,9 +106,9 @@ function Projects() {
   return (
     <section ref={componentRef} className="w-full min-h-[100svh] flex flex-col items-center gap-8 relative p-16 lg:p-28">
       <ProjectDecoration />
-      <h1 className="text-primary text-center w-40 text-2xl font-semibold relative pb-1 uppercase lg:text-4xl lg:w-56">
-        Projects
-        <span className="w-full h-[0.1rem] bg-primary absolute left-0 bottom-0">
+      <h1 className="text-primary text-center w-40 text-2xl font-semibold relative pb-1 uppercase lg:text-4xl lg:w-56 flex flex-col items-center">
+        <span className="heading">Projects</span>
+        <span className="bottom_border w-full h-[0.1rem] bg-primary relative">
           <img
             loading="lazy"
             src={triangle}
