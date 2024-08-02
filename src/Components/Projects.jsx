@@ -1,11 +1,36 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import triangle from "../assets/images/Projects/triangle.svg";
 import { projects } from "./ProjectsData";
 import mouse from "../assets/images/icon/scrollMouse.svg";
 import ProjectDecoration from "./ProjectDecoration";
 import ScrollMouse from "./ScrollMouse";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Projects() {
+
+  const componentRef = useRef(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: componentRef.current,
+          start: "15% center",
+          end: "40% center",
+          scrub: 8,
+        },
+      });
+
+      // tl.from(".projectItem", { opacity: 0, y: 100, stagger: 0.2 });
+    }, componentRef);
+
+    return () => ctx.revert();
+  }, []);
+
   const [activeTab, setActiveTab] = useState("all");
   const [viewAll, setViewAll] = useState(false);
 
@@ -77,7 +102,7 @@ function Projects() {
   };
 
   return (
-    <section className="w-full min-h-[100svh] flex flex-col items-center gap-8 relative p-16 lg:p-28">
+    <section ref={componentRef} className="w-full min-h-[100svh] flex flex-col items-center gap-8 relative p-16 lg:p-28">
       <ProjectDecoration />
       <h1 className="text-primary text-center w-40 text-2xl font-semibold relative pb-1 uppercase lg:text-4xl lg:w-56">
         Projects
