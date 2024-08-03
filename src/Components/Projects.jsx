@@ -30,7 +30,6 @@ function Projects() {
           start: "7% center",
           end: "40% center",
           scrub: 1,
-          markers: true
         },
       });
 

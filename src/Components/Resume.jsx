@@ -1,12 +1,47 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import triangle from "../assets/images/Projects/triangle.svg";
 import mouse from "../assets/images/icon/scrollMouse.svg";
 import { userData } from "./ResumeData";
 import dateBox from "../assets/images/Resume/dateBox.svg";
 import ResumeDecoration from "./ResumeDecoration";
 import ScrollMouse from "./ScrollMouse";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Resume() {
+
+  const componentRef = useRef(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: componentRef.current,
+          start: "0% center",
+          end: "0% center",
+          scrub: 3,
+        },
+      });
+      // const tl2 = gsap.timeline({
+      //   scrollTrigger: {
+      //     trigger: componentRef.current,
+      //     start: "7% center",
+      //     end: "40% center",
+      //     scrub: 1,
+      //   },
+      // });
+
+      tl.from(".heading", { opacity: 0, y: 20})
+        .from('.bottom_border', { width: '10px', opacity: 0 })
+        .from('.tab_buttons', { scale: 0, stagger: 0.5 });
+      // tl2.fromTo('.project_card', { opacity: 0 }, { opacity: 1}, "-=0.5")
+    }, componentRef);
+
+    return () => ctx.revert();
+  }, []);
+
   const [activeTab, setActiveTab] = useState("experience");
 
   const handleTabClick = (tab) => {
@@ -60,11 +95,11 @@ function Resume() {
   };
 
   return (
-    <section className="w-full min-h-[100svh] flex flex-col items-center relative pt-20 py-7">
+    <section ref={componentRef} className="w-full min-h-[100svh] flex flex-col items-center relative pt-20 py-7">
       <ResumeDecoration />
-      <h1 className="text-primary text-center w-40 text-2xl font-semibold relative pb-1 uppercase lg:text-4xl lg:w-56">
-        Resume
-        <span className="w-full h-[0.1rem] bg-primary absolute left-0 bottom-0">
+      <h1 className="text-primary text-center w-40 text-2xl font-semibold relative pb-1 uppercase lg:text-4xl lg:w-56 flex flex-col items-center">
+        <span className="heading">Resume</span>
+        <span className="bottom_border w-full h-[0.1rem] bg-primary relative">
           <img loading="lazy"
             src={triangle}
             className="w-3 absolute -left-1 top-1/2 -translate-y-1/2 rotate-90"
@@ -80,7 +115,7 @@ function Resume() {
         {["experience", "education"].map((tab) => (
           <button
             key={tab}
-            className={`text-sm font-semibold px-1 capitalize tracking-wider ${
+            className={`tab_buttons text-sm font-semibold px-1 capitalize tracking-wider ${
               activeTab === tab
                 ? "text-primary border-b-2 border-white"
                 : "text-neutral-300/70"
