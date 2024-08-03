@@ -27,8 +27,8 @@ function Projects() {
       const tl2 = gsap.timeline({
         scrollTrigger: {
           trigger: componentRef.current,
-          start: "10% center",
-          end: "100% center",
+          start: "7% center",
+          end: "40% center",
           scrub: 1,
           markers: true
         },
