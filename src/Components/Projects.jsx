@@ -22,12 +22,12 @@ function Projects() {
           start: "0% center",
           end: "0% center",
           scrub: 3,
-          markers: true,
         },
       });
 
       tl.from(".heading", { opacity: 0, y: 20})
         .from('.bottom_border', { width: '10px', opacity: 0 })
+        .from('.tab_buttons', { scale: 0, stagger: 0.3 })
     }, componentRef);
 
     return () => ctx.revert();
@@ -125,7 +125,7 @@ function Projects() {
         {["all", "frontend", "backend"].map((tab) => (
           <button
             key={tab}
-            className={`text-sm font-semibold px-3 py-1 capitalize rounded-lg ${
+            className={`tab_buttons text-sm font-semibold px-3 py-1 capitalize rounded-lg ${
               activeTab === tab
                 ? "bg-[#646464] text-primary"
                 : "text-neutral-300/70"
