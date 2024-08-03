@@ -24,10 +24,20 @@ function Projects() {
           scrub: 3,
         },
       });
+      const tl2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: componentRef.current,
+          start: "10% center",
+          end: "100% center",
+          scrub: 1,
+          markers: true
+        },
+      });
 
       tl.from(".heading", { opacity: 0, y: 20})
         .from('.bottom_border', { width: '10px', opacity: 0 })
-        .from('.tab_buttons', { scale: 0, stagger: 0.3 })
+        .from('.tab_buttons', { scale: 0, stagger: 0.5 });
+      tl2.fromTo('.project_card', { opacity: 0 }, { opacity: 1}, "-=0.5")
     }, componentRef);
 
     return () => ctx.revert();
@@ -58,8 +68,7 @@ function Projects() {
     return displayedProjects.map((project, index) => (
       <div
         key={index}
-        id="projects"
-        className="w-36 bg-[#353535] p-[0.33rem] rounded-md sm:w-56 flex gap-1 flex-col justify-between sm:gap-2 sm:p-3 lg:w-64 xl:w-72 lg:hover:scale-[1.12] lg:hover:rotate-3 duration-300 lg:hover:bg-[#202020]"
+        className="project_card w-36 bg-[#353535] p-[0.33rem] rounded-md sm:w-56 flex gap-1 flex-col justify-between sm:gap-2 sm:p-3 lg:w-64 xl:w-72 lg:hover:scale-[1.12] lg:hover:rotate-3 duration-300 lg:hover:bg-[#202020]"
       >
         <h2 className="text-white text-[0.7rem] font-semibold sm:text-[1rem] lg:text-[1.3rem]">
           {project.name}
