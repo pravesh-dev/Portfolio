@@ -37,9 +37,10 @@ function Resume() {
       tl.from(".heading", { opacity: 0, y: 20})
         .from('.bottom_border', { width: '10px', opacity: 0 })
         .from('.tab_buttons', { scale: 0, stagger: 0.5 })
-      // tl2.from('.content', { height: 0, opacity: 0}, 'a')
-         tl2.from('.time_start', { x: -50, opacity: 0}, 'a')
-         .from('.time_end', { x: 50, opacity: 0}, 'a')
+      tl2.from('.data_heading', { opacity: 0}, 'a')
+         .from('.content', { height: 0, opacity: 0}, 'a')
+         .from('.time_start', { x: -50, opacity: 0}, 'b')
+         .from('.time_end', { x: 50, opacity: 0}, 'b')
       // tl2.fromTo('.project_card', { opacity: 0 }, { opacity: 1}, "-=0.5")
     }, componentRef);
 
@@ -72,7 +73,7 @@ function Resume() {
         <div className="mid flex gap-2 flex-col justify-between lg:gap-1">
           <div className="flex gap-2 items-center lg:gap-4">
             <span className="w-5 h-5 rounded-full bg-primary shadow-[0_0_7px_2px_#FD563C] lg:w-7 lg:h-7"></span>
-            <h2 className="text-white text-[1rem] uppercase font-semibold lg:text-[1.3rem]">
+            <h2 className="data_heading text-white text-[1rem] uppercase font-semibold lg:text-[1.3rem]">
               {data.heading}
             </h2>
           </div>
