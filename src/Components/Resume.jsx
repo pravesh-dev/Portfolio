@@ -38,10 +38,9 @@ function Resume() {
         .from('.bottom_border', { width: '10px', opacity: 0 })
         .from('.tab_buttons', { scale: 0, stagger: 0.5 })
       tl2.from('.data_heading', { opacity: 0}, 'a')
-         .from('.content', { height: 0, opacity: 0}, 'a')
+         .from('.content', {opacity: 0}, 'a')
          .from('.time_start', { x: -50, opacity: 0}, 'b')
          .from('.time_end', { x: 50, opacity: 0}, 'b')
-      // tl2.fromTo('.project_card', { opacity: 0 }, { opacity: 1}, "-=0.5")
     }, componentRef);
 
     return () => ctx.revert();
