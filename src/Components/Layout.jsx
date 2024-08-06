@@ -55,7 +55,7 @@ function Layout() {
         }
         return timer - 1;
       });
-    }, 1000); // Changed interval to 1000ms for a 3-second preloader
+    }, 100);
 
     return () => window.clearInterval(id.current);
   }, []);

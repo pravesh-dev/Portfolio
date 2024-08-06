@@ -24,18 +24,22 @@ function Resume() {
           scrub: 3,
         },
       });
-      // const tl2 = gsap.timeline({
-      //   scrollTrigger: {
-      //     trigger: componentRef.current,
-      //     start: "7% center",
-      //     end: "40% center",
-      //     scrub: 1,
-      //   },
-      // });
+      const tl2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: componentRef.current,
+          start: "10% center",
+          end: "40% center",
+          scrub: 2,
+          markers: true
+        },
+      });
 
       tl.from(".heading", { opacity: 0, y: 20})
         .from('.bottom_border', { width: '10px', opacity: 0 })
-        .from('.tab_buttons', { scale: 0, stagger: 0.5 });
+        .from('.tab_buttons', { scale: 0, stagger: 0.5 })
+      // tl2.from('.content', { height: 0, opacity: 0}, 'a')
+         tl2.from('.time_start', { x: -50, opacity: 0}, 'a')
+         .from('.time_end', { x: 50, opacity: 0}, 'a')
       // tl2.fromTo('.project_card', { opacity: 0 }, { opacity: 1}, "-=0.5")
     }, componentRef);
 
@@ -58,7 +62,7 @@ function Resume() {
         className="data_box w-max p-[0.33rem] flex items-start gap-3"
       >
         <div className="flex items-center gap-3">
-          <div className="relative">
+          <div className="relative time_start">
             <img loading="lazy" src={dateBox} className="w-14 lg:w-24" alt="date container" />
             <span className="absolute top-1/2 left-1/2 -translate-x-[55%] -translate-y-1/2 text-[#979797] font-semibold text-sm lg:text-[1.4rem] lg:-translate-x-[60%]">
               {data.timeStart}
@@ -72,7 +76,7 @@ function Resume() {
               {data.heading}
             </h2>
           </div>
-          <div className="border-l-2 border-[#c3c3c3] pl-5 ml-[0.55rem] lg:ml-[0.75rem] lg:border-l-[3px] lg:pl-7">
+          <div className="content border-l-2 border-[#c3c3c3] pl-5 ml-[0.55rem] lg:ml-[0.75rem] lg:border-l-[3px] lg:pl-7">
             <h3 className="w-48 text-white/60 font-yellowTail text-[0.7rem] uppercase tracking-wider sm:w-72 lg:text-[0.95rem] lg:w-[35rem] lg:mb-2">
               {data.subHeading}
             </h3>
@@ -82,7 +86,7 @@ function Resume() {
           </div>
           <div className="flex items-center gap-2 lg:gap-4">
             <span className="w-5 h-5 rounded-full bg-primary shadow-[0_0_7px_2px_#FD563C] lg:w-7 lg:h-7"></span>
-            <div className="relative rotate-180">
+            <div className="relative rotate-180 time_end">
               <img loading="lazy" src={dateBox} className="w-14 lg:w-24" alt="date container" />
               <span className="absolute top-1/2 left-1/2 rotate-180 -translate-x-[55%] -translate-y-1/2 text-[#979797] font-semibold text-sm lg:text-[1.4rem] lg:-translate-x-[60%]">
                 {data.timeEnd}
