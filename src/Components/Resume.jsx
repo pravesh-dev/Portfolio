@@ -37,8 +37,9 @@ function Resume() {
       tl.from(".heading", { opacity: 0, y: 20})
         .from('.bottom_border', { width: '10px', opacity: 0 })
         .from('.tab_buttons', { scale: 0, stagger: 0.5 })
-      tl2.from('.data_heading', { opacity: 0}, 'a')
-         .from('.content', {opacity: 0}, 'a')
+      tl2.from('.data_heading', { opacity: 0}, 'b')
+         .from('.content', { opacity: 0}, 'b')
+         .from('.balls', { scale: 0}, 'b')
          .from('.time_start', { x: -50, opacity: 0}, 'b')
          .from('.time_end', { x: 50, opacity: 0}, 'b')
     }, componentRef);
@@ -71,7 +72,7 @@ function Resume() {
         </div>
         <div className="mid flex gap-2 flex-col justify-between lg:gap-1">
           <div className="flex gap-2 items-center lg:gap-4">
-            <span className="w-5 h-5 rounded-full bg-primary shadow-[0_0_7px_2px_#FD563C] lg:w-7 lg:h-7"></span>
+            <span className="balls w-5 h-5 rounded-full bg-primary shadow-[0_0_7px_2px_#FD563C] lg:w-7 lg:h-7"></span>
             <h2 className="data_heading text-white text-[1rem] uppercase font-semibold lg:text-[1.3rem]">
               {data.heading}
             </h2>
@@ -85,7 +86,7 @@ function Resume() {
             </p>
           </div>
           <div className="flex items-center gap-2 lg:gap-4">
-            <span className="w-5 h-5 rounded-full bg-primary shadow-[0_0_7px_2px_#FD563C] lg:w-7 lg:h-7"></span>
+            <span className="balls w-5 h-5 rounded-full bg-primary shadow-[0_0_7px_2px_#FD563C] lg:w-7 lg:h-7"></span>
             <div className="relative rotate-180 time_end">
               <img loading="lazy" src={dateBox} className="w-14 lg:w-24" alt="date container" />
               <span className="absolute top-1/2 left-1/2 rotate-180 -translate-x-[55%] -translate-y-1/2 text-[#979797] font-semibold text-sm lg:text-[1.4rem] lg:-translate-x-[60%]">
