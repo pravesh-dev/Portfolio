@@ -44,7 +44,7 @@ function Hero() {
       duration: 0.4,
     })
     tl.from('.contacts', {
-      // x: 50,
+      x: 50,
       stagger: 0.2,
       opacity: 0
     })

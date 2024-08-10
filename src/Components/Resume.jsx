@@ -30,7 +30,6 @@ function Resume() {
           start: "10% center",
           end: "40% center",
           scrub: 2,
-          markers: true
         },
       });
 
