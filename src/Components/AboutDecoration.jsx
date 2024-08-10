@@ -1,12 +1,33 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import triangle from "../assets/images/icon/triangle.svg";
 import aboutLongCurve from "../assets/images/About/aboutLongCurve.svg";
 import aboutLongCurve2 from "../assets/images/About/aboutLongCurve2.svg";
 import aboutShortCurve from "../assets/images/About/aboutShortCurve.svg";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-function AboutDecoration() {
+gsap.registerPlugin(ScrollTrigger);
+
+function AboutDecoration({ isCompleted }) {
+  const componentRef = useRef(null);
+
+  useEffect(() => {
+    if (isCompleted) {
+      let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: componentRef.current,
+          start: "15% center",
+          end: "40% center",
+          scrub: 8,
+        },
+      });
+
+      tl.from(".curve2", { y: 200 });
+    }
+  }, [isCompleted]);
+
   return (
-    <div className="w-full h-full absolute overflow-hidden">
+    <div ref={componentRef} className="w-full h-full absolute overflow-hidden">
       {/* Small Circles */}
       <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[50%] left-[1%] sm:top-[30%] sm:left-[8%] lg:w-[0.5rem] lg:h-[0.5rem] lg:top-[60%] lg:left-[98.5%] xl:top-[53%]"></span>
       <span className="circle w-[0.3rem] h-[0.3rem] border border-[#A5A5A5] rounded-full absolute top-[94%] left-[33%] lg:w-[0.5rem] lg:h-[0.5rem]"></span>
@@ -41,17 +62,17 @@ function AboutDecoration() {
       {/* curves */}
       <img
         src={aboutLongCurve}
-        className="w-full absolute left-0 top-0 sm:hidden"
+        className="curve1 w-full absolute left-0 top-0 sm:hidden"
         alt=""
       />
       <img
         src={aboutLongCurve2}
-        className="w-full absolute left-0 top-10 hidden sm:block lg:-top-24 xl:rotate-6"
+        className="curve2 w-full absolute left-0 top-10 hidden sm:block lg:-top-24 xl:rotate-6"
         alt=""
       />
       <img
         src={aboutShortCurve}
-        className="absolute bottom-0 right-0 lg:bottom-10 xl:w-36"
+        className="curve3 absolute bottom-0 right-0 lg:bottom-10 xl:w-36"
         alt=""
       />
     </div>
