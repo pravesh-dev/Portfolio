@@ -14,7 +14,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 function About() {
   const componentRef = useRef(null);
-  const [isCompleted, setIsCompleted] = useState(false);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -33,13 +32,11 @@ function About() {
         .from(".popCards", { scale: 0, stagger: 0.2 })
         .from(".aboutContent", { y: 100, stagger: 0.3, opacity: 0 })
         .from(".btn1", { x: -100, opacity: 0  }, "b")
-        .to(".resumeDownload", { x: 0, opacity: 1, onComplete: function(){
-          setIsCompleted(true);
-        }}, "b");
+        .to(".resumeDownload", { x: 0, opacity: 1}, "b");
     }, componentRef);
 
     return () => ctx.revert();
-  }, [isCompleted]);
+  }, []);
 
   return (
     <section
@@ -47,7 +44,7 @@ function About() {
       id="about"
       className="w-full h-[100svh] relative box-border sm:flex sm:flex-row sm:items-center sm:justify-center sm:gap-5 lg:gap-12 xl:gap-44 overflow-x-hidden"
     >
-      <AboutDecoration isCompleted />
+      <AboutDecoration />
       <div className="w-full h-[40%] relative flex items-center px-3 sm:w-auto sm:h-auto">
         <div className="w-48 h-[11.3rem] relative sm:w-80 sm:h-[19.3rem] lg:w-[26rem] lg:h-[25.3rem]">
           <div className="w-[85%] h-[80%] relative flex items-end z-20 overflow-hidden">
@@ -74,7 +71,7 @@ function About() {
           <div className="flex items-center gap-2 h-[20%] lg:gap-6">
             <div className="popCards w-[4rem] h-[1.45rem] flex justify-center items-center gap-1 bg-white/30 rounded-[4px] sm:w-[7rem] sm:h-[1.9rem] lg:w-[8.5rem] lg:h-[2.3rem]">
               <h3 className="text-white font-bold text-[0.6rem] sm:text-[1rem] lg:text-[1.4rem]">
-                20+ {isCompleted ? 'true': 'false'}
+                20+
               </h3>
               <p className="text-white text-[0.38rem] tracking-widest leading-[0.43rem] sm:text-[0.48rem] lg:text-[0.64rem] lg:leading-3">
                 Completed <br /> <span className="text-primary">Projects</span>

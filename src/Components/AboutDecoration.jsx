@@ -8,23 +8,23 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-function AboutDecoration({ isCompleted }) {
+function AboutDecoration() {
   const componentRef = useRef(null);
 
-  useEffect(() => {
-    if (isCompleted) {
-      let tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: componentRef.current,
-          start: "15% center",
-          end: "40% center",
-          scrub: 8,
-        },
-      });
+  // useEffect(() => {
+  //   if (isCompleted) {
+  //     let tl = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: componentRef.current,
+  //         start: "15% center",
+  //         end: "40% center",
+  //         scrub: 8,
+  //       },
+  //     });
 
-      tl.from(".curve2", { y: 200 });
-    }
-  }, [isCompleted]);
+  //     tl.from(".curve2", { y: 200 });
+  //   }
+  // }, [isCompleted]);
 
   return (
     <div ref={componentRef} className="w-full h-full absolute overflow-hidden">
