@@ -81,7 +81,7 @@ function Layout() {
       <main id="main-container">
         <CursorFollower />
         <Header />
-        <Outlet />
+        <Outlet context={{ preLoader }} />
       </main>
     </>
   );

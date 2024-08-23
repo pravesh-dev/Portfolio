@@ -11,8 +11,11 @@ import { FaLinkedin, FaGithub } from "react-icons/fa6";
 import ScrollMouse from "./ScrollMouse";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { useOutletContext } from "react-router-dom";
 
 function Hero() {
+  const { preLoader } = useOutletContext()
+  console.log(preLoader)
   const componentRef = useRef();
   useGSAP(()=>{
     const tl = gsap.timeline();
