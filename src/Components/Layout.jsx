@@ -63,7 +63,7 @@ function Layout() {
   return (
     <>
       {preLoader ? (
-        <div className="loader-wrapper absolute flex items-center justify-center bg-[#191919] w-full h-full">
+        <div className="loader-wrapper absolute flex items-center justify-center bg-[#191919] w-full h-screen">
           <h1 className="text-white text-3xl">loading...</h1>
         </div>
       ) : (
