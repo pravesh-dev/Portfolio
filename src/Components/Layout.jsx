@@ -62,8 +62,8 @@ function Layout() {
 
   return (
     <>
-      {preLoader ? (
-        <div className="loader-wrapper absolute flex items-center justify-center bg-[#191919] w-full h-screen">
+      {/* {preLoader ? (
+        <div className="loader-wrapper absolute flex items-center justify-center bg-[#191919] w-full h-[100svh]">
           <h1 className="text-white text-3xl">loading...</h1>
         </div>
       ) : (
@@ -72,7 +72,17 @@ function Layout() {
           <Header />
           <Outlet />
         </main>
+      )} */}
+      {preLoader && (
+        <div className="loader-wrapper absolute flex items-center justify-center bg-[#191919] w-full h-[100svh] z-[100]">
+          <h1 className="text-white text-3xl">loading...</h1>
+        </div>
       )}
+      <main id="main-container">
+        <CursorFollower />
+        <Header />
+        <Outlet />
+      </main>
     </>
   );
 }
