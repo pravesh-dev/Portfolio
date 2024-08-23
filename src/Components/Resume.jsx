@@ -46,7 +46,7 @@ function Resume() {
     return () => ctx.revert();
   }, []);
 
-  const [activeTab, setActiveTab] = useState("experience");
+  const [activeTab, setActiveTab] = useState("education");
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
