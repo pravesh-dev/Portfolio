@@ -56,7 +56,7 @@ function HeroDecoration() {
       <img
         src={heroCurveBottom}
         alt="curve lines"
-        className="curve2 absolute left-0 bottom-52 w-11 md:w-14 lg:w-20"
+        className="curve2 absolute left-0 bottom-5 w-11 md:w-14 lg:w-20"
       />
       <img
         src={heroCurveLong}
