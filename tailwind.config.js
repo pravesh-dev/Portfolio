@@ -11,8 +11,11 @@ export default {
         monseret: ['monsert']
       },
       colors: {
-        // primary: "#FD563C",
-        primary: "#7900ff",
+        primary: "#FD563C",
+        primary_dark: '#ff2403',
+        // primary: "#7900ff",
+        // primary_dark: '#4b009d',
+        // primary_light: '#8b22ff',
       }
     },
   },
