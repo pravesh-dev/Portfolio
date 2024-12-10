@@ -22,7 +22,7 @@ function About() {
           trigger: componentRef.current,
           start: "15% center",
           end: "40% center",
-          scrub: 8,
+          scrub: 4,
         },
       });
 
