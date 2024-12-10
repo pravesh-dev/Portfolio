@@ -34,8 +34,8 @@ function Header() {
         <nav className="gap-5 lg:gap-12 hidden md:flex">
           <Link
             to="/"
-            className={`nav_items text-xs font-normal tracking-wider lg:text-base cursor_pointer after:bg-primary_dark ${
-              activeTab === "home" ? "bg-primary_dark" : ""
+            className={`nav_items text-xs font-normal tracking-wider lg:text-base cursor_pointer after:bg-primary ${
+              activeTab === "home" ? "bg-primary" : ""
             }`}
             onClick={() => {
               setActiveTab("home");
@@ -45,8 +45,8 @@ function Header() {
           </Link>
           <Link
             to="/about"
-            className={`nav_items text-xs font-normal tracking-wider lg:text-base cursor_pointer after:bg-primary_dark ${
-              activeTab === "about" ? "bg-primary_dark" : ""
+            className={`nav_items text-xs font-normal tracking-wider lg:text-base cursor_pointer after:bg-primary ${
+              activeTab === "about" ? "bg-primary" : ""
             }`}
             onClick={() => {
               setActiveTab("about");
@@ -56,8 +56,8 @@ function Header() {
           </Link>
           <Link
             to="/skills"
-            className={`nav_items text-xs font-normal tracking-wider lg:text-base cursor_pointer after:bg-primary_dark ${
-              activeTab === "skills" ? "bg-primary_dark" : ""
+            className={`nav_items text-xs font-normal tracking-wider lg:text-base cursor_pointer after:bg-primary ${
+              activeTab === "skills" ? "bg-primary" : ""
             }`}
             onClick={() => {
               setActiveTab("skills");
@@ -67,8 +67,8 @@ function Header() {
           </Link>
           <Link
             to="/projects"
-            className={`nav_items text-xs font-normal tracking-wider lg:text-base cursor_pointer after:bg-primary_dark ${
-              activeTab === "projects" ? "bg-primary_dark" : ""
+            className={`nav_items text-xs font-normal tracking-wider lg:text-base cursor_pointer after:bg-primary ${
+              activeTab === "projects" ? "bg-primary" : ""
             }`}
             onClick={() => {
               setActiveTab("projects");
@@ -78,8 +78,8 @@ function Header() {
           </Link>
           <Link
             to="resume"
-            className={`nav_items text-xs font-normal tracking-wider lg:text-base cursor_pointer after:bg-primary_dark ${
-              activeTab === "resume" ? "bg-primary_dark" : ""
+            className={`nav_items text-xs font-normal tracking-wider lg:text-base cursor_pointer after:bg-primary ${
+              activeTab === "resume" ? "bg-primary" : ""
             }`}
             onClick={() => {
               setActiveTab("resume");
@@ -90,7 +90,7 @@ function Header() {
         </nav>
         <a
           href="mailto:praveshsaini.dev@gmail.com"
-          className="bg-primary text-white rounded-[1rem] text-sm px-3 py-1 hidden md:block shadow-md shadow-white/80 lg:px-4 hover:translate-y-1 hover:shadow-none duration-500 active:duration-100 active:scale-90 cursor_pointer"
+          className="bg-primary text-white rounded-[1rem] text-sm px-3 py-1 hidden md:block shadow-sm shadow-white/80 lg:px-4 hover:translate-y-1 hover:shadow-none duration-500 active:duration-100 active:scale-90 cursor_pointer"
           aria-label="Send an email to Pravesh"
         >
           Let's Talk
