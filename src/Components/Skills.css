@@ -1,7 +1,12 @@
 .skills_heading{
     transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s;
 }
-.skills_heading:hover{
-    color: #FD563C;
-    letter-spacing: 0.15rem;
+.resume_data_container{
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) 0.4s;
+}
+.resume_data_container:hover {
+    transform: scale(1.03);
+    .skills_heading{
+        color: #FD563C;
+    }
 }

@@ -31,10 +31,6 @@ function Skills() {
         },
       });
 
-      // tl.fromTo(".skills_heading", {
-      //     y: 50,
-      //     opacity: 0,
-      //   }, { y: 0, opacity: 1}, "-=0.5");
       tl.from('.skill_left', {
         x: -100,
         opacity: 0,
@@ -82,7 +78,7 @@ function Skills() {
             className="w-[97%] absolute -right-[0.1rem] bottom-0 hidden lg:block"
             alt=""
           />
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 resume_data_container">
             <h2 className="skills_heading">
               HTML, CSS, JAVASCRIPT
             </h2>
@@ -92,7 +88,7 @@ function Skills() {
               interactivity and functionality.
             </p>
           </div>
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 resume_data_container">
             <h2 className="skills_heading">
               REACT, REDUX
             </h2>
@@ -102,7 +98,7 @@ function Skills() {
               efficient data handling.
             </p>
           </div>
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 resume_data_container">
             <h2 className="skills_heading">
               TAILWIND CSS, GSAP
             </h2>
@@ -143,7 +139,7 @@ function Skills() {
             className="w-[24%] absolute -left-[0.1rem] -bottom-[0.1rem] hidden lg:block"
             alt=""
           />
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 resume_data_container">
             <h2 className="skills_heading">
               GIT & GITHUB
             </h2>
@@ -153,7 +149,7 @@ function Skills() {
               projects.
             </p>
           </div>
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 resume_data_container">
             <h2 className="skills_heading">
               NODE.JS, EXPRESS.JS
             </h2>
@@ -162,7 +158,7 @@ function Skills() {
               using Node.js and Express.js for robust backend development.
             </p>
           </div>
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 resume_data_container">
             <h2 className="skills_heading">
               MONGODB, MONGOOSE
             </h2>
