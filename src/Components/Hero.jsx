@@ -14,47 +14,53 @@ import gsap from "gsap";
 import { useOutletContext } from "react-router-dom";
 
 function Hero() {
-  const { preLoader } = useOutletContext()
-  console.log(preLoader)
+  const { preLoader } = useOutletContext();
+  console.log(preLoader);
   const componentRef = useRef();
-  useGSAP(()=>{
-    const tl = gsap.timeline();
-    tl.from('.socialIcons', {
-      left: '-100%',
-      stagger: 0.1,
-    });
-    tl.from('.bgImg', {
-      scale: 1.3,
-      opacity: 0,
-      duration: 0.4
-    });
-    tl.from('.myImg, .myImgSh', {
-      y: 100,
-      opacity: 0,
-      duration: 1
-    })
-    tl.from('.popCards', {
-      scale: 0,
-      duration: 0.6,
-      stagger: 0.3
-    })
-    tl.from('.nameBox', {
-      height: '0',
-      duration: 1
-    })
-    tl.from('.heroPara', {
-      opacity: 0,
-      duration: 0.4,
-    })
-    tl.from('.contacts', {
-      x: 50,
-      stagger: 0.2,
-      opacity: 0
-    })
-
-  }, {scope: componentRef})
+  useGSAP(
+    () => {
+      const tl = gsap.timeline();
+      tl.from(".socialIcons", {
+        left: "-100%",
+        stagger: 0.1,
+      });
+      tl.from(".bgImg", {
+        scale: 1.3,
+        opacity: 0,
+        duration: 0.4,
+      });
+      tl.from(".myImg, .myImgSh", {
+        y: 100,
+        opacity: 0,
+        duration: 1,
+      });
+      tl.from(".popCards", {
+        scale: 0,
+        duration: 0.6,
+        stagger: 0.3,
+      });
+      tl.from(".nameBox", {
+        height: "0",
+        duration: 1,
+      });
+      tl.from(".heroPara", {
+        opacity: 0,
+        duration: 0.4,
+      });
+      tl.from(".contacts", {
+        x: 50,
+        stagger: 0.2,
+        opacity: 0,
+      });
+    },
+    { scope: componentRef }
+  );
   return (
-    <section ref={componentRef} id="home" className="w-full h-[100svh] relative overflow-x-hidden">
+    <section
+      ref={componentRef}
+      id="home"
+      className="w-full h-[100svh] relative overflow-x-hidden"
+    >
       <HeroDecoration />
       <div id="hero-top" className="h-[70%] w-full flex relative lg:h-[80%]">
         <div className="w-[20%] h-[75%] flex flex-col gap-[0.6rem] items-center justify-end absolute z-20 left-0 lg:w-[14%] lg:h-[70%] lg:gap-4 xl:w-[10%] xl:h-[60%]">
