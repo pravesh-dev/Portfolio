@@ -7,11 +7,9 @@ import ScrollMouse from "./ScrollMouse";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-
 gsap.registerPlugin(ScrollTrigger);
 
 function Projects() {
-
   const componentRef = useRef(null);
 
   useEffect(() => {
@@ -33,10 +31,10 @@ function Projects() {
         },
       });
 
-      tl.from(".heading", { opacity: 0, y: 20})
-        .from('.bottom_border', { width: '10px', opacity: 0 })
-        .from('.tab_buttons', { opacity: 0, stagger: 0.5 });
-      tl2.fromTo('.project_card', { opacity: 0 }, { opacity: 1}, "-=0.5")
+      tl.from(".heading", { opacity: 0, y: 20 })
+        .from(".bottom_border", { width: "10px", opacity: 0 })
+        .from(".tab_buttons", { opacity: 0, stagger: 0.5 });
+      tl2.fromTo(".project_card", { opacity: 0 }, { opacity: 1 }, "-=0.5");
     }, componentRef);
 
     return () => ctx.revert();
@@ -112,7 +110,10 @@ function Projects() {
   };
 
   return (
-    <section ref={componentRef} className="w-full min-h-[100svh] flex flex-col items-center gap-8 relative p-16 lg:p-28">
+    <section
+      ref={componentRef}
+      className="w-full min-h-[100svh] flex flex-col items-center gap-8 relative p-16 lg:p-28"
+    >
       <ProjectDecoration />
       <h1 className="text-primary text-center w-40 text-2xl font-semibold relative pb-1 uppercase lg:text-4xl lg:w-56 flex flex-col items-center">
         <span className="heading">Projects</span>
