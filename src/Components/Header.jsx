@@ -10,15 +10,18 @@ function Header() {
   const [activeNav, setActiveNav] = useState(false);
   const [activeTab, setActiveTab] = useState("home");
   const headerRef = useRef(null);
-  useGSAP(()=>{
-    gsap.from(headerRef.current,{
-      y: '-100%',
+  useGSAP(() => {
+    gsap.from(headerRef.current, {
+      y: "-100%",
       duration: 0.8,
-    })
-  })
+    });
+  });
   return (
     <>
-      <header  ref={headerRef} className="w-full py-5  flex items-center justify-between px-7 absolute top-0 left-0 z-[99] lg:px-16">
+      <header
+        ref={headerRef}
+        className="w-full py-5  flex items-center justify-between px-7 absolute top-0 left-0 z-[99] lg:px-16"
+      >
         <Link to="/" className="font-yellowTail text-white text-xl lg:text-2xl">
           Pravesh
         </Link>
@@ -125,7 +128,7 @@ function Header() {
             }`}
             onClick={() => {
               setActiveTab("home");
-              setActiveNav(false)
+              setActiveNav(false);
             }}
           >
             Home
@@ -137,7 +140,7 @@ function Header() {
             }`}
             onClick={() => {
               setActiveTab("about");
-              setActiveNav(false)
+              setActiveNav(false);
             }}
           >
             About
@@ -149,7 +152,7 @@ function Header() {
             }`}
             onClick={() => {
               setActiveTab("skills");
-              setActiveNav(false)
+              setActiveNav(false);
             }}
           >
             About
@@ -161,7 +164,7 @@ function Header() {
             }`}
             onClick={() => {
               setActiveTab("projects");
-              setActiveNav(false)
+              setActiveNav(false);
             }}
           >
             Projects
@@ -173,7 +176,7 @@ function Header() {
             }`}
             onClick={() => {
               setActiveTab("resume");
-              setActiveNav(false)
+              setActiveNav(false);
             }}
           >
             Resume
