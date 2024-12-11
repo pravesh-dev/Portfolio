@@ -26,13 +26,13 @@ function About() {
         },
       });
 
-      tl.from(".imgBg", { y: -100,  opacity: 0 }, "a")
-        .from(".img", { y: 100,  opacity: 0 }, "a")
-        .from(".imgRight", { x: 100,  opacity: 0 })
+      tl.from(".imgBg", { y: -100, opacity: 0 }, "a")
+        .from(".img", { y: 100, opacity: 0 }, "a")
+        .from(".imgRight", { x: 100, opacity: 0 })
         .from(".popCards", { scale: 0, stagger: 0.2 })
         .from(".aboutContent", { y: 100, stagger: 0.3, opacity: 0 })
-        .from(".btn1", { x: -100, opacity: 0  }, "b")
-        .to(".resumeDownload", { x: 0, opacity: 1}, "b");
+        .from(".btn1", { x: -100, opacity: 0 }, "b")
+        .to(".resumeDownload", { x: 0, opacity: 1 }, "b");
     }, componentRef);
 
     return () => ctx.revert();
