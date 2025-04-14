@@ -5,6 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub, FaSquareInstagram } from "react-icons/fa6";
 
 function Footer() {
+  let date = new Date();
   return (
     <div className='w-full h-52 flex flex-col justify-center gap-4 px-2 bg-[#161616] md:h-32 lg:h-40'>
       <div className='w-full flex text-white flex-col gap-2 md:flex-row md:justify-between md:mt-6 lg:px-14 xl:px-32'>
@@ -19,7 +20,7 @@ function Footer() {
         </div>
       </div>
       <img src={line} className='w-full lg:w-[95%] lg:mx-auto' alt="" />
-      <div className='w-full h-5 text-white text-xs flex items-center justify-center uppercase lg:text-sm lg:tracking-widest'>© <span className='text-primary mx-1 font-bold'>Pravesh</span> 2024. ALL rIGHTS rESERVED</div>
+      <div className='w-full h-5 text-white text-xs flex items-center justify-center uppercase lg:text-sm lg:tracking-widest'>© <span className='text-primary mx-1 font-bold'>Pravesh</span> { date.getFullYear() }. ALL rIGHTS rESERVED</div>
     </div>
   )
 }

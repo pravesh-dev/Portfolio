@@ -15,7 +15,6 @@ import { useOutletContext } from "react-router-dom";
 
 function Hero() {
   const { preLoader } = useOutletContext();
-  console.log(preLoader);
   const componentRef = useRef();
   useGSAP(
     () => {
