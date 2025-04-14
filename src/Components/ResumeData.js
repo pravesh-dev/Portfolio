@@ -8,6 +8,14 @@ const userData = [
     type: 'experience'
   },
   {
+    heading: "Trimbak InfoTech",
+    subHeading: "FRONTEND WEB DEVELOPER Intern",
+    para: `Interned at Trimbak Info Tech from Aug 2024 to Sept 2024, developing responsive websites using HTML, TailwindCSS, and ReactJS. Collaborated with the team to deliver client-focused web solutions.`,
+    timeStart: '2024',
+    timeEnd: 2024,
+    type: 'experience'
+  },
+  {
     heading: "Higher Education",
     subHeading: "KLP Sr. Sec. School, Niwaz Nagar, Haryana",
     para: `I completed my higher education at KLP Sr. Sec. School, where I developed a strong foundation in various subjects and actively participated in extracurricular activities.`,

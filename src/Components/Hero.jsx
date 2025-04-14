@@ -169,8 +169,7 @@ function Hero() {
         className="w-full h-[30%] flex justify-between pt-8 pl-11 pr-8 absolute lg:h-[27%] lg:-mt-20 lg:pr-20 lg:pl-24"
       >
         <p className="heroPara w-28 text-[0.4rem] text-white/60 font-extralight text-justify mt-3 md:text-[0.55rem] md:w-44 lg:text-[0.65rem] lg:w-48 lg:mt-7">
-          Debbie put her hand into the hole, sliding her hand down as far as her
-          arm could reach. Lorem ipsum dolor sit amet Lorem, ipsum.
+          Frontend developer with a passion for building simple, intuitive, and user-friendly digital experiences that make a real difference in people's lives.
         </p>
         <div className="w-[7.2rem]">
           <h3 className="contacts text-[0.6rem] text-white -mb-2 mt-1 lg:text-[0.9rem]">
