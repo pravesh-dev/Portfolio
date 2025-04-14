@@ -154,8 +154,8 @@ function Skills() {
               NODE.JS, EXPRESS.JS
             </h2>
             <p className="skills_para">
-              Experienced in building server-side applications and RESTful APIs
-              using Node.js and Express.js for robust backend development.
+              Basic knowledge of building server-side applications and RESTful APIs
+              using Node.js and Express.js for backend development.
             </p>
           </div>
           <div className="flex flex-col gap-1 resume_data_container">
@@ -163,8 +163,8 @@ function Skills() {
               MONGODB, MONGOOSE
             </h2>
             <p className="skills_para">
-              Skilled in using MongoDB as a NoSQL database and Mongoose for
-              object data modeling (ODM) to interact with MongoDB seamlessly.
+              Basic understanding of using MongoDB as a NoSQL database and Mongoose for
+              object data modeling (ODM) to interact with MongoDB.
             </p>
           </div>
         </div>
