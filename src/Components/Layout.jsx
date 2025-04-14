@@ -74,8 +74,8 @@ function Layout() {
         </main>
       )} */}
       {preLoader && (
-        <div className="loader-wrapper absolute flex items-center justify-center bg-[#191919] w-full h-[100svh] z-[100]">
-          <h1 className="text-white text-3xl">loading...</h1>
+        <div className="absolute flex items-center justify-center bg-[#191919] w-full h-[100svh] z-[100]">
+          <div className="site-loader"></div>
         </div>
       )}
       <main id="main-container">
