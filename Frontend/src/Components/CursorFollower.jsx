@@ -1,32 +1,41 @@
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 
+// Function component for CursorFollower
 function CursorFollower() {
+  // State to store mouse position
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
+  // Effect to handle mouse movement and update state
   useEffect(() => {
     const handleMouseMove = (e) => {
+      // Extract clientX and clientY from the event to get mouse position
       const { clientX, clientY } = e;
+      // Update state with the new mouse position
       setMousePosition({ x: clientX, y: clientY });
     };
 
+    // Add event listener for mouse movement
     document.addEventListener("mousemove", handleMouseMove);
 
+    // Cleanup function to remove event listener on component unmount
     return () => {
       document.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
 
+  // Effect to animate cursor circles based on mouse position
   useEffect(() => {
-
+    // Use GSAP to animate elements with class 'cursor_Circs'
     gsap.to('.cursor_Circs', {
-      duration: 0.1,
-      x: mousePosition.x,
-      y: mousePosition.y,
-      ease: "power2.out",
+      duration: 0.1, // Animation duration
+      x: mousePosition.x, // Target x position
+      y: mousePosition.y, // Target y position
+      ease: "power2.out", // Easing function for animation
     });
   }, [mousePosition]);
 
+  // JSX for rendering cursor circles
   return (
     <div className="pointer-events-none">
       <div
