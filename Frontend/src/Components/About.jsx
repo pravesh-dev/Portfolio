@@ -10,14 +10,20 @@ import ScrollMouse from "./ScrollMouse";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+// Register the ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
 function About() {
+  // Create a reference to the component for animation
   const componentRef = useRef(null);
 
+  // Use effect to animate elements on scroll
   useEffect(() => {
+    // Create a context for the animation
     const ctx = gsap.context(() => {
+      // Create a timeline for the animation
       const tl = gsap.timeline({
+        // Set up scroll trigger for the animation
         scrollTrigger: {
           trigger: componentRef.current,
           start: "15% center",
@@ -26,6 +32,7 @@ function About() {
         },
       });
 
+      // Animate elements
       tl.from(".imgBg", { y: -100, opacity: 0 }, "a")
         .from(".img", { y: 100, opacity: 0 }, "a")
         .from(".imgRight", { x: 100, opacity: 0 })
@@ -35,6 +42,7 @@ function About() {
         .to(".resumeDownload", { x: 0, opacity: 1 }, "b");
     }, componentRef);
 
+    // Cleanup function to revert the animation context
     return () => ctx.revert();
   }, []);
 
